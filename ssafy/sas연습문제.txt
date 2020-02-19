@@ -1,0 +1,624 @@
+data code;
+code=1; test='Y'; session=5; output;
+code=2; test='N'; session=4; output;
+code=3; test='Y'; session=3; output;
+code=2; test='N'; session=4; output;
+code=3; test='N'; session=5; output;
+code=2; test='Y'; session=2; output;
+run;
+
+data code1;
+set code;
+if code= 1 then type='check';
+else if code=3 then type = 'check3';
+else put 'code is not valid' session = Test = ;
+run;
+
+proc format;
+value codefmt
+ 11 = 'TM'
+ 12 = 'MM'
+ 14 = 'BA'
+ 15 = 'AM';
+run;
+proc print; run
+
+proc format;
+value agefmt
+0-< 13 = 'child'
+13-<19 = 'T'
+19-<65 = 'A'
+65-100 = 'S'
+;
+run;
+
+data age;
+age =13; age_=age; output;
+run;
+proc print data=age;
+format age agefmt.;
+run;
+
+proc format;
+value yearlyfmt
+low-<2800 = '1-6분위'
+2800-< 4000 = '7-8분위';
+run;
+
+data yearly;
+salary=-3000; output;
+run;
+proc print data=yearly;
+format salary yearlyfmt.;
+run;
+
+%let lib_address = c:/;
+libname stats "&lib_address"
+
+proc format library = stats;
+value codefmt
+11= 'TM'
+12= 'MM'
+14= 'BA'
+15= 'AM';
+run;
+
+proc format library = work fmtlib;
+run;
+
+
+libname design 'C:/';
+proc format library = design fmtlib;
+run;
+
+
+data work1;
+input a b c d $;
+cards;
+1 2 3 4
+2 3 4 5
+3 4 5 6
+4 . . 7
+;
+run;
+proc means data=work1; run;
+proc means data=work1 min max mean maxdec=2;
+var c b a;
+run;
+
+
+
+
+
+
+
+proc means data=work1 min max maxdec=2;
+var b c a;
+run;
+
+data work.height;
+input id$ gender$ height weight;
+cards;
+1 F 170 56
+2 F 172 55
+3 F 174 65
+4 M 177 46
+5 F 180 86
+6 M 184 78
+7 M 183 77
+8 M 184 74
+;
+run;
+proc means data=height;
+var height; run;
+proc print; run;
+proc means data = height;
+var height;
+class gender;
+run;
+proc print; run;
+
+
+data work.height;
+input id$ gender$ height weight dept$;
+cards;
+1 F 170 56 FA
+2 F 172 55 FA
+3 F 174 65 MA
+4 M 177 46 SA
+5 F 180 86 SC
+6 M 184 78 SA
+7 M 183 77 MA
+8 M 184 74 MA
+;
+run;
+
+proc sort data = height;
+by descending gender; run;
+proc means data = height;
+var height;
+by descending gender;
+run;
+proc print; run;
+
+proc means data = work.height;
+output out = work.height_result;
+run;
+
+proc means data= height;
+output out = height_result min=min_value mean = avg_value;
+run;
+proc print data=height_result;
+run;
+proc freq data=height;
+tables id *gender;
+run;
+
+
+
+proc freq data=height;
+table id * gender / norow nocol nopercent; run;
+
+proc freq data=height;
+talbes id*gender/ norow nocol nopercent; run;
+
+data work.aa;
+a= 1;
+a =a +1;
+run;
+proc print; run;
+
+data work.cc;
+input c @@;
+cards;
+1 2 3 4 5 6 7 8 9 10
+;
+run;
+proc print; run;
+data work.cc2;
+set work.cc;
+d+c;
+run;
+proc print; run;
+
+data aa;
+input a @@;
+cards;
+1 2 3 . 4  5 6 7 8 9 .
+;
+run;
+proc print; run;
+data aa2;
+set aa;
+b+a;
+run;
+proc print; run;
+
+data sum;
+output;
+x+1;
+output;
+run;
+proc print; run;
+data sum;
+retain z 10;
+output;
+z+1;
+output;
+run;
+proc print; run;
+
+data work.a;
+z=3;
+output;
+run;
+data work.b;
+set work.a;
+retain z 10;
+run;
+proc print; run;
+
+data cookies;
+set qtr_A;
+if tot > 9000 then message = 'Warning';
+run;
+
+data result1;
+input id result;
+cards;
+1 1
+2 0
+3 2
+4 0
+5 3
+;
+run;
+data result2;
+set result1;
+if result then pass= 'OK';
+else pass = 'FAIL';
+run;
+proc print; run;
+
+data trap;
+input x y z;
+cards;
+1 2 3
+2 3 4
+3 4 5
+4 5 6
+;
+run;
+data trap2;
+set trap;
+if x =1 or x=2 then delete;
+run;
+proc print; run;
+
+data salary_rank;
+set salary;
+if tot> 3800 then rank=1;
+
+data fashion;
+x=10;
+if x=9 then y=1000;
+if x=10 then y=1100;
+if x =11 then y = 1200;
+else y =2700;
+run;
+
+data toys;
+length product $ 10 group $ 10;
+input product group price;
+cards;
+cards indoors 9.99
+marbles indoors 8.99
+drum instruments 12.99
+hula outdoors 12.99
+ball outdoors 8.49 
+;
+run;
+
+data groups;
+set toys;
+if group = 'outdoors' then price_gp = 'c';
+if price ge 12.99 then price_gp = 'a';
+else if price ge 8.99 then price_gp = 'b';
+run;
+proc print; run;
+
+data drop;
+input a b c d e;
+cards;
+1 2 3 4 5
+;
+run;
+
+data drop2;
+set drop;
+drop d e;
+run;
+proc print; run;
+
+data drop2 (drop = a e);
+set drop;
+run;
+proc print; run;
+
+data aa;
+set drop (drop = a c);
+run;
+
+	data a;
+	input id var1;
+	cards;
+	1 2
+	5 3
+	7 4
+	;
+	run;
+	
+	data b;
+	input id var2;
+	cards;
+	2 6 
+	3 8
+	;
+	run;
+	data c;
+	set a b;
+	by id;
+	run;
+	data a;
+	input id var1;
+	cards;
+	1 2
+	5 3
+	7 4
+	;
+	run;
+	
+	data b;
+	input id  var2;
+	cards;
+	2 6
+	3 8
+	;
+	run;
+	
+	data c;
+	set a b;
+	run;
+	proc print; run;
+	
+	data pat;
+	merge a b;
+	by id;
+	run;
+	proc print; run;
+	
+	data pat1;
+	merge work.a (in=ina)
+	      work.b (in=inb);
+	by id;
+	if ina*inb=1;
+	run;
+	proc print; run;
+	
+	data a;
+	input id var1;
+	cards;
+	1 2
+	5 3
+	7 4
+	;
+	run;
+	
+	data b;
+	input id var2;
+	cards;
+	2 6 
+	3 8
+	;
+	run;
+	data c;
+	set a b;
+	by id;
+	run;
+	data a;
+	input id var1;
+	cards;
+	1 2
+	5 3
+	7 4
+	;
+	run;
+	
+	data b;
+	input id  var2;
+	cards;
+	2 6
+	3 8
+	;
+	run;
+	
+	data c;
+	set a b;
+	run;
+	proc print; run;
+	
+	data pat;
+	merge a b;
+	by id;
+	run;
+	proc print; run;
+	
+	data pat1;
+	merge work.a (in=ina)
+	      work.b (in=inb);
+	by id;
+	if ina*inb=1;
+	run;
+	proc print; run;
+	
+data a;
+
+data mat;
+merge pat (in=inpat);
+      kor (in=inkor);
+by id;
+if inpat=1 and inkor=1;
+run;
+proc print; run;
+
+data score;
+test1=75; test2=65; test3=55; output;
+test1=60; test2=.; test3=60; output;
+test1=60; test2=60; test3=60; output;
+run;
+
+data aa;
+set score;
+mean = mean(test1, test2, test3);
+
+avg= mean(of test1-test3);
+avg2= (test1+test2+test3)/3;
+run;
+proc print; run;
+
+data chapter14;
+input rate payrate $ hours;
+cards;
+1 2 3
+;
+run;
+
+data ch;
+set chapter14;
+rate=payrate;
+salary=payrate*hours;
+wages=sum(rate,payrate,hours);
+run;
+proc print; run;
+
+data aa;
+input fee $ @@;
+cards;
+$13 $14 $15 $16
+;
+run;
+
+data aa2;
+set aa;
+salary= input(fee,dollar3.0);
+run;
+proc contents data=aa2; run;
+
+data aa1;
+input fee @@;
+cards;
+13 14 15 16
+;
+run;
+data aa2;
+set aa1;
+salary= put(fee,dollar3.0);
+run;
+proc print; run;
+
+data a14_1;
+input date $;
+informat date yymmdd10.;
+cards;
+1960/01/01
+2018/05/05
+;
+run;
+proc print; run;
+
+data a14_2;
+input day;
+informat day mmddyy8.;
+format day worddate14.;
+cards;
+05-05-18
+05-15-17
+;
+run;
+proc print; run;
+
+options yearcutoff=2000;
+data a14_3;
+input day;
+informat day mmddyy8.;
+format day worddate.;
+cards;
+05-05-89
+05-15-88
+07-14-86
+;
+run;
+proc print; run;
+
+data a14_4 (drop=i);
+deposit_day = '05may2018'd;
+format deposit_day weekdate20.;
+
+do i = 1 to 10;
+   deposit_day+1;
+   output;
+end;
+run;
+proc print;
+run;
+
+data a14;
+input submit;
+informat submit mmddyy10.;
+cards;
+05-05-2018
+05-07-2018
+;
+run;
+
+data a14_4;
+set a14;
+deadline = '05may2018'd;
+if deadline < submit then score = 'fail';
+if deadline >= submit then score ='passr';
+run;
+proc print; run;
+
+data a15;
+input birth today;
+informat birth today mmddyy10.;
+cards;
+07/14/1992
+05/05/2018
+;
+run;
+data a15_1;
+set a15;
+lives= today-birth;
+age= lives/365;
+run;
+proc print; run;
+
+date=mdy(1,2,11);
+today=today();
+today=date();
+
+data a16;
+input year month day;
+cards;
+1980 7 19
+1994 4 3
+1998 11 22
+1981 3 21
+1999 10 13
+1984 1 4
+1999 12 4
+;
+run;
+data a16_1;
+set a16;
+format birth_date worddate20.;
+birth_date=mdy(month,day,year);
+run;
+proc print; run;
+
+data a17;
+format today worddate20.;
+today = today();
+today2= date();
+run;
+proc print; run;
+proc contents data=a17; run;
+
+DATA TRIALS;
+LENGTH NAME TESTDATE $10.;
+input name$ testdate$ sex$ placebo$ cholesterol triglyc uric;
+cards;
+J 22MAY2000 F Y 200 180 3.7
+E 22MAY2000 F N 244 320 4.6
+N 22MAY2000 F Y 210 300 4.0
+J 01AUG2000 F Y 205 185 3.8
+E 01AUG2000 F N 249 325 4.7
+N 01AUG2000 F Y 215 305 4.1
+J 09AUG2000 F Y 215 190 3.9
+E 09AUG2000 F N 254 330 4.8
+N 09AUG2000 F Y 220 310 4.2
+;
+RUN;
+proc print; run;
+proc sort data=trials;
+by testdate;
+run;
+proc transpose data=trials;
+var cholesterol uric;
+id name ;
+by testdate;
+run;
+proc print; run;
+proc contents data=trans_trials;
+run;
