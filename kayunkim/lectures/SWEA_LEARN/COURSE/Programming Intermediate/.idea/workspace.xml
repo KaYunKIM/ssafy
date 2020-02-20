@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da6d12f9-f369-4581-b411-95f1c9a21335" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../TIL/타이포라/2020.01.20/Git 기초.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../TIL/타이포라/2020.01.20/TIL_2020.01.20.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../TIL/타이포라/2020.01.28/TIL_2020.01.28.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../TIL/타이포라/2020.02.19/TIL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../TIL/타이포라/타이포라_v.1.md" beforeDir="false" />
-    </list>
+    <list default="true" id="da6d12f9-f369-4581-b411-95f1c9a21335" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +12,7 @@
     <session id="810073190">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.opened" value="2" />
@@ -69,7 +63,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="938" />
+    <option name="x" value="954" />
+    <option name="y" value="1" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -181,7 +176,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="938" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="954" y="1" width="974" height="1047" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1388889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
