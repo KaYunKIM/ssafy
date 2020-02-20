@@ -1,4 +1,5 @@
-import calc
+# import calc
+from calc import *
 
 num1, num2 = map(int, input().split())
 print(add(num1, num2))
