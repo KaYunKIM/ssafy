@@ -4,11 +4,11 @@ def palin(N,M):
             if j == 0:
                 if mtx[i][j:j+M] == mtx[i][j+M-1::-1]:    #인덱싱주의!!
                     return mtx[i][j:j+M]
-                    break
+                break
             else:
                 if mtx[i][j:j+M] == mtx[i][j+M-1:j-1:-1]:
                     return mtx[i][j:j+M]
-                    break
+                break
 T = int(input())
 for tc in range(1,T+1):
     N,M = list(map(int,input().split()))

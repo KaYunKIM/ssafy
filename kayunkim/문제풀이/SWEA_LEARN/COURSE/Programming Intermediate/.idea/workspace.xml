@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da6d12f9-f369-4581-b411-95f1c9a21335" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/String/4864. 문자열 비교.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Programming Intermediate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programming Intermediate.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/String/ddfd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/String/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/String/4861. 회문.py" beforeDir="false" afterPath="$PROJECT_DIR$/String/4861. 회문.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/String/4865. 글자수.py" beforeDir="false" afterPath="$PROJECT_DIR$/String/4865. 글자수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/String/Untitled.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582092213709</updated>
       <workItem from="1584064795645" duration="300000" />
+      <workItem from="1584077780381" duration="31000" />
     </task>
     <servers />
   </component>
@@ -117,6 +122,10 @@
     </state>
     <state x="227" y="119" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.814@0.23.1440.814" timestamp="1584064907801" />
     <state x="336" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.816@0.23.1440.816" timestamp="1584076255894" />
+    <state x="229" y="71" key="SettingsEditor" timestamp="1584077792737">
+      <screen x="0" y="23" width="1440" height="822" />
+    </state>
+    <state x="229" y="71" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1584077792737" />
     <state x="399" y="261" key="com.intellij.ide.util.TipDialog" timestamp="1584064796473">
       <screen x="0" y="23" width="1440" height="814" />
     </state>
