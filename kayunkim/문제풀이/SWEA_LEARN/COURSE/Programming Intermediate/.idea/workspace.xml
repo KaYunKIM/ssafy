@@ -2,13 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da6d12f9-f369-4581-b411-95f1c9a21335" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Programming Intermediate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programming Intermediate.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LIST1/4831. 전기버스.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LIST1/4831. 전기버스_help.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LIST2/4837. 부분집합의 합.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LIST2/4843. 특별한 정렬.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/String/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/String/4861. 회문.py" beforeDir="false" afterPath="$PROJECT_DIR$/String/4861. 회문.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/String/4865. 글자수.py" beforeDir="false" afterPath="$PROJECT_DIR$/String/4865. 글자수.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/String/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST1/.ipynb_checkpoints/전기버스-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST1/1일차_min max.py" beforeDir="false" afterPath="$PROJECT_DIR$/LIST1/4828. min max.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST1/1일차_구간합.py" beforeDir="false" afterPath="$PROJECT_DIR$/LIST1/4835. 구간합.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST1/1일차_숫자카드.py" beforeDir="false" afterPath="$PROJECT_DIR$/LIST1/4834. 숫자 카드.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST1/1일차_전기버스.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST1/1일차_전기버스_help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST1/전기버스.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST2/.ipynb_checkpoints/부분집합의 합-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST2/2일차_부분집합의 합.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST2/2일차_색칠하기.py" beforeDir="false" afterPath="$PROJECT_DIR$/LIST2/4836. 색칠하기.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST2/2일차_이진탐색.py" beforeDir="false" afterPath="$PROJECT_DIR$/LIST2/4839. 이진탐색.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST2/2일차_이진탐색_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/LIST2/4839. 이진탐색_함수.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST2/2일차_특별한 정렬.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST2/2일차_특별한 정렬_함수사용.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LIST2/부분집합의 합.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
+  <component name="JupyterTrust" id="adc34173-9630-43e7-898f-d345c503b6ef" />
   <component name="ProjectId" id="1Z3PQYLD0RJH42qxlGAnhpYpgj9" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,7 +56,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.ddfd">
+  <component name="RunManager" selected="Python.4831. 전기버스">
     <configuration name="3일차_문자열 비교" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Programming Intermediate" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -57,6 +71,94 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/String/3일차_문자열 비교.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4831. 전기버스" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programming Intermediate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LIST1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LIST1/4831. 전기버스.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4837. 부분집합의 합" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programming Intermediate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LIST2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LIST2/4837. 부분집합의 합.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4843. 특별한 정렬" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programming Intermediate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LIST2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LIST2/4843. 특별한 정렬.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4843. 특별한 정렬" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programming Intermediate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LIST2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LIST2/4843. 특별한 정렬.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -90,11 +192,17 @@
     <list>
       <item itemvalue="Python.3일차_문자열 비교" />
       <item itemvalue="Python.ddfd" />
+      <item itemvalue="Python.4837. 부분집합의 합" />
+      <item itemvalue="Python.4843. 특별한 정렬" />
+      <item itemvalue="Python.4831. 전기버스" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4831. 전기버스" />
+        <item itemvalue="Python.4843. 특별한 정렬" />
+        <item itemvalue="Python.4843. 특별한 정렬" />
+        <item itemvalue="Python.4837. 부분집합의 합" />
         <item itemvalue="Python.ddfd" />
-        <item itemvalue="Python.3일차_문자열 비교" />
       </list>
     </recent_temporary>
   </component>
@@ -109,7 +217,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582092213709</updated>
       <workItem from="1584064795645" duration="300000" />
-      <workItem from="1584077780381" duration="31000" />
+      <workItem from="1584077780381" duration="1219000" />
     </task>
     <servers />
   </component>
@@ -122,6 +230,22 @@
     </state>
     <state x="227" y="119" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.814@0.23.1440.814" timestamp="1584064907801" />
     <state x="336" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.816@0.23.1440.816" timestamp="1584076255894" />
+    <state width="1398" height="208" key="GridCell.Tab.0.bottom" timestamp="1584081593978">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1584081593978" />
+    <state width="1398" height="208" key="GridCell.Tab.0.center" timestamp="1584081593977">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1584081593977" />
+    <state width="1398" height="208" key="GridCell.Tab.0.left" timestamp="1584081593977">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1584081593977" />
+    <state width="1398" height="208" key="GridCell.Tab.0.right" timestamp="1584081593978">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state width="1398" height="208" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1584081593978" />
     <state x="229" y="71" key="SettingsEditor" timestamp="1584077792737">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
@@ -130,5 +254,11 @@
       <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="399" y="261" key="com.intellij.ide.util.TipDialog/0.23.1440.814@0.23.1440.814" timestamp="1584064796473" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Programming_Intermediate$4837___.coverage" NAME="4837. 부분집합의 합 Coverage Results" MODIFIED="1584078021159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIST2" />
+    <SUITE FILE_PATH="coverage/Programming_Intermediate$2__.coverage" NAME="2일차_특별한 정렬 Coverage Results" MODIFIED="1584078255689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIST2" />
+    <SUITE FILE_PATH="coverage/Programming_Intermediate$1_.coverage" NAME="1일차_전기버스 Coverage Results" MODIFIED="1584081593960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIST1" />
+    <SUITE FILE_PATH="coverage/Programming_Intermediate$4843___.coverage" NAME="4843. 특별한 정렬 Coverage Results" MODIFIED="1584078232342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIST2" />
   </component>
 </project>
