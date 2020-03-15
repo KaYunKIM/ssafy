@@ -1,0 +1,47 @@
+body{
+    margin:0;
+
+}
+
+nav{
+    padding:1rem;
+}
+
+.nav_logo {
+    text-decoration: none;
+    color : black;
+    font-family: Georgia;
+
+}
+
+.nav_items{
+    float:right;
+    margin:0;
+}
+
+.nav_item{
+    list-style :none;
+    display:inline;
+}
+
+.cover{
+    height:500px;
+    line-height: 500px;
+    background-image: url("images/bicycles.jpg");
+    text-align: center;
+}
+
+.cover_title{
+    margin : 0;
+    color: white;
+
+}
+
+.contents{
+    text-align: center;
+}
+
+.contents >img{
+    width: 500px;
+
+}
