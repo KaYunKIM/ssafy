@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="da6d12f9-f369-4581-b411-95f1c9a21335" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/STACK1/5356. 의석이의 세로로 말해요.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/.idea/알고리즘.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/.idea/알고리즘.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/D10_Stack/Stack_ex.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/D10_Stack/Stack_ex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/D10_Stack/Stack_ex_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/D10_Stack/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/D10_Stack/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../lectures/ALGORITHM/D10_Stack/input_graph.txt.py" beforeDir="false" afterPath="$PROJECT_DIR$/STACK1/4873. 반복문자 지우기.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/STACK1/4871. 그래프 경로.py" beforeDir="false" afterPath="$PROJECT_DIR$/STACK1/4871. 그래프 경로.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +46,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.5356. 의석이의 세로로 말해요">
+  <component name="RunManager" selected="Python.4873. 반복문자 지우기">
     <configuration name="4831. 전기버스" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Programming Intermediate" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -55,28 +61,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LIST1/4831. 전기버스.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="4843. 특별한 정렬" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Programming Intermediate" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LIST2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LIST2/4843. 특별한 정렬.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,6 +135,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="4873. 반복문자 지우기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Programming Intermediate" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/STACK1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/STACK1/4873. 반복문자 지우기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="5356. 의석이의 세로로 말해요" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Programming Intermediate" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,19 +180,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.4843. 특별한 정렬" />
       <item itemvalue="Python.4831. 전기버스" />
       <item itemvalue="Python.4866. 괄호검사" />
       <item itemvalue="Python.4871. 그래프 경로" />
       <item itemvalue="Python.5356. 의석이의 세로로 말해요" />
+      <item itemvalue="Python.4873. 반복문자 지우기" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4873. 반복문자 지우기" />
         <item itemvalue="Python.5356. 의석이의 세로로 말해요" />
         <item itemvalue="Python.4871. 그래프 경로" />
         <item itemvalue="Python.4866. 괄호검사" />
         <item itemvalue="Python.4831. 전기버스" />
-        <item itemvalue="Python.4843. 특별한 정렬" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +209,7 @@
       <workItem from="1584064795645" duration="300000" />
       <workItem from="1584077780381" duration="1300000" />
       <workItem from="1584331907588" duration="15003000" />
-      <workItem from="1584363443781" duration="2409000" />
+      <workItem from="1584363443781" duration="4724000" />
     </task>
     <servers />
   </component>
@@ -216,57 +222,61 @@
     </state>
     <state x="227" y="119" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.814@0.23.1440.814" timestamp="1584064907801" />
     <state x="336" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.816@0.23.1440.816" timestamp="1584076255894" />
-    <state width="934" height="208" key="GridCell.Tab.0.bottom" timestamp="1584366576630">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="934" height="208" key="GridCell.Tab.0.bottom" timestamp="1584367778231">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="866" height="208" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1584346407908" />
     <state width="866" height="259" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1584352473303" />
-    <state width="1398" height="208" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1584081593978" />
+    <state width="934" height="208" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1584367778231" />
     <state width="934" height="208" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1584366576630" />
-    <state width="934" height="208" key="GridCell.Tab.0.center" timestamp="1584366576629">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="934" height="208" key="GridCell.Tab.0.center" timestamp="1584367778230">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="866" height="208" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1584346407907" />
     <state width="866" height="259" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1584352473302" />
-    <state width="1398" height="208" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1584081593977" />
+    <state width="934" height="208" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1584367778230" />
     <state width="934" height="208" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1584366576629" />
-    <state width="934" height="208" key="GridCell.Tab.0.left" timestamp="1584366576629">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="934" height="208" key="GridCell.Tab.0.left" timestamp="1584367778229">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="866" height="208" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1584346407907" />
     <state width="866" height="259" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1584352473301" />
-    <state width="1398" height="208" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1584081593977" />
+    <state width="934" height="208" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1584367778229" />
     <state width="934" height="208" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1584366576629" />
-    <state width="934" height="208" key="GridCell.Tab.0.right" timestamp="1584366576630">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="934" height="208" key="GridCell.Tab.0.right" timestamp="1584367778231">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="866" height="208" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1584346407908" />
     <state width="866" height="259" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1584352473302" />
-    <state width="1398" height="208" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1584081593978" />
+    <state width="934" height="208" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1584367778231" />
     <state width="934" height="208" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1584366576630" />
-    <state width="934" height="259" key="GridCell.Tab.1.bottom" timestamp="1584365090069">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="934" height="259" key="GridCell.Tab.1.bottom" timestamp="1584367726842">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="866" height="259" key="GridCell.Tab.1.bottom/0.23.1440.812@0.23.1440.812" timestamp="1584346158377" />
     <state width="866" height="259" key="GridCell.Tab.1.bottom/0.23.1440.814@0.23.1440.814" timestamp="1584352473305" />
+    <state width="934" height="259" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1584367726842" />
     <state width="934" height="259" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1584365090069" />
-    <state width="934" height="259" key="GridCell.Tab.1.center" timestamp="1584365090068">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="934" height="259" key="GridCell.Tab.1.center" timestamp="1584367726841">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="866" height="259" key="GridCell.Tab.1.center/0.23.1440.812@0.23.1440.812" timestamp="1584346158376" />
     <state width="866" height="259" key="GridCell.Tab.1.center/0.23.1440.814@0.23.1440.814" timestamp="1584352473304" />
+    <state width="934" height="259" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1584367726841" />
     <state width="934" height="259" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1584365090068" />
-    <state width="934" height="259" key="GridCell.Tab.1.left" timestamp="1584365090068">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="934" height="259" key="GridCell.Tab.1.left" timestamp="1584367726841">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="866" height="259" key="GridCell.Tab.1.left/0.23.1440.812@0.23.1440.812" timestamp="1584346158375" />
     <state width="866" height="259" key="GridCell.Tab.1.left/0.23.1440.814@0.23.1440.814" timestamp="1584352473303" />
+    <state width="934" height="259" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1584367726841" />
     <state width="934" height="259" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1584365090068" />
-    <state width="934" height="259" key="GridCell.Tab.1.right" timestamp="1584365090068">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="934" height="259" key="GridCell.Tab.1.right" timestamp="1584367726842">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="866" height="259" key="GridCell.Tab.1.right/0.23.1440.812@0.23.1440.812" timestamp="1584346158376" />
     <state width="866" height="259" key="GridCell.Tab.1.right/0.23.1440.814@0.23.1440.814" timestamp="1584352473304" />
+    <state width="934" height="259" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1584367726842" />
     <state width="934" height="259" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1584365090068" />
     <state x="229" y="71" key="SettingsEditor" timestamp="1584077792737">
       <screen x="0" y="23" width="1440" height="822" />
@@ -277,12 +287,17 @@
     </state>
     <state x="399" y="260" key="com.intellij.ide.util.TipDialog/0.23.1440.812@0.23.1440.812" timestamp="1584331908205" />
     <state x="399" y="261" key="com.intellij.ide.util.TipDialog/0.23.1440.814@0.23.1440.814" timestamp="1584064796473" />
+    <state x="757" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584367284188">
+      <screen x="0" y="23" width="1440" height="821" />
+    </state>
+    <state x="757" y="51" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.1440.821@0.23.1440.821" timestamp="1584367284188" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Programming_Intermediate$5356____.coverage" NAME="5356. 의석이의 세로로 말해요 Coverage Results" MODIFIED="1584366576617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/STACK1" />
     <SUITE FILE_PATH="coverage/Programming_Intermediate$4866__.coverage" NAME="4866. 괄호검사 Coverage Results" MODIFIED="1584339245517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/STACK1" />
     <SUITE FILE_PATH="coverage/Programming_Intermediate$4837___.coverage" NAME="4837. 부분집합의 합 Coverage Results" MODIFIED="1584078021159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIST2" />
     <SUITE FILE_PATH="coverage/Programming_Intermediate$2__.coverage" NAME="2일차_특별한 정렬 Coverage Results" MODIFIED="1584078255689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIST2" />
+    <SUITE FILE_PATH="coverage/Programming_Intermediate$4873___.coverage" NAME="4873. 반복문자 지우기 Coverage Results" MODIFIED="1584367778220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/STACK1" />
     <SUITE FILE_PATH="coverage/Programming_Intermediate$1_.coverage" NAME="1일차_전기버스 Coverage Results" MODIFIED="1584081593960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIST1" />
     <SUITE FILE_PATH="coverage/Programming_Intermediate$4843___.coverage" NAME="4843. 특별한 정렬 Coverage Results" MODIFIED="1584078232342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/LIST2" />
     <SUITE FILE_PATH="coverage/Programming_Intermediate$4871___.coverage" NAME="4871. 그래프 경로 Coverage Results" MODIFIED="1584346605698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/STACK1" />

@@ -24,15 +24,6 @@
 
 '''
 
-V,E = map(int,input().split())
-edge = list(map(int,input().split()))
-matrix = [[0]*(V+1) for _ in range(V+1)]
-for i in range(E):
-    n1, n2 = edge[i*2], edge[i*2+1]
-    matrix[n1][n2] = 1      #무방향그래프이므로 둘 다 1
-    matrix[n2][n1] = 1
-for row in matrix:
-    print(row)
 
 '''
 스택을 활용한 dfs 구현
@@ -44,7 +35,7 @@ for row in matrix:
         꺼내온 정점에 인접하고 
         스택에 넣은 정점 방문 표시
 '''
-def dfs(n,V):
+def dfs(n,V):                   #시작점, 정점갯수
     visited = [0] * (V + 1)     #방문표시용 배열
     stack = [0]*V               #스택
     top = -1
@@ -63,15 +54,13 @@ def dfs(n,V):
                 stack[top] = i
                 visited[i] = 1
 
-
 V,E = map(int,input().split())
-adj = [[0 for _ in range(V+1)] for _ in range(V+1)]
 edge = list(map(int,input().split()))
+matrix = [[0]*(V+1) for _ in range(V+1)]
+#matrix = [[0 for _ in range(V+1)] for _ in range(V+1)]
 for i in range(E):
-    n1,n2 = edge[i*2], edge[1*2+1]
-    adj[n1][n2] = 1
-    adj[n2][n1] = 1
-for row in adj:
+    n1, n2 = edge[i*2], edge[i*2+1]
+    matrix[n1][n2] = 1      #무방향그래프이므로 둘 다 1
+    matrix[n2][n1] = 1
+for row in matrix:
     print(row)
-
-def dfs(1,V):        #시작점, 정점갯수
