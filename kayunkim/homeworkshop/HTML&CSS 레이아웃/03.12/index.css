@@ -1,0 +1,29 @@
+body {
+  margin:0;
+
+}
+
+.wrapper{width:1000px; margin:0 auto;}
+h3{color:black; line-height: 40px; float:left; font-family:Georgia; font-size: 20px; margin:30px;}
+.menu {float:right;}
+.menu li{float:left; margin-right: 30px; font-family:Georgia; font-size: 20px;}
+.menu a{color:black;  padding:30px; display:block; }
+
+ul{
+  list-style:none;
+}
+
+div{
+  text-align:center;
+}
+
+
+div {
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 30px;
+}
+
