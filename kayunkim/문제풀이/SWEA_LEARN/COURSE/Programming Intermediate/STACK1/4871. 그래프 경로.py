@@ -20,10 +20,8 @@ def graph(start,end):
 T = int(input())
 for tc in range(1,T+1):
     V,E = list(map(int,input().split()))
-    lst = [0]*(v+1) for _ in range(v+1)]
+    lst = [[0]*(V+1) for _ in range(V+1)]
     for i in range(E):
         start, end = list(map(int,input().split()))
-
     S,G = list(map(int,input().split()))
-    visited
     print(graph(S,G))

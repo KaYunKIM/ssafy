@@ -1,0 +1,41 @@
+/* 아래애 자유롭게 꾸며 주세요! */
+
+.contents{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 350px;
+    padding:20px;
+    background-color: bisque;
+    z-index: 1;
+}
+.contents>h1{
+    text-align: center;
+}
+
+.contents>label{
+    text-align:left;
+}
+
+.content{
+    margin: 15px auto;
+    width: 200px;
+    padding:5px;
+    background-color: lightblue;
+    z-index: 2;
+}
+
+input{
+    width:190px;
+    margin:5px 0;
+}
+
+.submit{
+    text-align: center;
+}
+
+.submit>input{
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    background-color: mediumpurple;
+}
