@@ -3,11 +3,36 @@ body {
 
 }
 
-.wrapper{width:1000px; margin:0 auto;}
-h3{color:black; line-height: 40px; float:left; font-family:Georgia; font-size: 20px; margin:30px;}
-.menu {float:right;}
-.menu li{float:left; margin-right: 30px; font-family:Georgia; font-size: 20px;}
-.menu a{color:black;  padding:30px; display:block; }
+.wrapper{
+  width:1000px;
+  margin:0 auto;
+}
+
+h3{
+  color:black;
+  line-height: 40px;
+  float:left;
+  font-family:Georgia;
+  font-size: 20px;
+  margin:30px;
+}
+
+.menu {
+  float:right;
+}
+
+.menu li{
+  float:left;
+  margin-right: 30px;
+  font-family:Georgia;
+  font-size: 20px;
+}
+
+.menu a{
+  color:black;
+  padding:30px;
+  display:block;
+}
 
 ul{
   list-style:none;
@@ -16,7 +41,6 @@ ul{
 div{
   text-align:center;
 }
-
 
 div {
   color: black;
