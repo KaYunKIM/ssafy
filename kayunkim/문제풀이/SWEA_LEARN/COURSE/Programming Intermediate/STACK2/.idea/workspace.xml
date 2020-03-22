@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a2e925d-33ea-4b34-8ed5-c74bc8ae711a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/4881. 배열 최소 합.py" beforeDir="false" afterPath="$PROJECT_DIR$/4881. 배열 최소 합.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4874. Forth.py" beforeDir="false" afterPath="$PROJECT_DIR$/4874. Forth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,10 +34,17 @@
       <option name="presentableId" value="Default" />
       <updated>1584445928222</updated>
       <workItem from="1584445929515" duration="9000" />
+      <workItem from="1584878713106" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="798" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1584878714395">
+      <screen x="0" y="23" width="1440" height="820" />
+    </state>
+    <state x="798" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.820@0.23.1440.820" timestamp="1584878714395" />
   </component>
 </project>
