@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996917b4-12d9-4a5c-bb5e-952de8ab450c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../문제풀이/SWEA/D4/123.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TIL/2020.01.20/Git 기초.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TIL/2020.01.20/TIL_2020.01.20.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TIL/2020.01.28/TIL_2020.01.28.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TIL/2020.02.19/TIL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TIL/2020.02.20/TIL.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TIL/2020.03.24/2020.03.24.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../homeworkshop/HTML&amp;CSS 레이아웃/03.25 web_pjt2" beforeDir="false" afterPath="$PROJECT_DIR$/../../homeworkshop/HTML&amp;CSS 레이아웃/03.25 web_pjt2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../문제풀이/SWEA_LEARN/COURSE/Programming Intermediate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../문제풀이/SWEA_LEARN/COURSE/Programming Intermediate/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../문제풀이/SWEA_LEARN/COURSE/Programming Intermediate/STACK2/4875. 미로.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../문제풀이/SWEA_LEARN/COURSE/Programming Intermediate/STACK2/4875. 미로.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../문제풀이/SWEA/.idea/SWEA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../문제풀이/SWEA/.idea/SWEA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../문제풀이/SWEA/D4/1210. Ladder1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../문제풀이/SWEA/D4/1210. Ladder1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../문제풀이/SWEA_LEARN/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../문제풀이/SWEA_LEARN/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../문제풀이/SWEA_LEARN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../문제풀이/SWEA_LEARN/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +43,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SWEA_LEARN" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -97,27 +112,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SWEA_농작물 수확하기" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="알고리즘" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/D09_String문제풀이2" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D09_String문제풀이2/SWEA_농작물 수확하기.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="SWEA_반복문자 지우기" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="알고리즘" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,6 +126,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D11_Stack(연습문제)/SWEA_반복문자 지우기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SWEA_농작물 수확하기" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="알고리즘" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/D09_String문제풀이2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/D09_String문제풀이2/SWEA_농작물 수확하기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,6 +273,7 @@
       <updated>1580947843768</updated>
       <workItem from="1584368070068" duration="649000" />
       <workItem from="1585150403390" duration="13000" />
+      <workItem from="1585196870258" duration="596000" />
     </task>
     <servers />
   </component>
