@@ -24,17 +24,3 @@ for tc in range(1,T+1):
         if max < i:
             max = i
     print('#{} {}'.format(tc, bin_1.count(max)))
-
-        # sum = 0
-        # for j in range(len(bin)):
-        #     print(bin[j])
-        # for k in bin[j]:
-        #     print(k)
-        #     print(bin[j][k])
-            # print(bin[j+1][k])
-            # for k in bin[j]:
-            #     print(k)
-            #     print(bin[j+1])
-            # print(bin[j+1][0],bin[j+1][1])
-                # sum+=1
-                # print(sum)
