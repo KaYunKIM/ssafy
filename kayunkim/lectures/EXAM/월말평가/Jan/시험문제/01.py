@@ -7,6 +7,9 @@ def q1(number):
     주어진 순서도의 조건에 따라 Boolean 값인 True 혹은 False를 반환합니다.
     """
 
+    if number%2==0:
+        return True
+    return False
 
 
 # 실행 결과를 확인하기 위한 코드입니다. 수정하지 마시오.
