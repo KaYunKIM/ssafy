@@ -7,19 +7,17 @@ def q7(n):
     n을 바탕으로 가능한 암호의 갯수를 정수로 반환합니다.
     """
     number = [0,1,2,3,4,5]
-    ans = [0]*3
-    bin = []
+    bin = [0]*3
+    cnt = 0
     for i in number:
-        if n-i in number:
+        if n-i != n and n-i != i and n-i in number:
             bin[0] = i
             bin[2] = n-i
-        if i != bin[0] and i != bin[2]:
-            bin[1] = i
-        return ans
-
-
-
-
+            for j in number:
+                if j != bin[0] and j!= bin[2]:
+                    bin[1] = j
+                    cnt+=1
+    return cnt
 
 # 실행 결과를 확인하기 위한 코드입니다. 수정하지 마시오.
 if __name__ == '__main__':
