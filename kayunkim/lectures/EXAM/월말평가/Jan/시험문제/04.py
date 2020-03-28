@@ -7,6 +7,13 @@ def q4(word):
     word에 등장하는 알파벳을 key로, 갯수를 value로 가지는 딕셔너리를 반환합니다.
     딕셔너리 결과 값만 같으면, 순서는 상관없습니다.
     """
+    bin = {}
+    for i in word:
+        if i not in bin:
+            bin[i] = 1
+        else:
+            bin[i] += 1
+    return bin
 
 
 # 실행 결과를 확인하기 위한 코드입니다. 수정하지 마시오.

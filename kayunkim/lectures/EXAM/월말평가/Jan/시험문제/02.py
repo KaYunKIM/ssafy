@@ -7,6 +7,13 @@ def q2(word):
     word에 있는 모음의 갯수를 정수로 반환합니다.
     """
 
+    vowels = 'aeiou'
+    cnt = 0
+    for i in word:
+        if i in vowels:
+            cnt+=1
+    return cnt
+
 
 
 # 실행 결과를 확인하기 위한 코드입니다. 수정하지 마시오.

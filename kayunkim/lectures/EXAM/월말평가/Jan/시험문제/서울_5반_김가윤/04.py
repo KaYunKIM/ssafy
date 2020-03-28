@@ -17,8 +17,8 @@ def q4(word):
     # for i in range(len(result)):
     #     if result[]
     for j in range(len(result)):
-        a = dict{result[j] =1}
-        print(a)    
+        a = dict(result[j] =1)
+        print(a)
     return result
 
 
