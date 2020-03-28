@@ -6,6 +6,18 @@ def q7(n):
     n은 9이하의 양의 정수이다.
     n을 바탕으로 가능한 암호의 갯수를 정수로 반환합니다.
     """
+    number = [0,1,2,3,4,5]
+    ans = [0]*3
+    bin = []
+    for i in number:
+        if n-i in number:
+            bin[0] = i
+            bin[2] = n-i
+        if i != bin[0] and i != bin[2]:
+            bin[1] = i
+        return ans
+
+
 
 
 
