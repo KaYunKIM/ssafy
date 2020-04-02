@@ -1,5 +1,11 @@
-sam = {}
-for i in enumerate(range(4)):
-    sam[i[0]] = i[1]
+A = []
 
-print(sum(sam.values()))
+def subset(k,N):
+    if k==N:
+        return
+    else:
+        A.append(arr[k])
+        subset(k+1,N)
+        A.pop()
+        bit[k]=0
+        subset(k+1,N)
