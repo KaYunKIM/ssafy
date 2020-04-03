@@ -1,28 +1,21 @@
-# def fix():
-#     if N == 1:
-#         return
-#     else:
-#         return
-
-
 T = 10
 for tc in range(1,T+1):
-    N = int(input())
-    pwd = list(map(int,input().split()))
-    odn = int(input())
+    N1 = int(input())
+    original = list(map(int,input().split()))
+    N2 = int(input())
     order = list(input().split())
-    bin = []
-    for i in range(odn):
+    for i in range(len(order)):
         if order[i] == 'I':
-            bin.append(order[i:i+int(order[i+2])+3])
+            index = int(order[i+1])
+            num = int(order[i+2])
+            for j in range(num):
+                original.insert(index+j, int(order[i+3+j]))
         elif order[i] == 'D':
-            bin.append(order[i:i+3])
+            del original[int(order[i+1])-1:int(order[i+1])+int(order[i+2])-1]
         elif order[i] == 'A':
-            bin.append(order[i:i+int(order[i+1])+2])
-    # for i in bin:
-    #     if i[0] == 'I':
-    pwd.insert(1,bin[0][3:])
-        # elif i[0] == 'D':
-        #
-        # else:
-    print(''.join(map(int(pwd))))
+            for j in range(int(order[i+1])):
+                original.append(int(order[i+2+j]))
+    print('#{}'.format(tc), end =' ')
+    for k in range(10):
+        print(original[k], end =' ')
+    print()
