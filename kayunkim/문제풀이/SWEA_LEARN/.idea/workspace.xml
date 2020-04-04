@@ -44,7 +44,7 @@
       <recent name="C:\Users\multicampus\Desktop\kayunkim\lectures\SWEA_LEARN\COURSE\Programming Intermediate\LIST1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.5105. 미로의 거리">
+  <component name="RunManager" selected="Python.123">
     <configuration name="123" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,8 +164,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.5105. 미로의 거리" />
         <item itemvalue="Python.123" />
+        <item itemvalue="Python.5105. 미로의 거리" />
         <item itemvalue="Python.456" />
         <item itemvalue="Python.5102. 노드의 거리" />
         <item itemvalue="Python.5099. 피자 굽기" />
@@ -187,6 +187,7 @@
       <workItem from="1585837359242" duration="2000" />
       <workItem from="1585891107731" duration="23204000" />
       <workItem from="1586000609645" duration="2197000" />
+      <workItem from="1586009920913" duration="6546000" />
     </task>
     <servers />
   </component>
@@ -194,45 +195,45 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1376" height="261" key="GridCell.Tab.0.bottom" timestamp="1586008566742">
+    <state width="1237" height="244" key="GridCell.Tab.0.bottom" timestamp="1586017654460">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1376" height="261" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1586008566742" />
+    <state width="1237" height="244" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1586017654460" />
     <state width="1376" height="209" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1585910241814" />
-    <state width="1376" height="261" key="GridCell.Tab.0.center" timestamp="1586008566741">
+    <state width="1237" height="244" key="GridCell.Tab.0.center" timestamp="1586017654459">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1376" height="261" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1586008566741" />
+    <state width="1237" height="244" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1586017654459" />
     <state width="1376" height="209" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1585910241813" />
-    <state width="1376" height="261" key="GridCell.Tab.0.left" timestamp="1586008566741">
+    <state width="1237" height="244" key="GridCell.Tab.0.left" timestamp="1586017654459">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1376" height="261" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1586008566741" />
+    <state width="1237" height="244" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1586017654459" />
     <state width="1376" height="209" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1585910241812" />
-    <state width="1376" height="261" key="GridCell.Tab.0.right" timestamp="1586008566742">
+    <state width="1237" height="244" key="GridCell.Tab.0.right" timestamp="1586017654459">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1376" height="261" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1586008566742" />
+    <state width="1237" height="244" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1586017654459" />
     <state width="1376" height="209" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1585910241813" />
-    <state width="1376" height="261" key="GridCell.Tab.1.bottom" timestamp="1586008566744">
+    <state width="1237" height="261" key="GridCell.Tab.1.bottom" timestamp="1586015879908">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1376" height="261" key="GridCell.Tab.1.bottom/0.23.1440.820@0.23.1440.820" timestamp="1586008566744" />
+    <state width="1237" height="261" key="GridCell.Tab.1.bottom/0.23.1440.820@0.23.1440.820" timestamp="1586015879908" />
     <state width="1376" height="258" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1585837187826" />
-    <state width="1376" height="261" key="GridCell.Tab.1.center" timestamp="1586008566743">
+    <state width="1237" height="261" key="GridCell.Tab.1.center" timestamp="1586015879907">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1376" height="261" key="GridCell.Tab.1.center/0.23.1440.820@0.23.1440.820" timestamp="1586008566743" />
+    <state width="1237" height="261" key="GridCell.Tab.1.center/0.23.1440.820@0.23.1440.820" timestamp="1586015879907" />
     <state width="1376" height="258" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1585837187826" />
-    <state width="1376" height="261" key="GridCell.Tab.1.left" timestamp="1586008566743">
+    <state width="1237" height="261" key="GridCell.Tab.1.left" timestamp="1586015879907">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1376" height="261" key="GridCell.Tab.1.left/0.23.1440.820@0.23.1440.820" timestamp="1586008566743" />
+    <state width="1237" height="261" key="GridCell.Tab.1.left/0.23.1440.820@0.23.1440.820" timestamp="1586015879907" />
     <state width="1376" height="258" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1585837187825" />
-    <state width="1376" height="261" key="GridCell.Tab.1.right" timestamp="1586008566744">
+    <state width="1237" height="261" key="GridCell.Tab.1.right" timestamp="1586015879908">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1376" height="261" key="GridCell.Tab.1.right/0.23.1440.820@0.23.1440.820" timestamp="1586008566744" />
+    <state width="1237" height="261" key="GridCell.Tab.1.right/0.23.1440.820@0.23.1440.820" timestamp="1586015879908" />
     <state width="1376" height="258" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1585837187826" />
     <state x="373" y="76" key="SettingsEditor" timestamp="1585789239424">
       <screen x="0" y="23" width="1440" height="821" />
@@ -263,7 +264,7 @@
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5102___.coverage" NAME="5102. 노드의 거리 Coverage Results" MODIFIED="1585908779749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5105___.coverage" NAME="5105. 미로의 거리 Coverage Results" MODIFIED="1586002634818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5099___.coverage" NAME="5099. 피자 굽기 Coverage Results" MODIFIED="1585834804635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
-    <SUITE FILE_PATH="coverage/SWEA_LEARN$123.coverage" NAME="123 Coverage Results" MODIFIED="1586002523733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
+    <SUITE FILE_PATH="coverage/SWEA_LEARN$123.coverage" NAME="123 Coverage Results" MODIFIED="1586017654449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$456.coverage" NAME="456 Coverage Results" MODIFIED="1585910241803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
   </component>
 </project>
