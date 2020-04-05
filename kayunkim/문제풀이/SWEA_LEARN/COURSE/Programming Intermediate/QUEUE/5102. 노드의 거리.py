@@ -1,32 +1,25 @@
-def bfs(start,end):
+def node (start,end):
     visited = [0]*(V+1)
-    queue = [start]
-    cnt = 1
+    queue=[(start,1)]
     while queue:
-        queue1 = []
-        while queue:
-            cur = queue.pop(0)
-            if visited[cur] == 0:
-                visited[cur] = 1
-            for i in graph[cur]:
-                if i == end:
-                    return cnt
-                if visited[i] ==0:
-                    queue1.append(i)
-        queue = queue1
-        cnt+=1
+        i,cnt = queue.pop(0)
+        if i == end:
+            return cnt-1
+        else:
+            for k in range(V+1):
+                if graph[i][k] == 1:
+                    queue.append((k,cnt+1))
+                    graph[i][k] = cnt+1
+                    graph[k][i] = cnt+1
     return 0
 
 T = int(input())
 for tc in range(1,T+1):
-    V, E = map(int,input().split())
-    bin = [[] for _ in range(V+1)]
-    for _ in range(E):
-        n1,n2 = map(int,input().split())
-        bin[n1].append(n2)
-        bin[n2].append(n1)
+    V,E = map(int,input().split())
+    graph = [[0]*(V+1) for _ in range(V+1)]
+    for i in range(E):
+        a,b = map(int,input().split())
+        graph[a][b] = 1
+        graph[b][a] = 1
     S,G = map(int,input().split())
-    graph = {}
-    for i in range(len(bin)):
-        graph[i] = bin[i]
-    print('#{} {}'.format(tc,bfs(S,G)))
+    print('#{} {}'.format(tc,node(S,G)))
