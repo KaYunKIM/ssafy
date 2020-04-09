@@ -4,7 +4,7 @@ def node (start,end):
     while queue:
         i,cnt = queue.pop(0)
         if i == end:
-            return cnt-1
+            return cnt-1K
         else:
             for k in range(V+1):
                 if graph[i][k] == 1:
