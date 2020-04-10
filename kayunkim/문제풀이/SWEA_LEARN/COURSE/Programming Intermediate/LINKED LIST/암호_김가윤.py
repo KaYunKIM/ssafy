@@ -27,6 +27,7 @@ def printList(lst):
         return
     cur = lst.head
     for _ in range(lst.size*2):
+        # print(cur.data, end=' ')
         cur = cur.next
     cur = lst.head.prev
     for _ in range(lst.size*2):
@@ -54,7 +55,6 @@ for tc in range(1,T+1):
         cur = new   #새로 추가된 위치를 시작위치로 재설정
         mylist.size +=1
 
-    # print('#{}'.format(tc))
+    print('#{}'.format(tc), end=' ')
     printList(mylist)
     print()
-
