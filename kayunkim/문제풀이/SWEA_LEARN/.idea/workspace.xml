@@ -89,28 +89,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="수열합치기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SWEA_LEARN" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST/수열합치기.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="5110. 수열 합치기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,6 +103,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST/5110. 수열 합치기.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="수열합치기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SWEA_LEARN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST/수열합치기.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,7 +179,6 @@
     </configuration>
     <list>
       <item itemvalue="Python.단순연결리스트" />
-      <item itemvalue="Python.수열합치기" />
       <item itemvalue="Python.5110. 수열 합치기" />
       <item itemvalue="Python.수열 합치기_김가윤" />
       <item itemvalue="Python.암호_김가윤" />
@@ -189,7 +188,6 @@
         <item itemvalue="Python.암호_김가윤" />
         <item itemvalue="Python.수열 합치기_김가윤" />
         <item itemvalue="Python.5110. 수열 합치기" />
-        <item itemvalue="Python.수열합치기" />
         <item itemvalue="Python.단순연결리스트" />
       </list>
     </recent_temporary>
@@ -212,6 +210,7 @@
       <workItem from="1586009920913" duration="7268000" />
       <workItem from="1586405876010" duration="8283000" />
       <workItem from="1586481689469" duration="18797000" />
+      <workItem from="1586667050815" duration="20000" />
     </task>
     <servers />
   </component>
@@ -263,10 +262,10 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="373" y="76" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1585789239424" />
-    <state x="374" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1586481690005">
+    <state x="374" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1586667050973">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state x="374" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.820@0.23.1440.820" timestamp="1586481690005" />
+    <state x="374" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.820@0.23.1440.820" timestamp="1586667050973" />
     <state x="727" y="55" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586001152437">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
