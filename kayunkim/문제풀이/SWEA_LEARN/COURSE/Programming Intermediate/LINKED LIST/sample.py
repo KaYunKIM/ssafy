@@ -19,4 +19,3 @@ for i in range(1,N):
         arr[j] = temp
         j -= 1
 
-    print(arr)
