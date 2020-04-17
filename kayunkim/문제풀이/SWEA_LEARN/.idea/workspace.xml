@@ -213,6 +213,7 @@
       <workItem from="1586667050815" duration="20000" />
       <workItem from="1586960012912" duration="7000" />
       <workItem from="1587022094652" duration="2421000" />
+      <workItem from="1587085948048" duration="1401000" />
     </task>
     <servers />
   </component>
@@ -268,10 +269,11 @@
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="373" y="76" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1585789239424" />
-    <state x="374" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1587022095115">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state x="374" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1587085948229">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="374" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.820@0.23.1440.820" timestamp="1587022095115" />
+    <state x="374" y="265" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1587085948229" />
     <state x="374" y="266" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1586960012607" />
     <state x="727" y="55" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586001152437">
       <screen x="0" y="23" width="1440" height="820" />
