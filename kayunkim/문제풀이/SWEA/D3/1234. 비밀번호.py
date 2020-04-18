@@ -16,7 +16,6 @@ for tc in range(1,T+1):
     print('#{} {}'.format(tc,''.join(ans)))
 
 
-
 # T = 10
 # for tc in range(1,T+1):
 #     N, pwd = list(input().split())
@@ -28,7 +27,15 @@ for tc in range(1,T+1):
 #             ans.append('')
 #     print('#{} {}'.format(tc,''.join(ans)))
 
-T = 2
-for tc in range(1,T+1):
-    N, pwd = list(input().split())
-    ans = list(pwd)
+
+# T = 10
+# for tc in range(1,T+1):
+#     N, pwd = list(input().split())
+#     ans = list(pwd)
+#     bin = []
+#     for i in range(int(N)):
+#         if len(bin)== 0 or ans[i] != bin[-1]:
+#             bin.append(ans[i])
+#         else:
+#             bin.pop()
+#     print('#{} {}'.format(tc,''.join(bin)))
