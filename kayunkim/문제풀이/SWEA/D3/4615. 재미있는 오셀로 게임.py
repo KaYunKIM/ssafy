@@ -10,12 +10,12 @@ for tc in range(1,T+1):
     for q in range(M):
         i,j,s = list(map(int,input().split()))
         visited[i][j]=s
-        for d in range(8):
+        for d in range(8):    #방향정하기
             newi = i + di[d]
             newj = j + dj[d]
-            bin = []
-            while 0<=newi<(N+1) and 0<=newj<(N+1):
-                if visited[newi][newj] !=0 and visited[newi][newj]!= s:
+            bin = []   #방향 바꾸고나서 초기화
+            while 0<=newi<(N+1) and 0<=newj<(N+1):   #쭉 파기, 한방향!!!!!!!!!
+                if visited[newi][newj] !=0 and visited[newi][newj]!= s: #반대숫자찾기
                     bin.append((newi, newj))
                     newi += di[d]
                     newj += dj[d]
@@ -32,3 +32,10 @@ for tc in range(1,T+1):
         B+=k.count(1)
         W+=k.count(2)
     print('#{} {} {}'.format(tc,B,W))
+
+       0  1  2  3  4
+    0 [0, 0, 0, 0, 0]
+    1 [0, 2, 2, 2, 0]
+    2 [0, 2, 1, 0, 0]
+    3 [0, 1, 2, 0, 0]
+    4 [0, 0, 0, 1, 2]
