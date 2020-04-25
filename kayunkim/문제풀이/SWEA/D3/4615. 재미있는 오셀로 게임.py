@@ -6,7 +6,7 @@ for tc in range(1,T+1):
     N,M = list(map(int,input().split()))
     visited = [[0]*(N+1) for _ in range(N+1)]
     visited[N//2][N//2], visited[N//2+1][N//2], visited[N//2][N//2+1], visited[N//2+1][N//2+1]= 2,1,1,2
-    # board = [list(map(int, input().split())) for _ in range(M)]
+
     for q in range(M):
         i,j,s = list(map(int,input().split()))
         visited[i][j]=s
@@ -33,9 +33,9 @@ for tc in range(1,T+1):
         W+=k.count(2)
     print('#{} {} {}'.format(tc,B,W))
 
-       0  1  2  3  4
-    0 [0, 0, 0, 0, 0]
-    1 [0, 2, 2, 2, 0]
-    2 [0, 2, 1, 0, 0]
-    3 [0, 1, 2, 0, 0]
-    4 [0, 0, 0, 1, 2]
+    #    0  1  2  3  4
+    # 0 [0, 0, 0, 0, 0]
+    # 1 [0, 2, 2, 2, 0]
+    # 2 [0, 2, 1, 0, 0]
+    # 3 [0, 1, 2, 0, 0]
+    # 4 [0, 0, 0, 1, 2]
