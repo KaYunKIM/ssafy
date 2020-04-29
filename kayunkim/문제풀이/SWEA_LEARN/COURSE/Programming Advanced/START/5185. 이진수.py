@@ -7,4 +7,4 @@ for tc in range(1,T+1):
         bin = '000'              
         bin+= format(num,'b')    
         ans+=bin[-4:]            
-    print('#{} {}'.format(tc,ans)
+    print('#{} {}'.format(tc,ans))
