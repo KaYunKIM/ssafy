@@ -44,7 +44,7 @@
       <recent name="C:\Users\multicampus\Desktop\kayunkim\lectures\SWEA_LEARN\COURSE\Programming Intermediate\LIST1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.암호_김가윤">
+  <component name="RunManager" selected="Python.5185. 이진수">
     <configuration name="수열 합치기_김가윤" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,28 +59,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST/수열 합치기_김가윤.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="단순연결리스트" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SWEA_LEARN" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST/단순연결리스트.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -111,6 +89,72 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="5120. 암호" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SWEA_LEARN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST/5120. 암호.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="5185. 이진수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SWEA_LEARN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/START/5185. 이진수.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="5185. 이진수" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SWEA_LEARN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/START/5185. 이진수.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="수열합치기" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,28 +169,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST/수열합치기.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="암호_김가윤" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SWEA_LEARN" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST/암호_김가윤.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -178,17 +200,18 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.단순연결리스트" />
       <item itemvalue="Python.5110. 수열 합치기" />
       <item itemvalue="Python.수열 합치기_김가윤" />
-      <item itemvalue="Python.암호_김가윤" />
+      <item itemvalue="Python.5120. 암호" />
+      <item itemvalue="Python.5185. 이진수" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.암호_김가윤" />
+        <item itemvalue="Python.5185. 이진수" />
+        <item itemvalue="Python.5185. 이진수" />
+        <item itemvalue="Python.5120. 암호" />
         <item itemvalue="Python.수열 합치기_김가윤" />
         <item itemvalue="Python.5110. 수열 합치기" />
-        <item itemvalue="Python.단순연결리스트" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +239,7 @@
       <workItem from="1587085948048" duration="1401000" />
       <workItem from="1587133725255" duration="2000" />
       <workItem from="1587219622759" duration="23000" />
+      <workItem from="1588147255745" duration="8200000" />
     </task>
     <servers />
   </component>
@@ -227,25 +251,25 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="882" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.820@0.23.1440.820" timestamp="1587047897707" />
-    <state width="1237" height="261" key="GridCell.Tab.0.bottom" timestamp="1586530702959">
+    <state width="1237" height="244" key="GridCell.Tab.0.bottom" timestamp="1588165417572">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1237" height="261" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1586530702959" />
+    <state width="1237" height="244" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1588165417572" />
     <state width="1237" height="244" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1586507536169" />
-    <state width="1237" height="261" key="GridCell.Tab.0.center" timestamp="1586530702958">
+    <state width="1237" height="244" key="GridCell.Tab.0.center" timestamp="1588165417571">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1237" height="261" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1586530702958" />
+    <state width="1237" height="244" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1588165417571" />
     <state width="1237" height="244" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1586507536168" />
-    <state width="1237" height="261" key="GridCell.Tab.0.left" timestamp="1586530702957">
+    <state width="1237" height="244" key="GridCell.Tab.0.left" timestamp="1588165417570">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1237" height="261" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1586530702957" />
+    <state width="1237" height="244" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1588165417570" />
     <state width="1237" height="244" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1586507536167" />
-    <state width="1237" height="261" key="GridCell.Tab.0.right" timestamp="1586530702958">
+    <state width="1237" height="244" key="GridCell.Tab.0.right" timestamp="1588165417571">
       <screen x="0" y="23" width="1440" height="820" />
     </state>
-    <state width="1237" height="261" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1586530702958" />
+    <state width="1237" height="244" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1588165417571" />
     <state width="1237" height="244" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1586507536168" />
     <state width="1237" height="261" key="GridCell.Tab.1.bottom" timestamp="1586530702960">
       <screen x="0" y="23" width="1440" height="820" />
@@ -305,7 +329,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SWEA_LEARN$__.coverage" NAME="수열 합치기_김가윤 Coverage Results" MODIFIED="1586505748641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$sample.coverage" NAME="sample Coverage Results" MODIFIED="1586482866431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
-    <SUITE FILE_PATH="coverage/SWEA_LEARN$123.coverage" NAME="123 Coverage Results" MODIFIED="1586018261075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
+    <SUITE FILE_PATH="coverage/SWEA_LEARN$123.coverage" NAME="123 Coverage Results" MODIFIED="1588163191841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5108___.coverage" NAME="5108. 숫자 추가 Coverage Results" MODIFIED="1586428193713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5110___.coverage" NAME="5110. 수열 합치기 Coverage Results" MODIFIED="1586504717614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$456.coverage" NAME="456 Coverage Results" MODIFIED="1585910241803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
@@ -313,6 +337,7 @@
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5102___.coverage" NAME="5102. 노드의 거리 Coverage Results" MODIFIED="1585908779749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$_.coverage" NAME="수열편집_김가윤 Coverage Results" MODIFIED="1586429163312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5105___.coverage" NAME="5105. 미로의 거리 Coverage Results" MODIFIED="1586002634818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
+    <SUITE FILE_PATH="coverage/SWEA_LEARN$5185__.coverage" NAME="5185. 이진수 Coverage Results" MODIFIED="1588165417562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5099___.coverage" NAME="5099. 피자 굽기 Coverage Results" MODIFIED="1585834804635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$.coverage" NAME="암호_김가윤 Coverage Results" MODIFIED="1586530675887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$dsfad.coverage" NAME="dsfad Coverage Results" MODIFIED="1586428558968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />

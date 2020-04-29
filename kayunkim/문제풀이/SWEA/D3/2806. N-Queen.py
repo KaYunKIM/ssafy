@@ -31,30 +31,30 @@
 #
 #     # print('#{} {}'.format(tc,cnt))
 
-def possible(k,c):
-    for i in range(k):
-        if k-i == abs(c-col[i]):
-            return False
-        return True
-
-
-def nq(k):
-    if k ==N:
-        pass
-    else:
-        for i in range(N):
-            if visit[i]==1:
-                continue
-            if not possible(k,i):
-                continue
-            visit[i]=1
-            col[k]=1
-            nq(k+1)
-            visit[i]= 0
-
-
-for tc in range(1,int(input())+1):
-    N = int(input())
-    col = [0]*N
-    visit = [0]*N
-    nq(N)
+# def possible(k,c):
+#     for i in range(k):
+#         if k-i == abs(c-col[i]):
+#             return False
+#         return True
+#
+#
+# def nq(k):
+#     if k ==N:
+#         pass
+#     else:
+#         for i in range(N):
+#             if visit[i]==1:
+#                 continue
+#             if not possible(k,i):
+#                 continue
+#             visit[i]=1
+#             col[k]=1
+#             nq(k+1)
+#             visit[i]= 0
+#
+#
+# for tc in range(1,int(input())+1):
+#     N = int(input())
+#     col = [0]*N
+#     visit = [0]*N
+#     nq(N)
