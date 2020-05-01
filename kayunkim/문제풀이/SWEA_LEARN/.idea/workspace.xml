@@ -39,6 +39,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
       <recent name="C:\Users\multicampus\Desktop\kayunkim\lectures\SWEA_LEARN\COURSE\Programming Intermediate\LIST2" />
@@ -242,7 +245,7 @@
       <workItem from="1587133725255" duration="2000" />
       <workItem from="1587219622759" duration="23000" />
       <workItem from="1588147255745" duration="9150000" />
-      <workItem from="1588329743240" duration="2480000" />
+      <workItem from="1588329743240" duration="4143000" />
     </task>
     <servers />
   </component>
@@ -254,46 +257,46 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="882" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.820@0.23.1440.820" timestamp="1587047897707" />
-    <state width="1237" height="244" key="GridCell.Tab.0.bottom" timestamp="1588332543021">
+    <state width="1237" height="261" key="GridCell.Tab.0.bottom" timestamp="1588334474425">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1237" height="244" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1588331006938" />
-    <state width="1237" height="244" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1588332543021" />
-    <state width="1237" height="244" key="GridCell.Tab.0.center" timestamp="1588332543020">
+    <state width="1237" height="261" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1588334474425" />
+    <state width="1237" height="261" key="GridCell.Tab.0.center" timestamp="1588334474424">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1237" height="244" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1588331006937" />
-    <state width="1237" height="244" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1588332543020" />
-    <state width="1237" height="244" key="GridCell.Tab.0.left" timestamp="1588332543019">
+    <state width="1237" height="261" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1588334474424" />
+    <state width="1237" height="261" key="GridCell.Tab.0.left" timestamp="1588334474423">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1237" height="244" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1588331006937" />
-    <state width="1237" height="244" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1588332543019" />
-    <state width="1237" height="244" key="GridCell.Tab.0.right" timestamp="1588332543020">
+    <state width="1237" height="261" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1588334474423" />
+    <state width="1237" height="261" key="GridCell.Tab.0.right" timestamp="1588334474425">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1237" height="244" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1588331006938" />
-    <state width="1237" height="244" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1588332543020" />
-    <state width="1237" height="261" key="GridCell.Tab.1.bottom" timestamp="1588330977140">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1237" height="261" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1588334474425" />
+    <state width="1237" height="261" key="GridCell.Tab.1.bottom" timestamp="1588334474427">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.bottom/0.23.1440.820@0.23.1440.820" timestamp="1588330977140" />
-    <state width="1237" height="261" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1586429192616" />
-    <state width="1237" height="261" key="GridCell.Tab.1.center" timestamp="1588330977139">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1237" height="261" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1588334474427" />
+    <state width="1237" height="261" key="GridCell.Tab.1.center" timestamp="1588334474426">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.center/0.23.1440.820@0.23.1440.820" timestamp="1588330977139" />
-    <state width="1237" height="261" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1586429192615" />
-    <state width="1237" height="261" key="GridCell.Tab.1.left" timestamp="1588330977139">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1237" height="261" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1588334474426" />
+    <state width="1237" height="261" key="GridCell.Tab.1.left" timestamp="1588334474426">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.left/0.23.1440.820@0.23.1440.820" timestamp="1588330977139" />
-    <state width="1237" height="261" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1586429192615" />
-    <state width="1237" height="261" key="GridCell.Tab.1.right" timestamp="1588330977140">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1237" height="261" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1588334474426" />
+    <state width="1237" height="261" key="GridCell.Tab.1.right" timestamp="1588334474427">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.right/0.23.1440.820@0.23.1440.820" timestamp="1588330977140" />
-    <state width="1237" height="261" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1586429192615" />
+    <state width="1237" height="261" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1588334474427" />
     <state x="373" y="76" key="SettingsEditor" timestamp="1585789239424">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
@@ -332,7 +335,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SWEA_LEARN$__.coverage" NAME="수열 합치기_김가윤 Coverage Results" MODIFIED="1586505748641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$sample.coverage" NAME="sample Coverage Results" MODIFIED="1586482866431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
-    <SUITE FILE_PATH="coverage/SWEA_LEARN$5186__2.coverage" NAME="5186. 이진수2 Coverage Results" MODIFIED="1588332542999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
+    <SUITE FILE_PATH="coverage/SWEA_LEARN$5186__2.coverage" NAME="5186. 이진수2 Coverage Results" MODIFIED="1588334453101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$123.coverage" NAME="123 Coverage Results" MODIFIED="1588163191841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5108___.coverage" NAME="5108. 숫자 추가 Coverage Results" MODIFIED="1586428193713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5110___.coverage" NAME="5110. 수열 합치기 Coverage Results" MODIFIED="1586504717614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
