@@ -1,0 +1,29 @@
+/* 04_community.css */
+/* 아래에 코드를 작성해 주세요. */
+.main{
+    width: 720px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.board{
+    text-align: center;
+    margin-top: 170px;
+}
+
+section{
+    margin-top: 70px;
+}
+
+
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}

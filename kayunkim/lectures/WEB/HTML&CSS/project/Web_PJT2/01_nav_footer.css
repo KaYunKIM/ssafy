@@ -1,0 +1,15 @@
+/* 01_nav_footer.css */
+/* 아래에 코드를 작성해 주세요. */
+body {
+    height: 2500px;
+    padding-top:80px;
+}
+
+.navbar{
+    padding:0 10px;
+    width:100%;
+}
+
+nav img{
+    height:80px;
+}
