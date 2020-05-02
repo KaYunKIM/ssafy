@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+<h1>index</h1>
+{% block content %}
+    <h1>회원 목록</h1>
+    {% for user in users %}
+        <h3> {{ user.pk }} : {{ user.username }}</h3>
+        {% if user == request.user %}
+        <a href="{% url 'accounts:delete_user' user.pk %}">회원 탈퇴</a>
+        {% endif %}
+        <hr>
+    {% endfor %}
+{% endblock %}

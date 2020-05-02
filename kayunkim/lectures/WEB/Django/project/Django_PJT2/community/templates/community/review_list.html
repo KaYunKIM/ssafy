@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Review Lists</h2>
+    <a href="{% url 'community:create' %}">NEW</a>
+    <hr>
+    {% for review in reviews %}
+        <a href="{% url 'community:detail' review.pk %}"><h3>{{ review.title }}</h3></a>
+        <p>MOVIE TITLE: {{ review.movie_title }}</p>
+        <p>RANK: {{ review.rank }}</p>
+    <hr>
+    {% endfor %}
+</form>
+{% endblock %}

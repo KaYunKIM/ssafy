@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>리뷰 작성</h3>
+<form action='/community/create_review/' method="GET">
+    제목: <input type="text" name="title"><br>
+    내용: <textarea name="content"></textarea><br>
+    순위: <input type="number" name="rank"><br>
+    <input type="submit" value="리뷰 작성">
+</form>
+{% endblock %}

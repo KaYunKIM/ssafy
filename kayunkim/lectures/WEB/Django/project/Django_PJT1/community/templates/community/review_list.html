@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>리뷰 목록</h3>
+    {% for review in reviews %}
+        <li>{{ review.title }}</li>
+        <p>{{ review.content }}</p>
+        <p>{{ review.rank }}</p>
+        <p>{{ review.created_at }}</p>
+        <hr>
+    {% endfor %}
+    <a href="/community/new_review/">리뷰쓰기</a>
+{% endblock %}

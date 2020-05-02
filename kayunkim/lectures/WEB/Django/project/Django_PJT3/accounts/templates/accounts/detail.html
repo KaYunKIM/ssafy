@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>{{ user.username }}</h1>
+<hr>
+<h1 class='text-center'>작성한 글 목록</h1>
+<hr>
+<table class="table">
+  <thead class="thead-dark table-striped">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Movie Title</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for review in user.review_set.all %}
+    <tr>
+      <th scope="row">{{ review.pk }}</th>
+      <td><a href="{% url 'community:review_detail' review.pk %}">{{ review.title }}</a></td>
+      <td>{{ review.movie_title }}</td>
+    </tr>
+{% endfor %}
+  </tbody>
+</table>
+<form action="{% url 'accounts:delete_user' user.pk %}" method="POST">
+    {% csrf_token %}
+    <button class='btn btn-danger'>계정탈퇴</button>
+</form>
+{% endblock %}
