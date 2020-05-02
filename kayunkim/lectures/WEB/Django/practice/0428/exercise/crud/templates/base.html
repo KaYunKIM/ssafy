@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>exercise</title>
+  <script src="https://kit.fontawesome.com/cd3c0b3f7c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+  <h1>Articles</h1>
+  {% if user.is_authenticated %}
+    <h2>{{ user.username }}님 안녕하세요!</h2>
+    <a href="{% url 'accounts:logout' %}">LOGOUT</a>
+  {% else %}
+    <a href="{% url 'accounts:login' %}">LOGIN</a>
+    <a href="{% url 'accounts:signup' %}">SIGNUP</a>
+  {% endif %}
+  <hr>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>

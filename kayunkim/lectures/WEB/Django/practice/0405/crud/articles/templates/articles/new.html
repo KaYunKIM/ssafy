@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>글 작성</h1>
+<form action ="/articles/create" method="GET">
+    제목: <input type = "Text" name="title"><br>
+    내용: <input type = "Text" name="content"><br>
+    <input type = "submit" value="게시글 작성">
+</form>
+<hr>
+<a href = "/articles">BACK</a>
+
+{% endblock %}

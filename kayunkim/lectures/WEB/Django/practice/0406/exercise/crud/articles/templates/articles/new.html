@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>NEW</h1>
+    <form action="/articles/create/" method="GET">
+        TITLE<br>
+        <input type="text" name="title"><br>
+        <br>
+        CONTENT<br>
+        <textarea name="content"></textarea><br>
+        <input type="submit" value="작성">
+    </form>
+<a href="/articles/">BACK</a>
+{% endblock %}
+
+

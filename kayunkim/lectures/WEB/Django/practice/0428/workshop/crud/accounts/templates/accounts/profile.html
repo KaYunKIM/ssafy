@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>{{ profile_owner }}님의 PROFILE</h2>
+  {% if request.user != profile_owner %}
+      {% if request.user in profile_owner.followers.all %}
+          <a href="{% url 'accounts:follow' profile_owner %}"><button>UNFOLLOW</button></a>
+      {% else %}
+          <a href="{% url 'accounts:follow' profile_owner %}"><button>FOLLOW</button></a>
+      {% endif %}
+  {% endif %}
+  <!--<p>{{ profile_owner.article_set.count }} posts</p>-->
+  <p>{{ profile_owner.article_set.all|length }} posts</p>
+  <p>{{ profile_owner.followers.all|length }} followers</p>
+  <p>{{ profile_owner.followings.all|length }} following </p>
+  {% for article in profile_owner.article_set.all %}
+    <p>{{ article.title }}:{{ article.content }}</p>
+  {% endfor %}
+  <p>{{ profile}}</p>
+  <a href="{% url 'articles:index' %}">BACK</a>
+{% endblock %}

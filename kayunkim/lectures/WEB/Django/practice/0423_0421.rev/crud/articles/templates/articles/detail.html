@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h2>DETAIL</h2>
+	<hr>
+	<h3>{{ article.pk }}번글</h3>
+	<p>제목: {{ article.title }}</p>
+	<p>내용: {{ article.content }}</p>
+	<p>생성 시각: {{ article.created_at }}</p>
+	<p>수정 시각: {{ article.updated_at }}</p>
+
+	<hr>
+	<h2>MAKE SOME COMMENTS</h2>
+	<form action="{% url 'articles:comment_create' article.pk %}" method='POST'>
+		{% csrf_token %}
+		{{ comment_form.as_p }}
+		<button>댓글작성</button>
+		<a href="{% url 'articles:index' %}">BACK</a>
+	</form>
+	<hr>
+
+
+	<h2>COMMENTS</h2>
+	{% for comment in article.comment_set.all %}
+		<h3>{{ article.title }}</h3>
+		<p>{{ comment.content }}</p>
+		<a href="{% url 'articles:comment_delete' article.pk comment.pk %}">DELETE</a>
+	{% empty %}
+		<p>MAKE YOUR OWN COMMENTS</p>
+	{% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>EDIT</h1>
+    <form action="/articles/{{ article.pk }}/update/" method="GET">
+        TITLE<br>
+        <input type="text" name="title" value="{{ article.title }}"><br>
+        <br>
+        CONTENT<br>
+        <textarea name="content">{{ article.content }}</textarea><br>
+        <input type="submit" value="수정">
+    </form>
+<a href="/articles/{{ article.pk }}/">BACK</a>
+{% endblock %}

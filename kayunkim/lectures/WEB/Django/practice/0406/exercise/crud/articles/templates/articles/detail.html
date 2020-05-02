@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>DETAIL</h1>
+<hr>
+    <p>{{ article.title }}</p>
+    <p>{{ article.content }}</p>
+    <p>{{ article.create_at }}</p>
+    <p>{{ article.updated_at }}</p>
+
+    <a href="/articles/{{ article.pk }}/edit/">EDIT</a>
+    <a href="/articles/{{ article.pk }}/delete/">DELETE</a><br>
+    <br>
+    <a href="/articles">BACK</a>
+{% endblock %}

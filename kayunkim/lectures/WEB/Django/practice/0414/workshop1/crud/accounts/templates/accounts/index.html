@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+<h1>회원목록</h1>
+{% block content %}
+    {% for user in users %}
+        {{ user.username }}
+        <hr>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load bootstrap4 %}
+{% block content %}
+<h1>INDEX</h1>
+    {% for poll in polls %}
+      <p>{{ poll.id }}번 ISSUE</p>
+      <h3>{{ poll.Title }}</h3>
+      <a href="{% url 'polls:poll_detail' poll.pk %}">DETAIL</a>
+      <hr>
+    {% endfor %}
+    <a href="{% url 'polls:random' %}">RANDOM</a>
+{% endblock %}

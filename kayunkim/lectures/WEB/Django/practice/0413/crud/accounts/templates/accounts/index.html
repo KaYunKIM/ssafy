@@ -1,0 +1,7 @@
+<h1>유저목록</h1>
+<a href='{% url 'accounts:signup' %}'>회원가입</a>
+{% for user in users %}
+    <a href='{% url 'accounts:detail' user.pk %}'><h2>{{ user.pk}}번 유저</h2></a>
+    <h3>아이디: {{ user.username }}</h3>
+    <hr>
+{% endfor %}

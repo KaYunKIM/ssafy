@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% load bootstrap4 %}
+{% block content %}
+    <h1>로그인 페이지</h1><br>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary">로그인</button>
+        </form>
+
+{% endblock %} 

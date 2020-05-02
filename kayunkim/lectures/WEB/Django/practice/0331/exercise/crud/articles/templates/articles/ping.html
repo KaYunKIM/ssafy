@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>여기는 ping</h1>
+<h2>pong으로 데이터를 보내보자!</h2>
+<form action = "/articles/pong/">
+    <input type="text" name = "message">
+    <input type="submit">
+</form>
+
+{% endblock %}

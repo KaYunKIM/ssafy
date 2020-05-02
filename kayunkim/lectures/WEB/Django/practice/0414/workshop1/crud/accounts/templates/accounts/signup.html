@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+<h1>회원가입 페이지</h1>
+{% block content %}
+    <form action="{% url 'accounts:index' %}", method='POST'>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class= 'btn btn-primary'>회원가입</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% load bootstrap4 %}
+{% block content %}
+<h1>회원 목록</h1><br>
+    {% for user in users %}
+    <p>{{ user.username }}</p>
+    <hr>
+    {% endfor %}
+{% endblock %}

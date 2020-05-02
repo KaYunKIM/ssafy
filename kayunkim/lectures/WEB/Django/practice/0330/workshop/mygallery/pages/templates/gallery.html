@@ -1,0 +1,5 @@
+{% for url in photo_list %}
+    <img src="{{ url }}" alt="">
+{% empty %}
+    <h1>해당 카테고리에 해당하는 이미지가 없습니다!</h1>
+{% endfor %}

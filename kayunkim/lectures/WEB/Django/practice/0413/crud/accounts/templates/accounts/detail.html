@@ -1,0 +1,4 @@
+<h1>{{ user.pk }}번 유저 상세정보</h1>
+<a href='{% url 'accounts:update' user.pk %}'>수정</a>
+
+<h2>아이디: {{ user.username }}</h2>

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if messages %}
+      {% for message in messages %}
+        <div class="arlet alert-success" role="alert">
+            {{ message }}
+        </div>
+      {% endfor%}
+    {% endif %}
+<h1>DETAIL</h1>
+<hr>
+    <p>{{ article.title }}</p>
+    <p>{{ article.content }}</p>
+    <p>{{ article.create_at }}</p>
+    <p>{{ article.updated_at }}</p>
+
+    <a href="{% url 'articles:edit' article.pk %}">EDIT</a>
+    <a href="{% url 'articles:delete' article.pk %}" onclick="return confirm('정말 지우시겠습니까?')">DELETE</a><br>
+    <br>
+    <a href="{% url 'articles:index' %}">BACK</a>
+{% endblock %}
+

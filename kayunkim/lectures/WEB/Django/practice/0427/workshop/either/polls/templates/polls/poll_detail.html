@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% load bootstrap4 %}
+{% block content %}
+    <h2>DETAIL</h2>
+    <a href="{% url 'polls:index' %}">BACK</a>
+    <hr>
+    <div class="container d-flex justify-content-center">
+        <h1 >{{ poll.Title }}</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <form action="{% url 'polls:create_choice' poll.pk poll.IssueA %}" class="col-6 p-0" method="POST">
+                {% csrf_token %}
+                <button class='btn btn-danger col-12' value='{{ poll.IssueA }}' name="issue">{{ poll.IssueA }}</button>
+                <!--value:item, name:key-->
+                <p class="text-center">{{ IssueA_cnt}} </p>
+                <p style="text-align:center">{{ IssueA_ratio }}%</p>
+            </form>
+            <form action="{% url 'polls:create_choice' poll.pk poll.IssueB %}" class="col-6 p-0" method="POST">
+                {% csrf_token %}
+                <button class='btn btn-success col-12' value='{{ poll.IssueB }}' name="issue">{{ poll.IssueB }}</button>
+                <p class="text-center">{{ IssueB_cnt }}</p>
+                <p style="text-align:center">{{ IssueB_ratio }}%</p>
+            </form>
+        </div>
+    </div>
+        <hr>
+        <br>
+
+    <h3>댓글작성</h3>
+        <p>PICK</p>
+        <form action="{% url 'polls:comment_create' poll.pk  %}" method='POST'>
+            {% csrf_token %}
+            <select class="custom-select" name="select">
+                <option selected>PICK YOUR SELECTION</option>
+                <option value="{{ poll.IssueA }}">{{ poll.IssueA }}</option>
+                <option value="{{ poll.IssueB }}">{{ poll.IssueB }}</option>
+            </select>
+            {% bootstrap_form comment_form %}
+        <button class="btn btn-primary">COMMENT</button>
+        </form>
+        <hr>
+        <br>
+
+    <h3>댓글목록</h3>
+        {% for comment in poll.comment_set.all %}
+            <p>pick: {{ comment.pick }}</p>
+            <p>content: {{ comment.content }}</p>
+            <hr>
+        {% empty%}
+            <p>MAKE YOUR OWN COMMENT</p>
+        {% endfor %}
+
+{% endblock %}
