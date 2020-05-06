@@ -19,7 +19,7 @@ def find(x,y):
                 if 0<=ni<N and 0<=nj<N:
                     # print(min)
                     if num+mtx[ni][nj]< min:
-                        queue.stack((ni,nj,num+mtx[ni][nj]))
+                        stack.append((ni,nj,num+mtx[ni][nj]))
                     else:
                         pass
     return min
