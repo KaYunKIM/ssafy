@@ -4,28 +4,28 @@ def find(num):
     bin = ''
     while stack:
         cnt = 0
-        print(stack)
+        # print(stack)
         cart = stack.pop()
-        bin = cart
-        if len(bin) == N:
+        bin = cart          #현재까지 지나온 길 누적값
+        if len(bin) == N:   #끝까지 갔으면,
             bin+='1'
             for j in range(N):
-                print(bin[j], bin[j+1])
-                if cnt+e[int(bin[j])-1][int(bin[j+1])-1] < min:
-                    cnt+= e[int(bin[j])-1][int(bin[j+1])-1]
+                # print(bin[j], bin[j+1])
+                if cnt+e[int(bin[j])-1][int(bin[j+1])-1] < min:   #현재지점까지 값을 다 더했을 때 최소보다 작다면
+                    cnt+= e[int(bin[j])-1][int(bin[j+1])-1]     #추가
                 else:
-                    cnt = min
-                    break
-                print('cnt:{}'.format(cnt))
-            if cnt < min:
+                    cnt = min           #아니면 현재 최소값 유지
+                    break               #뒤에 숫자들은 더해주지 않아도 됨
+                # print('cnt:{}'.format(cnt))
+            if cnt < min:   #최소값 바꿔주기
                 min = cnt
             else:
                 cnt = min
-            print('min:{}'.format(min))
-        else:
+            # print('min:{}'.format(min))
+        else:       #아직 지나가는 과정이라면
             for i in range(2, N+1):
-                print('bin:{}'.format(bin))
-                if str(i) not in bin:
+                # print('bin:{}'.format(bin))
+                if str(i) not in bin:      #지나가는 길을 하나씩 더해주기
                     stack.append(bin+str(i))
     return min
 
