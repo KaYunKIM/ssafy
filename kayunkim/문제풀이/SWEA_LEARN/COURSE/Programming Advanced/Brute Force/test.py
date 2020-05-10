@@ -11,20 +11,22 @@ def find(num,cur,sumV):
         for i in range(1,N):
             if v[i]==0:
                 v[i]=1
-                print('i_1,num :{}, {}'.format(i,num))
+                print('i1: {}, num: {}'.format(i+1, num))
+                print(v)
                 find(num+1, i, sumV+e[cur][i])
-                print('i_2,num :{},{}'.format(i,num))
+                print('i2: {}, num: {}'.format(i+1, num))
                 v[i]=0
+                print(v)
         return
 
-
-        0 1 2 3
-   v = [0,0,1,0]
-   1231
-   지금:2
-    가야하는 곳: 1321
-       12
-321
+#
+#         0 1 2 3
+#    v = [0,0,1,0]
+#    1231
+#    지금:2
+#     가야하는 곳: 1321
+#        12
+# 321
 
     # 우리세상                     딴세상1                딴세상2
     # i=1                       find()
