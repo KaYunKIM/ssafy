@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Movie Lists</h1>
+  <br>
+  <div class="d-flex">
+    {% for movie in movies %}
+      <div class="card mx-4" style="width: 18rem;">
+        {% if movie.image %}
+          <img src="{{ movie.image.url }}" class="card-img-top" alt="movie_poster">
+        {% else %}
+          <img src="media/ghost.jpeg" class="card-img-top" alt="ghost_image">
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.description }}</p>
+          <a href="{% url 'community:movie_detail' movie.pk %}" class="btn btn-primary">Detail</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+    <!--< HTTP/1.1 200 OK-->
+    <!--< Server: nginx-->
+    <!--< Date: Wed, 28 Sep 2016 07:40:17 GMT-->
+    <!--< Content-Type: text/xml;charset=utf-8-->
+    <!--< Transfer-Encoding: chunked-->
+    <!--< Connection: keep-alive-->
+    <!--< Keep-Alive: timeout=5-->
+    <!--< Vary: Accept-Encoding-->
+    <!--< X-Powered-By: Naver-->
+    <!--< Cache-Control: no-cache, no-store, must-revalidate-->
+    <!--< Pragma: no-cache-->
+    <!--<-->
+    <!--<?xml version="1.0" encoding="UTF-8"?>-->
+    <!--<rss version="2.0">-->
+    <!--    <channel>-->
+    <!--        <title>Naver Open API - movie ::'주식'</title>-->
+    <!--        <link>http://search.naver.com</link>-->
+    <!--        <description>Naver Search Result</description>-->
+    <!--        <lastBuildDate>Wed, 28 Sep 2016 16:40:17 +0900</lastBuildDate>-->
+    <!--        <total>2</total>-->
+    <!--        <start>1</start>-->
+    <!--        <display>2</display>-->
+    <!--        <item>-->
+    <!--            <title>주마등&lt;b&gt;주식&lt;/b&gt;회사</title>-->
+    <!--            <link>http://openapi.naver.com/l?AAADWLQQvCIBzFP83f48h0zh08uK1B0S2IOm7mUEIts0F9+vQQPN77vQfv+dbxI2DXgyTQ9QV4B+2ATNSLMCk9gEjYjlkurFZXflp1rFRw/yXnbEspNk8vqypvPJBRhZsGMrSMY4ySwLSpN5RT3NSYIScO5nxhdzc18cjq0958w8LneKUy8fz6AdRxjD6YAAAA</link><image>http://imgmovie.naver.com/mdi/mit110/0968/96811_P01_142155.jpg</image>-->
+    <!--            <subtitle>走馬&amp;amp;#28783;株式&amp;amp;#20250;社</subtitle>-->
+    <!--            <pubDate>2012</pubDate>-->
+    <!--            <director>미키 코이치로|</director>-->
+    <!--            <actor>카시이 유우|쿠보타 마사타카|카지와라 히카리|치요 쇼타|요코야마 메구미|카시와바라 슈지|</actor>-->
+    <!--            <userRating>4.50</userRating>-->
+    <!--        </item>-->
+    <!--        ...-->
+    <!--    </channel>-->
+    <!--</rss>-->
+{% endblock %}

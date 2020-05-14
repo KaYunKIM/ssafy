@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if request.resolver_match.url_name == 'comment_create' %}
+        <h1>Make some Comments</h1>
+    {% else %}
+        <h2>Edit Your Comment</h2>
+    {% endif %}
+    <form action="" method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="">SUBMIT</button>
+    </form>
+{% endblock %}

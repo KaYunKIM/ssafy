@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+<h1>Login Page</h1>
+
+{% block content %}
+  <form action="" method="POST">
+      {% csrf_token %}
+      <p>{{ form.as_p }}</p>
+      <button>Login</button>
+  </form>
+  <div class="my-4">
+    <a href="{% url 'community:index' %}" class="btn btn-dark" >BACK</a>
+  </div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Review Detail</h2>
+  <hr>
+  <div class="d-flex justify-content-center">
+    <div class="w-35">
+      <h4>Title: {{ review.title }}
+        <span class="badge badge-warning"> 평점 {{ review.rank }}</span>
+      </h4>
+      <div class="d-flex">
+        <p class="px-1">by</p>
+        <a href="{% url 'accounts:detail' review.user.pk %}">{{ review.user }}</a>
+      </div>
+      <img src="{{ movie.image.url }}" class="rounded mx-auto d-block">
+      <br>
+      <p>{{ review.content }}</p>
+      <a href="{% url 'community:like' movie.pk review.pk %}"></a>
+      {% if request.user in review.like_users.all %}
+        <a href="{% url 'community:like' movie.pk review.pk %}" style="text-decoration: none">
+        <div class="d-flex">
+          <i class="far fa-thumbs-down fa-lg" style="color:dodgerblue"></i>UNLIKE</a>
+          <p class="px-1">{{ review.like_users.count }}LIKES this Review!</p>
+        </div>
+      {% else %}
+        <a href="{% url 'community:like' movie.pk review.pk %}" style="text-decoration: none">
+        <div class="d-flex">
+          <i class="far fa-thumbs-up fa-lg animate__animated animate__shakeY" style="color:dodgerblue"></i>LIKE</a>
+          <p class="px-1">{{ review.like_users.count }}LIKES this Review!</p>
+        </div>
+      {% endif %}
+      {% if request.user == review.user %}
+          <a href="{% url 'community:review_edit' movie.pk review.pk %}" class="btn btn-warning">EDIT</a>
+          <a href="{% url 'community:review_delete' movie.pk review.pk %}" class="btn btn-danger">DELETE</a>
+      {% endif %}
+    </div>
+  </div>
+  <hr>
+  <h4>Comments</h4>
+  {% for comment in review.comment_set.all %}
+    <p>{{ comment.user }} : {{ comment.content }}</p>
+      {% if request.user == comment.user %}
+        <a href="{% url 'community:comment_delete' movie.pk review.pk comment.pk %}" class="btn btn-danger">DELETE</a>
+      {% endif %}
+  {% endfor %}
+  <hr>
+  <h4>New Comment</h4>
+  <form action="{% url 'community:comment_create' movie.pk review.pk %}" method=POST>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <a href="{% url 'community:movie_detail' movie.pk %}" class="btn btn-dark">BACK</a>
+    <button class="btn btn-primary">SUBMIT</button>
+  </form>
+{% endblock %}

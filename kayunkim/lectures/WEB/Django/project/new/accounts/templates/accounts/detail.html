@@ -1,0 +1,22 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ user.username }}'s profile</h1>
+    {% if request.user != user %}
+        {% if request.user in user.followers.all %}
+          <button><a href="{% url 'accounts:follow' user.pk %}">UNFOLLOW</a></button>
+        {% else %}
+          <button><a href="{% url 'accounts:follow' user.pk %}">FOLLOW</a></button>
+        {% endif %}
+    {% endif %}
+    <p>{{ user.followers.count }}followers</p>
+    <p>{{ user.followings.count }}following</p>
+
+    <h2>Created Reviews by {{ user.username }}</h2>
+    {% for review in user.review_set.all %}
+        <a href="{% url 'community:review_detail' review.movie_id review.pk %}">
+          <p>{{ review.title }}</p>
+        </a>
+    {% endfor %}
+    <p>{{ user.comment }}</p>
+{% endblock %}

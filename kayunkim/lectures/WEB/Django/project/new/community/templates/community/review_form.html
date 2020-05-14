@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% if request.resolver_match.url_name == 'review_create' %}
+        <h1>Add Review</h1>
+    {% else %}
+        <h2>Edit Review</h2>
+    {% endif %}
+    <form action="" method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button class="btn btn-primary">SUBMIT</button>
+    </form>
+{% endblock %}
