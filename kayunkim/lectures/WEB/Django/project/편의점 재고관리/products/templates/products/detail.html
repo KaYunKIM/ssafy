@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+<h3>{{ store.name }} 재고목록</h3>
+<br>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">NAME</th>
+        <th scope="col">STOCK</th>
+        <th scope="col">INCHARGE</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in store.item_set.all %}
+      <tr>
+        <th scope="row" >{{ item.id }}</th>
+        <td><a href="{% url 'products:item_detail' store.id item.id %}">{{ item.name}}</a></td>
+        <td>{{ item.stock }}</td>
+        <td>{{ item.incharge }}</td>
+      </tr>
+       {% endfor %}
+    </tbody>
+  </table>
+  <br>
+  <a href="{% url 'products:index' %}"><button class="btn btn-secondary">BACK</button></a>
+  <a href="{% url 'products:create' store.id %}"><button class="btn btn-primary">ADD</button></a>
+{% endblock %}

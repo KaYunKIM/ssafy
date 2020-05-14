@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+<h3>{{ store.name }} 재고목록</h3>
+<hr>
+<h4>{{ item.name }} 세부정보</h4>
+    {% if item.image %}
+        <img src="{{ item.image.url }}">
+    {% else %}
+        <img src="/media/ghost.jpeg" alt="no image">
+    {% endif %}
+    <p>STOCK : {{ item.stock }}</p>
+    <p>CATEGORY : {{ item.category }}</p>
+    <p>COMPANY : {{ item.company }}</p>
+    <p>INCHARGE : {{ item.incharge }}</p>
+    <br>
+    <a href="{% url 'products:detail' store.id %}"><button class="btn btn-secondary">BACK</button></a>
+    <a href="{% url 'products:edit' store.id item.id %}"><button class="btn btn-success">EDIT</button></a>
+    <a href="{% url 'products:delete' store.id item.id %}"><button class="btn btn-danger">DELETE</button></a>
+{% endblock %}
