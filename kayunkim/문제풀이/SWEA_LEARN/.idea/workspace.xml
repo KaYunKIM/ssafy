@@ -34,7 +34,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -46,8 +46,8 @@
       <recent name="C:\Users\multicampus\Desktop\kayunkim\lectures\SWEA_LEARN\COURSE\Programming Intermediate\LIST1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.5190. 전자카트">
-    <configuration name="12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.순열복습">
+    <configuration name="순열복습" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,7 +60,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force/12.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force/순열복습.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,7 +113,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="5203. 베이비진 게임" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="전자카트_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -121,12 +121,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY/5203. 베이비진 게임.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force/전자카트_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,19 +158,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.5203. 베이비진 게임" />
-      <item itemvalue="Python.12" />
       <item itemvalue="Python.5189. 전자카트_1" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.5190. 전자카트" />
+      <item itemvalue="Python.전자카트_test" />
+      <item itemvalue="Python.순열복습" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.순열복습" />
         <item itemvalue="Python.5190. 전자카트" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.12" />
+        <item itemvalue="Python.전자카트_test" />
         <item itemvalue="Python.5189. 전자카트_1" />
-        <item itemvalue="Python.5203. 베이비진 게임" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +203,7 @@
       <workItem from="1588752505777" duration="15833000" />
       <workItem from="1588810702084" duration="16531000" />
       <workItem from="1588912523520" duration="20807000" />
+      <workItem from="1589425839375" duration="1850000" />
     </task>
     <servers />
   </component>
@@ -218,34 +219,38 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="882" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.820@0.23.1440.820" timestamp="1587047897707" />
-    <state width="1198" height="217" key="GridCell.Tab.0.bottom" timestamp="1589126602222">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1198" height="217" key="GridCell.Tab.0.bottom" timestamp="1589427062197">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1589126602222" />
     <state width="1198" height="281" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1588952199680" />
     <state width="957" height="228" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1588780281641" />
     <state width="957" height="228" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1588776526301" />
-    <state width="1198" height="217" key="GridCell.Tab.0.center" timestamp="1589126602221">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1198" height="217" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1589427062197" />
+    <state width="1198" height="217" key="GridCell.Tab.0.center" timestamp="1589427062196">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1589126602221" />
     <state width="1198" height="281" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1588952199679" />
     <state width="957" height="228" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1588780281640" />
     <state width="957" height="228" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1588776526300" />
-    <state width="1198" height="217" key="GridCell.Tab.0.left" timestamp="1589126602220">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1198" height="217" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1589427062196" />
+    <state width="1198" height="217" key="GridCell.Tab.0.left" timestamp="1589427062194">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1589126602220" />
     <state width="1198" height="281" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1588952199678" />
     <state width="957" height="228" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1588780281639" />
     <state width="957" height="228" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1588776526300" />
-    <state width="1198" height="217" key="GridCell.Tab.0.right" timestamp="1589126602221">
-      <screen x="0" y="23" width="1440" height="820" />
+    <state width="1198" height="217" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1589427062194" />
+    <state width="1198" height="217" key="GridCell.Tab.0.right" timestamp="1589427062196">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1589126602221" />
     <state width="1198" height="281" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1588952199679" />
     <state width="957" height="228" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1588780281640" />
     <state width="957" height="228" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1588776526300" />
+    <state width="1198" height="217" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1589427062196" />
     <state width="957" height="261" key="GridCell.Tab.1.bottom" timestamp="1588782983937">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
@@ -270,10 +275,11 @@
     <state width="1237" height="261" key="GridCell.Tab.1.right/0.23.1440.820@0.23.1440.820" timestamp="1588330977140" />
     <state width="957" height="261" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1588782983936" />
     <state width="957" height="261" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1588770491593" />
-    <state x="373" y="76" key="SettingsEditor" timestamp="1585789239424">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="427" y="125" key="SettingsEditor" timestamp="1589426175825">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="373" y="76" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1585789239424" />
+    <state x="427" y="125" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1589426175825" />
     <state x="374" y="265" key="com.intellij.ide.util.TipDialog" timestamp="1588912535392">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
@@ -331,7 +337,7 @@
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5105___.coverage" NAME="5105. 미로의 거리 Coverage Results" MODIFIED="1586002634818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5185__.coverage" NAME="5185. 이진수 Coverage Results" MODIFIED="1588165417562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5099___.coverage" NAME="5099. 피자 굽기 Coverage Results" MODIFIED="1585834804635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
-    <SUITE FILE_PATH="coverage/SWEA_LEARN$.coverage" NAME="암호_김가윤 Coverage Results" MODIFIED="1586530675887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
+    <SUITE FILE_PATH="coverage/SWEA_LEARN$.coverage" NAME="순열복습 Coverage Results" MODIFIED="1589427062174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$dsfad.coverage" NAME="dsfad Coverage Results" MODIFIED="1586428558968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
   </component>
 </project>
