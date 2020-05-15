@@ -47,29 +47,7 @@
       <recent name="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.5174. subtree">
-    <configuration name="전기버스2_김가윤" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SWEA_LEARN" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/Back Tracking" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/Back Tracking/전기버스2_김가윤.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.5190. 전자카트">
     <configuration name="5174. subtree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,6 +84,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force/5188. 최소합.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="5190. 전자카트" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SWEA_LEARN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force/5190. 전자카트.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,18 +182,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.5208. 전기버스2" />
-      <item itemvalue="Python.전기버스2_김가윤" />
       <item itemvalue="Python.5209. 최소 생산 비용" />
       <item itemvalue="Python.5188. 최소합" />
       <item itemvalue="Python.5174. subtree" />
+      <item itemvalue="Python.5190. 전자카트" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.5190. 전자카트" />
         <item itemvalue="Python.5174. subtree" />
         <item itemvalue="Python.5188. 최소합" />
         <item itemvalue="Python.5208. 전기버스2" />
         <item itemvalue="Python.5209. 최소 생산 비용" />
-        <item itemvalue="Python.전기버스2_김가윤" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +227,7 @@
       <workItem from="1588810702084" duration="16531000" />
       <workItem from="1588912523520" duration="20807000" />
       <workItem from="1589425839375" duration="8616000" />
-      <workItem from="1589524359026" duration="27376000" />
+      <workItem from="1589524359026" duration="29937000" />
     </task>
     <servers />
   </component>
@@ -243,66 +243,66 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="882" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.820@0.23.1440.820" timestamp="1587047897707" />
-    <state width="1198" height="211" key="GridCell.Tab.0.bottom" timestamp="1589565481203">
+    <state width="1198" height="211" key="GridCell.Tab.0.bottom" timestamp="1589571095496">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1589126602222" />
     <state width="1198" height="281" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1588952199680" />
     <state width="957" height="228" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1588780281641" />
     <state width="957" height="228" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1588776526301" />
-    <state width="1198" height="211" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1589565481203" />
-    <state width="1198" height="211" key="GridCell.Tab.0.center" timestamp="1589565481202">
+    <state width="1198" height="211" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1589571095496" />
+    <state width="1198" height="211" key="GridCell.Tab.0.center" timestamp="1589571095495">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1589126602221" />
     <state width="1198" height="281" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1588952199679" />
     <state width="957" height="228" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1588780281640" />
     <state width="957" height="228" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1588776526300" />
-    <state width="1198" height="211" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1589565481202" />
-    <state width="1198" height="211" key="GridCell.Tab.0.left" timestamp="1589565481201">
+    <state width="1198" height="211" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1589571095495" />
+    <state width="1198" height="211" key="GridCell.Tab.0.left" timestamp="1589571095494">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1589126602220" />
     <state width="1198" height="281" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1588952199678" />
     <state width="957" height="228" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1588780281639" />
     <state width="957" height="228" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1588776526300" />
-    <state width="1198" height="211" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1589565481201" />
-    <state width="1198" height="211" key="GridCell.Tab.0.right" timestamp="1589565481202">
+    <state width="1198" height="211" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1589571095494" />
+    <state width="1198" height="211" key="GridCell.Tab.0.right" timestamp="1589571095495">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1589126602221" />
     <state width="1198" height="281" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1588952199679" />
     <state width="957" height="228" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1588780281640" />
     <state width="957" height="228" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1588776526300" />
-    <state width="1198" height="211" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1589565481202" />
-    <state width="1198" height="261" key="GridCell.Tab.1.bottom" timestamp="1589565102740">
+    <state width="1198" height="211" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1589571095495" />
+    <state width="1198" height="261" key="GridCell.Tab.1.bottom" timestamp="1589571074439">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.bottom/0.23.1440.820@0.23.1440.820" timestamp="1588330977140" />
     <state width="957" height="261" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1588782983937" />
     <state width="957" height="261" key="GridCell.Tab.1.bottom/0.23.1440.822@0.23.1440.822" timestamp="1588770491593" />
-    <state width="1198" height="261" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1589565102740" />
-    <state width="1198" height="261" key="GridCell.Tab.1.center" timestamp="1589565102739">
+    <state width="1198" height="261" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1589571074439" />
+    <state width="1198" height="261" key="GridCell.Tab.1.center" timestamp="1589571074435">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.center/0.23.1440.820@0.23.1440.820" timestamp="1588330977139" />
     <state width="957" height="261" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1588782983936" />
     <state width="957" height="261" key="GridCell.Tab.1.center/0.23.1440.822@0.23.1440.822" timestamp="1588770491593" />
-    <state width="1198" height="261" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1589565102739" />
-    <state width="1198" height="261" key="GridCell.Tab.1.left" timestamp="1589565102738">
+    <state width="1198" height="261" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1589571074435" />
+    <state width="1198" height="261" key="GridCell.Tab.1.left" timestamp="1589571074434">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.left/0.23.1440.820@0.23.1440.820" timestamp="1588330977139" />
     <state width="957" height="261" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1588782983935" />
     <state width="957" height="261" key="GridCell.Tab.1.left/0.23.1440.822@0.23.1440.822" timestamp="1588770491592" />
-    <state width="1198" height="261" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1589565102738" />
-    <state width="1198" height="261" key="GridCell.Tab.1.right" timestamp="1589565102739">
+    <state width="1198" height="261" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1589571074434" />
+    <state width="1198" height="261" key="GridCell.Tab.1.right" timestamp="1589571074437">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.right/0.23.1440.820@0.23.1440.820" timestamp="1588330977140" />
     <state width="957" height="261" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1588782983936" />
     <state width="957" height="261" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1588770491593" />
-    <state width="1198" height="261" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1589565102739" />
+    <state width="1198" height="261" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1589571074437" />
     <state x="427" y="125" key="SettingsEditor" timestamp="1589426175825">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -348,7 +348,7 @@
     <SUITE FILE_PATH="coverage/SWEA_LEARN$123.coverage" NAME="123 Coverage Results" MODIFIED="1588775684907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5108___.coverage" NAME="5108. 숫자 추가 Coverage Results" MODIFIED="1586428193713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5102___.coverage" NAME="5102. 노드의 거리 Coverage Results" MODIFIED="1585908779749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
-    <SUITE FILE_PATH="coverage/SWEA_LEARN$5190__.coverage" NAME="5190. 전자카트 Coverage Results" MODIFIED="1588999430682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
+    <SUITE FILE_PATH="coverage/SWEA_LEARN$5190__.coverage" NAME="5190. 전자카트 Coverage Results" MODIFIED="1589571095484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5189__.coverage" NAME="5189. 전자카트 Coverage Results" MODIFIED="1588944281788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$test.coverage" NAME="test Coverage Results" MODIFIED="1588997760911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$_.coverage" NAME="병합 정렬 Coverage Results" MODIFIED="1589445136502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/분할정복" />
