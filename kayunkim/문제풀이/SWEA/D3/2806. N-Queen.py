@@ -58,3 +58,23 @@
 #     col = [0]*N
 #     visit = [0]*N
 #     nq(N)
+
+def queen(k):
+    cnt = 0
+    if k == N:
+        cnt+=1
+        return cnt
+    else:
+
+
+
+T = int(input())
+for tc in range(1,T+1):
+    N = int(input())
+    queen(0)
+    diagnol_1= [0]*()
+    diagnol_2= [0]*()
+    for k in range(N):
+        ans = queen(0,k)
+        cnt+= ans
+    print('#{} {}'.format(tc,cnt))
