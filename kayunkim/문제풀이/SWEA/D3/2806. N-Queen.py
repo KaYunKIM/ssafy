@@ -1,3 +1,31 @@
+def queen(Q):
+    global cnt, N
+    if Q == N+1:
+        cnt+=1
+        return
+    else:
+        for j in range(1,N+1):
+            if v[j]==0 and diag1[Q+j-1]==0 and diag2[N-Q+j-2]==0:
+                v[j]=1
+                diag1[Q+j-1]=1
+                diag2[N-Q+j-2]=1
+                queen(Q+1)
+                v[j]=0
+                diag1[Q+j-1]=0
+                diag2[N-Q+j-2]=0
+
+
+T = int(input())
+for tc in range(1,T+1):
+    N = int(input())
+    diag1 = [0]*(2*N)  #(i+j-1)
+    diag2 = [0]*(2*N)  #(N-i+j-2)
+    cnt = 0
+    v = [0]*(N+1)
+    queen(1)
+    print('#{} {}'.format(tc,cnt))
+
+
 # def queen(i,j):
 #     visited = [[0] * N for _ in range(N)]
 #     visited[i][j] = 1
@@ -30,51 +58,3 @@
 #         print(queen(0,k))
 #
 #     # print('#{} {}'.format(tc,cnt))
-
-# def possible(k,c):
-#     for i in range(k):
-#         if k-i == abs(c-col[i]):
-#             return False
-#         return True
-#
-#
-# def nq(k):
-#     if k ==N:
-#         pass
-#     else:
-#         for i in range(N):
-#             if visit[i]==1:
-#                 continue
-#             if not possible(k,i):
-#                 continue
-#             visit[i]=1
-#             col[k]=1
-#             nq(k+1)
-#             visit[i]= 0
-#
-#
-# for tc in range(1,int(input())+1):
-#     N = int(input())
-#     col = [0]*N
-#     visit = [0]*N
-#     nq(N)
-
-def queen(k):
-    cnt = 0
-    if k == N:
-        cnt+=1
-        return cnt
-    else:
-
-
-
-T = int(input())
-for tc in range(1,T+1):
-    N = int(input())
-    queen(0)
-    diagnol_1= [0]*()
-    diagnol_2= [0]*()
-    for k in range(N):
-        ans = queen(0,k)
-        cnt+= ans
-    print('#{} {}'.format(tc,cnt))
