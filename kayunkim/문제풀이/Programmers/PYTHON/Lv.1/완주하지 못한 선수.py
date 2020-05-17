@@ -4,12 +4,29 @@ def solution(participant, completion):
     completion.sort()
     for i in range(len(completion)-1,-1,-1):
         if participant[i] != completion[i]:
-             ans = participant[i]
+            ans = participant[i]
         elif ans ==0:
             ans = participant[-1]
     return ans
 
-#라이브러리 사용
+
+## Ver.2
+def solution(participant, completion):
+    ans = 0
+    participant.sort()
+    completion.sort()
+    while completion:
+        if participant[-1] != completion[-1]:
+            ans = participant[-1]
+            break
+        else:
+            participant.pop()
+            completion.pop()
+    if ans ==0:
+        ans = participant[0]
+    return ans
+
+## 라이브러리 사용
 from collections import Counter
 
 def solution(participant, completion):

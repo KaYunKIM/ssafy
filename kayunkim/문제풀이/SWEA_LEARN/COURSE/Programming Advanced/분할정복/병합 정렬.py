@@ -1,29 +1,38 @@
-def merge(k):
-    if k == N//2:
-        return
-    else:
-        while len(start)!=0 and len(end)!=0:
-            # if len(start)==len(end):
-            if start[-1] < end[-1]:
-                bin.append(start.pop())
+def merge(s,e):
+    global cnt
+    while s or e:
+        if s and e:
+            if s[-1] >= e[-1]:
+                bin.insert(0, s.pop())
             else:
-                bin.append(end.pop(0))
-            # elif len(start) < len(end):
-            print(bin)
-        k+=1
-
-
+                bin.insert(0, e.pop())
+                cnt += 1
+        else:
+            if len(s)==0:
+                bin.insert(0, e.pop())
+            elif len(e)==0:
+                bin.insert(0, s.pop())
 
 T = int(input())
 for tc in range(1,T+1):
     N = int(input())
-    num = list(map(int,input().split()))
-    start = num[0:N//2]
-    end = num[N//2:N]
-    print(start, end)
-    bin = []
-    merge(0)
-    print(bin)
+    lst = list(map(int,input().split()))
+    start = lst[0:N//2]
+    end = lst[N//2:N]
+    cnt = 0
+    bin=[]
+    merge(start,end)
+    bin.sort()
+    print('#{} {}'.format(tc,bin[N//2],cnt))
+
+
+
+
+
+
+
+
+
 
 # def merge_sorted(arr):
 #     if len(arr) > 1:
@@ -50,7 +59,6 @@ for tc in range(1,T+1):
 #         else:
 #             arr.append(right[j])
 #             j += 1
-#     # ㅇㅇㅇ
 #     while (i < len(left)):
 #         arr.append(left[i])
 #         i += 1
