@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array helper method
+
+        // 1. forEach
+        const colors = ['red', 'blue', 'green', 'purple']
+
+        colors.forEach(function(color) {
+
+        }) // callback 함수를 넘겨준다.
+
+        // 2. map
+        // 반드시 return 값이 있어야 한다.
+        const numbers = [1,2,3]
+
+        const doubleNumbers = numbers.map(number) => {
+            return number * 2
+        })
+
+        // 3. filter
+        const products = [
+            { name: 'cucumber', type: 'vegetable'},
+            { name: 'apple', type: 'fruit'}
+        ]
+
+        const fruits = products.filter((product) => {
+            return product.type == 'fruit'
+        })
+        console.log(fruits)
+        
+
+    </script>
+</body>
+</html>
