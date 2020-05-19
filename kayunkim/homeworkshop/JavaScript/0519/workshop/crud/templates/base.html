@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>workshop</title>
+  <!-- font-awesome -->
+
+  <!-- axios -->
+  
+</head>
+<body>
+  {% if request.user.is_authenticated %}
+    <li>
+      {{ request.user.username }}님 로그인
+    </li>
+    <li>
+      <a href="{% url 'accounts:logout' %}">로그아웃</a>
+    </li>
+  {% else %}
+    <li>
+      <a href="{% url 'accounts:login' %}">로그인</a>
+    </li>
+    <li>
+      <a href="{% url 'accounts:signup' %}">회원가입</a>
+    </li>
+  {% endif %}
+
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
