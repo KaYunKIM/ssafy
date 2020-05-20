@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>About This Movie</h1>
+  <hr>
+  <div class="d-flex justify-content-center">
+    <div class="w-50">
+      <h2 class="d-flex justify-content-center">{{ movie.title }}</h2>
+      <img src="{{ image_url }}" class="rounded mx-auto d-block my-3" alt="movie_image">
+      <p>장르:
+        {% for genre in movie.genres.all %}
+          <span class="badge badge-warning"> {{ genre }}</span>
+          {% if forloop.last %}
+          {% else %}
+            ,
+          {% endif %}
+        {% endfor %}
+      </p>
+      <p>개봉일: {{ movie.release_date }}</p>
+      <p>투표 평균: {{ movie.vote_average}}</p>
+      <p>한줄 평: {{ movie.overview}}</p>
+      {% if request.user in movie.like_users.all %}
+        <div class="d-flex">
+          <i class="far fa-thumbs-down fa-lg like-button" style="color:dodgerblue" data-id="{{ movie.pk }}"></i>
+          <p id="like-count-{{ movie.pk }}" class="px-1">{{ movie.like_users.count }}LIKES this Movie!</p>
+        </div>
+      {% else %}
+        <div class="d-flex">
+          <i class="far fa-thumbs-up fa-lg animate__animated animate__shakeY like-button" style="color:dodgerblue" data-id="{{ movie.pk }}"></i>
+          <p id="like-count-{{ movie.pk }}" class="px-1">{{ movie.like_users.count }}LIKES this Movie!</p>
+        </div>
+      {% endif %}
+      <div class="">
+        <a href="{% url 'movies:index' %}" class="btn btn-dark" >BACK</a>
+        <a href="{% url 'movies:review_create' movie.pk %}" class="btn btn-primary">Add Review</a>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <h2>Review Lists</h2>
+  <br>
+  {% for review in movie.review_set.all %}
+    <div class="d-flex">
+      <li class="px-3"><a href="{% url 'movies:review_detail' movie.pk review.pk %}">{{ review.title }}</a></li>
+    </div>
+  {% endfor %}
+
+   <script>
+    const likeButtonList = document.querySelectorAll('.like-button')
+
+    likeButtonList.forEach(likeButton => {
+    likeButton.addEventListener('click', function(event){
+
+      const movieId = event.target.dataset.id
+
+      {% if user.is_authenticated %}
+      axios.get(`/movies/${movieId}/like/`)
+        .then(response => {
+          console.log(response)
+          console.log(event.target.classList)
+          if (response.data.liked === true) {
+            event.target.style.color = 'crimson'
+            event.target.classList.remove('fa-thumbs-down')
+            event.target.classList.add('fa-thumbs-up')
+          } else {
+            event.target.style.color = 'dodgerblue'
+            event.target.classList.remove('fa-thumbs-up')
+            event.target.classList.add('fa-thumbs-down')
+          }
+
+          const likeCount = response.data.count
+          document.querySelector(`#like-count-${movieId}`).innerText = `${likeCount}LIKES this Movie!`
+        })
+        .catch(err => {
+          console.log(err)
+        })
+      {% else %}
+        alert('로그인을 하시면 "좋아요"를 누를 수 있어요! ')
+      {% endif %}
+      })
+    })
+   </script>
+{% endblock %}

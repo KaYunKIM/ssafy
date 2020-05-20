@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+<h1>SignUp Page</h1>
+
+{% block content %}
+    <form id="signup-form" action="" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+    </form>
+  <div class="my-4">
+    <a href="{% url 'movies:index' %}" class="btn btn-dark" >BACK</a>
+    <button type="submit" form="signup-form" class="btn btn-primary">회원가입 신청</button>
+  </div>
+{% endblock %}

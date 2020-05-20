@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+
+<h1>Login Page</h1>
+
+{% block content %}
+  <form id="login-form" action="" method="POST">
+      {% csrf_token %}
+      {% bootstrap_form form %}
+  </form>
+  <div class="my-4">
+    <a href="{% url 'movies:index' %}" class="btn btn-dark" >BACK</a>
+    <button type="submit" form="login-form" class="btn btn-primary">Login</button>
+  </div>
+{% endblock %}
