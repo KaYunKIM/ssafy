@@ -2,14 +2,16 @@
 {% load bootstrap4 %}
 
 {% block content %}
-<h3>{{ store.name }} 재고목록</h3>
+<h3>{{ store.name }} Stock List</h3>
 <hr>
-<h4>{{ item.name }} 세부정보</h4>
+<h4>About {{ item.name }}</h4>
     {% if item.image %}
         <img src="{{ item.image.url }}">
     {% else %}
         <img src="/media/ghost.jpeg" alt="no image">
     {% endif %}
+    <br>
+    <br>
     <p>STOCK : {{ item.stock }}</p>
     <p>CATEGORY : {{ item.category }}</p>
     <p>COMPANY : {{ item.company }}</p>

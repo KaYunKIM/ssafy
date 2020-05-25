@@ -2,7 +2,24 @@
 {% load bootstrap4 %}
 
 {% block content %}
-<h3>{{ store.name }} 재고목록</h3>
+  {% if store.item_set.all %}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>OUT of STOCK!</strong> You should reorder
+    {% for item in store.item_set.all %}
+        {% if item.stock <= 5 %}
+          {{ item.name }}
+            {% if forloop.last %}
+            {% else %}
+            ,
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {% endif %}
+<h3>{{ store.name }} Stock List</h3>
 <br>
   <table class="table table-striped">
     <thead>
@@ -17,8 +34,12 @@
       {% for item in store.item_set.all %}
       <tr>
         <th scope="row" >{{ item.id }}</th>
-        <td><a href="{% url 'products:item_detail' store.id item.id %}">{{ item.name}}</a></td>
-        <td>{{ item.stock }}</td>
+        <td><a href="{% url 'products:item_detail' store.id item.id %}">{{ item.name }}</a></td>
+        {% if item.stock <= 5 %}
+          <td class="text-danger">{{ item.stock }}</td>
+        {% else %}
+          <td>{{ item.stock }}</td>
+        {% endif %}
         <td>{{ item.incharge }}</td>
       </tr>
        {% endfor %}
