@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="getLuckySix">GET LUCKY 6</button>
+        <ul>
+            <li v-for="number in myNumbers">
+                {{ number }}
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <script>
+        const app = new Vue({
+            el: '#app',
+            //[1..45] 배열에서 6개를 랜덤하게 뽑는다.(비복원 추출)
+            data: {
+                allNumbers: _.range(1,46),
+                myNumbers: []
+            },
+            methods: {
+                // makeAllNumbers () {
+                //     for (let i=0, i<45; i++){
+                //         this.allNumbers.puth(i+1)
+                //     }
+                getLuckySix() {
+                    this.myNumbers = _.samplSize(this.allNumbers, 6)
+                    this.myNumbers.sort()
+                }
+            },
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog or Cat</title>
+</head>
+<body>
+    <div id="app">
+        <h1>강아지 & 고양이 사진 가져오기</h1>
+        <input @keypress.enter="getPetImage" type="text">
+
+        <div class="dog-image">
+            <img :src="dogImage" alt="dog Image">
+        </div>
+        <div class="cat-image"> 
+            <img :src="catImage" alt="cat Image">
+        </div>
+        <!-- <button @click= "getCatImage">고양이 사진 교체</button> -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                catImage: '',
+                dogImage: '',
+            },
+            methods: {
+                getCatImage: function(){
+                    axios.get('https://api.thecatapi.com/v1/images/search')
+                        .then(response => {
+                        this.catImage = response.data[0].url
+                        })
+                },
+                getDogImage: function() {
+                     axios.get('https://dog.ceo/api/breeds/image/random')
+                        .then(response => {
+                            const src = response.data.message
+                            this.dogImage = src
+                        })    
+                },
+                getPetImage: function(event){
+                    if (event.target.value === '고양이') {
+                        this.getCatImage()
+                    } else if (event.target.value === '강아지') {
+                        this.getDogImage()
+                    }
+                } 
+            }
+        })
+    </script>
+</body>
+</html>

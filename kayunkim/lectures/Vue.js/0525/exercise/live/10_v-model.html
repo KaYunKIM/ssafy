@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ message }}</h1>
+        <!-- 사용자 입력 <=> -->
+        <!-- v-model => input, select, textarea에 양방향 바인딩 -->
+
+        <hr>
+        <!-- 단방향 바인딩 (input => data) -->
+        1way:
+        <input @keyup="onInputChange" type="text">
+        <hr>
+        <!-- 양방향 바인딩 (input => data) -->
+        2way: 
+        <input @keyup="onInputChange" type="Text" :value="message">
+        <hr>
+        <!-- v-model -->
+        v-model/2way:
+        <input v-model="message" type="text"> 
+        <hr>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                message: 'hi',
+            },
+            methods : {
+                onInputChange(event) {
+                    this.messgae = event.target.value
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"> 
+        {{ greeting }}
+        <p>{{ 'wow!!!' + greeting }}</p>
+        <p>{{ excited ? greeting : 'vue 쪼꼼 낯설어...'}}</p>
+        <p v-bind:title="hiddenMessage">내 위에 마우스를 올려보세요</p>
+    </div>
+
+    <!-- vue cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        // 뷰 인스턴스 만들기
+        const app = new Vue({
+            el: '#app',  // 뷰로 관리할 돔 지정: 상단 div 태그를
+            data: {
+                // 앞으로는 데이터 중심으로 사용할 것
+                greeting: 'hello, vue!',
+                excited: true,
+                hiddenMessage: '메롱메롱!!!',
+            },
+        })
+    </script>
+</body>
+</html>

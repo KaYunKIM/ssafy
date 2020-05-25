@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        const catTitle = document.createElement('h2')
+        catTitle.innerText = 'Cat List'
+
+        const catHr = document.createElement('hr')
+
+        const catText = document.createElement('h2')
+        catText.id = 'cat_text'
+        catText.innerText = '고양이'
+        
+        const catImage = document.createElement('div')
+        catImage.classList.add('cats')
+
+        const catButton = document.createElement('button')
+        catButton.id = 'cat'
+        catButton.innerText = '내놔!!'
+
+        const catBody = document.querySelector('body')
+        catBody.append(catTitle, catHr, catText, catImage, catButton)
+        
+
+        catButton.addEventListener('click', function(event){
+            axios.get('https://api.thecatapi.com/v1/images/search')
+            .then (response => {
+                const getImage = document.createElement('img')
+                const imageUrl = response.data[0].url
+                getImage.src = imageUrl
+                getImage.style.width = "200px"
+                getImage.style.height = "300px"
+                getImage.style.padding = "5px"
+                catImage.appendChild(getImage)
+                console.log(response)
+            })
+            .catch(err =>{
+                console.log(err)
+            })
+        })
+    </script>
+
+</body>
+</html>
+
+<img>
