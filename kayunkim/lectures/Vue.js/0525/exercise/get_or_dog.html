@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog or Cat</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Dog or Cat</h1>
+        <hr>
+        <input @keypress.enter ="getImage" type="text">
+        <div>
+            <!-- v-bind: => :-->
+            <img v-if="imageUrl" :src="imageUrl" alt="pet Image">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>    
+        const app = new Vue({
+            el: "#app",
+            data: {
+                imageUrl: '',
+            },  
+            methods: {
+                getImage (event){
+                    if (event.target.value=== "고양이") {
+                        axios.get('https://api.thecatapi.com/v1/images/search')  //url에서 정보 가져오기
+                        .then(response => {
+                            this.imageUrl = response.data[0].url
+                            //  Vue에서는 this가 해당 앱에 접근 가능
+                        })
+                        .catch(err =>{
+                            console.log(err)
+                        })
+                    } else if (event.target.value === "강아지") {
+                        axios.get('https://dog.ceo/api/breeds/image/random')
+                        .then(response => {
+                            this.imageUrl = response.data.message
+                        })
+                        .catch(err =>{
+                            console.log(err)
+                        })
+                    }
+                }
+            },
+
+        })
+    </script>
+</body>
+</html>

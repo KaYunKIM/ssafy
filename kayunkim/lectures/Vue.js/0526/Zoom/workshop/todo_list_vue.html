@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>0526 workshop</title>
+  <style>
+    /* 취소선 */
+    .completed {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <!-- 여기에 코드를 작성하시오 -->
+  <div id="app">
+
+    <!-- 검색 기능 -->
+    <input type="text" v-model="userInput" @input="search">
+    <br>
+
+    <!-- v-model: 양방향 -->
+    <select v-model="status">
+      <option value="all">전체</option>
+      <option value="in-progress">진행중</option>
+      <option value="completed">완료</option>
+    </select>
+
+    <!-- 할 일 목록 -->
+    <ul v-if="!userInput" class="todo-list">
+      <!-- v-for가 v-if 보다 우선순위 가진다/
+          v-for와 v-if는 동시에 사용하지 않는다-->
+      <li 
+        v-for="todo in todosByStatus"
+        :key="todo.id"
+        :class="{ completed: todo.completed }"
+      >
+        <!-- <input type="checkbox" @click="checkTodoBox(todo, $event)"> -->
+        <input type="checkbox" v-model="todo.completed">
+        <span>{{ todo.content }}</span>
+      </li>
+      <!-- <li v-else @click="check(todo)">
+        Done!!
+      </li> -->
+    </ul>
+
+    <!-- 검색 결과 리스트 따로 만들기 -->
+    <ul v-else>
+      <li 
+        v-for="todo in searchResults"
+        :key="todo.id"
+        :class="{ completed: todo.completed}"
+      >
+        <input type="checkbox" v-model="todo.completed">
+        <span>{{ todo.content }}</span>
+      </li>
+    </ul>
+
+    <!-- 할 일 추가하기 -->
+    <input type="text" v-model="newTodo">
+    <button @click="addTodo">+</button>
+    <br>
+
+    <!-- 완료된 일 삭제하기 -->
+    <button @click="deleteTodo">완료된 일 삭제하기</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    // 여기에 코드를 작성하시오
+    const app = new Vue({
+      el: '#app',
+      data: {
+        todos : [
+          {
+            id: 1,
+            content: 'Vue 과제제출',
+            completed: false,
+          },
+          {
+            id: 2,
+            content: 'Vue 복습',
+            completed: false,
+          },
+          {
+            id: 3,
+            content: '알고스터디',
+            completed: false,
+          },
+        ],
+        newTodo: '',
+        status: 'all', //all, in-prgress, completed
+        userInput: '',
+        searchResults: [],
+      },
+      methods: {
+        search: function (event) {
+          const todos = this.todosByStatus
+          const newTodos = todos.filter(todo => {
+            return todo.content.toLowerCase().includes(event.target.value)
+          })
+          this.searchResults = newTodos
+        },
+
+        // check: function (todo) {
+        //   // if (todo.completed === false){
+        //   //   todo.completed = true
+        //   // } else {
+        //   //   todo.completed = false
+        //   // }
+        //   todo.completed = !todo.completed
+        // },
+        addTodo: function () {
+          if (this.newTodo.trim().length >= 1) {
+            const newEntry = {
+            id: Date.now(),
+            content: this.newTodo,
+            completed: false,
+            }
+          // if (this.newTodo !== ''){
+            this.todos.push(newEntry)
+            this.newTodo=''
+          }
+        },
+        deleteTodo: function () {
+          const doubleCheck = confirm('정말 삭제하시겠습니까?')
+          
+          if (doubleCheck) {
+            // notCompletedTodos 배열 생성
+            const notCompletedTodos = this.todos.filter(todo => {
+              return todo.completed == false
+            })
+            this.todos = notCompletedTodos
+          }
+        },
+        // checkTodoBox: function(todo, event) {
+        //   todo.completed = event.target.checked
+        // },
+      },
+      // 성능적인 면에서 더 좋다
+      computed: {
+        todosByStatus: function () {
+          // 진행중인 일
+          if (this.status === 'in-progress') {
+            // filter 함수 자체는 array를 반환한다
+            return this.todos.filter(todo => !todo.completed)
+            // return this.todos.filter(todo => {
+            //   return !todo.completed
+            // })
+          // 완료된 일
+          } else if (this.status === 'completed') {
+            return this.todos.filter(todo => todo.completed)
+            // return this.todos.filter(todo => {
+            //   return todo.completed
+            // })
+          } else {
+            return this.todos  // 전체 목록 그래도 리턴
+          }    
+        },
+      },  
+    })
+  </script>
+</body>
+</html>

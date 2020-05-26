@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueJS</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Bankrupted</h1>
+        {{ getBankruptedPeople }}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:'#app',
+            data: {
+                accounts: [
+                    { name: 'neo', balance: 500, isBankrupted: true },
+                    { name: 'tak', balance: 700, isBankrupted: true },
+                    { name: 'john', balance: 350, isBankrupted: true },
+                    { name: 'justin', balance: 20, isBankrupted: true },
+                ],
+                bankruptedPeople: []
+            },
+            methods: {
+                // getBankruptedPeople: function() {
+                //     // filter는 새로운 배열을 리턴한다.
+                //     const newArr = this.accounts.filter((account) => {
+                //         return account.isBankrupted
+                //     })
+                //     return newArr
+                // }
+            },
+
+            // 함수인데, Data를 Create Update Delete하지 않고, Read(return) 하고 싶을 때,
+            computed: {
+                // 함수지만, 이름은 명사형으로 짓는다.
+                bankruptedPeople: function () {
+                    // filter는 새로운 배열을 리턴한다.
+                    const newArr = this.accounts.filter((account) => {
+                        return account.isBankrupted
+                    })
+                    return newArr
+
+                }
+            },
+        })
+    </script>
+</body>
+</html>

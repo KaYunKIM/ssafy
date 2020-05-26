@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 10000px;
+        }
+    </style>
+</head>
+<body>
+    <div id="vue-directive-practice">
+        <h1>Directive Practice</h1>
+        <hr>
+
+        <h2>v-if</h2>
+        <!-- (1) v-if -->
+        <p v-if="seen">now you see me.</p>
+
+        <!-- 기본적인 자바스크립트 표현도 가능하다. -->
+        <p v-if="seen === '얀녕'">안녕?</p>
+        <p v-else-if="seen === '반가워'">반가워!</p>
+        <p v-else>안녕 뷰, 만나서 반가워!</p>
+
+        <!-- false일 때만 보여주기-->
+        <p v-if ="!seen">느낌표로 부정하기</p>
+
+        <!-- (2) v-for -->
+        <h2>v-for</h2>
+        <!-- without v-for -->
+        <ol class="todo-list">
+            <li>따릉이 타기</li>
+            <li>코딩하기</li>
+            <li>넥플릭스 보기</li>
+        </ol>
+
+         <!-- with v-for -->
+         <ol class="todo-list">
+             <li v-for="todo in todoList">{{ todo }}</li>
+         </ol>
+
+        <!-- 배열 안에 객체를 넣어서 사용해보기 -->
+          <ol class="todo-list">
+            <li v-for="todo in todoList2">{{ todo.content }}</li>
+        </ol>
+
+        <!-- (3) v-on -->
+        <h2>v-on</h2>
+        <!-- without v-on -->
+        <button onclick="alert('짜잔!!')">click me</button>
+        <br>
+        <!-- v-on은 이벤트 발동 시, methods에 정의된 함수를 호출한다. -->
+        {{ message }}
+        <button v-on:click="reversedMessage">메세지 뒤집기</button>
+        <br>
+        <!-- 자바스크립트에서 사용 가능한 어떠한 이벤트도 가능하다. -->
+        <img v-on:mouseover="patPuppy" src="https://i.pinimg.com/originals/39/6f/14/396f14bd9c68652906500047d677356c.jpg" alt="cute puppy">
+        <p>강아지 머리 {{ tapCount }}번 쓰다듬는 중</p>
+        <!-- event 객체가 필요한 경우, $event로 받아올 수 있다. -->
+        <img v-on: mouseover="patKitty('고양이', $event)" src="" alt="cute puppy">
+        <br>
+
+        <!-- v-on 축약형 (v-on: === @)-->
+        <!-- ex) @click, @mouseover, @keydown ... -->
+        {{ message }}
+        <button @click="reversedMessage">메세지 뒤집기2</button>
+        <br>
+
+        <!-- (4) v-bind -->
+        <!-- 태그의 속성에 데이터를 연결할 때는 반드시 {{ }}가 아닌, v-bind를 사용한다 -->
+        <h2>v-bind</h2>
+        <a href="https://google.com">go to google</a>
+        <br>
+        <a v-bind:href="google">go to google</a>
+
+        <!-- *주의* 이렇게는 안됩니다! -->
+        <!-- <a href="{{ google }}">go to google</a> -->
+        <br>
+        <!-- v-bind 축약형 -->
+        <a href="google">go to google (축약형)</a>
+
+        <!-- (5) v-model -->
+        <h2>v-model (양방향 바인딩)</h2>
+        {{ userInput }}
+        <br>
+        <input type="text" v-model="userInput">
+
+        <!-- v-models 아시안 문자 입력 이슈 -->
+        {{ userInput }}
+        <input type="text" @input="setMessage">
+        <input type="text" v-on:input="setMessage">
+    </div>
+
+    <!-- Vue cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#vue-directive-practice',
+            data: {
+                seen: '안녕',
+                todoList: ['따릉이 타기', '코딩하기', '넷플릭스 보기'],
+                todoList2: [
+                    {content: '따릉이 타기'},
+                    {content: '코딩하기'},
+                    {content: '넷플릭스 보기'},
+                ],
+                message: '5반 짱짱짱',
+                tapCount: 0,
+                google: 'https://www.google.com',
+                userInput: '',
+            },
+            // v-on 호출 함수는 아래 method로 만든다.
+            methods: {
+                reversedMessage: function(){
+                    this.message = this.message.split('').reverse().join('')
+                    console.log(this.message)
+                },
+                // PatCat: function() {
+                //     this.tapCount +=1
+                // },
+                patPuppy: function() {
+                    this.tapCount += 1
+                },
+                patKitty: function(name, event){
+                    console.log(name)
+                    console.log(event)
+                },
+                setMessage: function(){
+                    //아무것도 안넘겨주면 인자에 event가 자동으로 들어감
+                    console.log(event.target)
+                    this.userInput = event.target.value
+                },
+            },
+        })
+    </script>
+</body>
+</html>
