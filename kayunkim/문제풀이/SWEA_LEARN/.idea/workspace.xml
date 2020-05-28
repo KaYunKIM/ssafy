@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6304cbd0-c528-4732-b482-4e23a774bc8b" name="Default Changelist" comment="" />
+    <list default="true" id="6304cbd0-c528-4732-b482-4e23a774bc8b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../lectures/Vue.js/0527/homework/0527_homework.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lectures/Vue.js/0527/workshop/my-workshop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lectures/Vue.js/0527/workshop/my-workshop/src/views/Lotto.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../lectures/Vue.js/0527/workshop/my-workshop/src/views/Lotto.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lectures/Vue.js/0527/workshop/my-workshop/src/views/Lunch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../../lectures/Vue.js/0527/workshop/my-workshop/src/views/Lunch.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +52,7 @@
       <recent name="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.최소 신장 트리">
+  <component name="RunManager" selected="Python.최소신장트리_heapq">
     <configuration name="최소 신장 트리" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="5190. 전자카트" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="5201. 컨테이너 운반" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -100,12 +105,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force/5190. 전자카트.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY/5201. 컨테이너 운반.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,7 +119,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="5249. 최소 신장 트리" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="5202. 화물 도크" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SWEA_LEARN" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,12 +127,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/그래프의 최소 비용" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/그래프의 최소 비용/5249. 최소 신장 트리.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY/5202. 화물 도크.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,19 +163,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="최소신장트리_heapq" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SWEA_LEARN" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/COURSE/Programming Advanced/그래프의 최소 비용" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COURSE/Programming Advanced/그래프의 최소 비용/최소신장트리_heapq.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.5190. 전자카트" />
-      <item itemvalue="Python.5249. 최소 신장 트리" />
       <item itemvalue="Python.최소_김가윤" />
       <item itemvalue="Python.최소 신장 트리" />
+      <item itemvalue="Python.최소신장트리_heapq" />
+      <item itemvalue="Python.5201. 컨테이너 운반" />
+      <item itemvalue="Python.5202. 화물 도크" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.최소신장트리_heapq" />
+        <item itemvalue="Python.5202. 화물 도크" />
+        <item itemvalue="Python.5201. 컨테이너 운반" />
         <item itemvalue="Python.최소 신장 트리" />
         <item itemvalue="Python.최소 신장 트리" />
-        <item itemvalue="Python.최소_김가윤" />
-        <item itemvalue="Python.5249. 최소 신장 트리" />
-        <item itemvalue="Python.5190. 전자카트" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +236,7 @@
       <workItem from="1590153747140" duration="4007000" />
       <workItem from="1590489925586" duration="4026000" />
       <workItem from="1590503783419" duration="3828000" />
-      <workItem from="1590586843077" duration="491000" />
+      <workItem from="1590586843077" duration="26291000" />
     </task>
     <servers />
   </component>
@@ -224,78 +252,82 @@
       <screen x="0" y="23" width="1440" height="820" />
     </state>
     <state x="882" y="243" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.820@0.23.1440.820" timestamp="1587047897707" />
-    <state width="584" height="130" key="GridCell.Tab.0.bottom" timestamp="1590508650623">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="713" height="261" key="GridCell.Tab.0.bottom" timestamp="1590673081281">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.bottom/0.23.1440.820@0.23.1440.820" timestamp="1589126602222" />
     <state width="1198" height="281" key="GridCell.Tab.0.bottom/0.23.1440.821@0.23.1440.821" timestamp="1588952199680" />
     <state width="957" height="228" key="GridCell.Tab.0.bottom/0.23.1440.822@0.23.1440.822" timestamp="1588780281641" />
-    <state width="584" height="130" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1590508650623" />
-    <state width="938" height="60" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1590503520419" />
+    <state width="960" height="183" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1590665750871" />
+    <state width="713" height="261" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1590673081281" />
+    <state width="713" height="130" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1590628471101" />
     <state width="938" height="211" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1590490851324" />
     <state width="938" height="245" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1590493729337" />
-    <state width="584" height="130" key="GridCell.Tab.0.center" timestamp="1590508650622">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="713" height="261" key="GridCell.Tab.0.center" timestamp="1590673081280">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.center/0.23.1440.820@0.23.1440.820" timestamp="1589126602221" />
     <state width="1198" height="281" key="GridCell.Tab.0.center/0.23.1440.821@0.23.1440.821" timestamp="1588952199679" />
     <state width="957" height="228" key="GridCell.Tab.0.center/0.23.1440.822@0.23.1440.822" timestamp="1588780281640" />
-    <state width="584" height="130" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1590508650622" />
-    <state width="938" height="60" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1590503520403" />
+    <state width="960" height="183" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1590665750870" />
+    <state width="713" height="261" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1590673081280" />
+    <state width="713" height="130" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1590628471098" />
     <state width="938" height="211" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1590490851323" />
     <state width="938" height="245" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1590493729331" />
-    <state width="584" height="130" key="GridCell.Tab.0.left" timestamp="1590508650621">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="713" height="261" key="GridCell.Tab.0.left" timestamp="1590673081279">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.left/0.23.1440.820@0.23.1440.820" timestamp="1589126602220" />
     <state width="1198" height="281" key="GridCell.Tab.0.left/0.23.1440.821@0.23.1440.821" timestamp="1588952199678" />
     <state width="957" height="228" key="GridCell.Tab.0.left/0.23.1440.822@0.23.1440.822" timestamp="1588780281639" />
-    <state width="584" height="130" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1590508650621" />
-    <state width="938" height="60" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1590503520399" />
+    <state width="960" height="183" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1590665750869" />
+    <state width="713" height="261" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1590673081279" />
+    <state width="713" height="130" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1590628471096" />
     <state width="938" height="211" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1590490851323" />
     <state width="938" height="245" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1590493729329" />
-    <state width="584" height="130" key="GridCell.Tab.0.right" timestamp="1590508650622">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="713" height="261" key="GridCell.Tab.0.right" timestamp="1590673081280">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1198" height="217" key="GridCell.Tab.0.right/0.23.1440.820@0.23.1440.820" timestamp="1589126602221" />
     <state width="1198" height="281" key="GridCell.Tab.0.right/0.23.1440.821@0.23.1440.821" timestamp="1588952199679" />
     <state width="957" height="228" key="GridCell.Tab.0.right/0.23.1440.822@0.23.1440.822" timestamp="1588780281640" />
-    <state width="584" height="130" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1590508650622" />
-    <state width="938" height="60" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1590503520415" />
+    <state width="960" height="183" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1590665750870" />
+    <state width="713" height="261" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1590673081280" />
+    <state width="713" height="130" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1590628471100" />
     <state width="938" height="211" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1590490851324" />
     <state width="938" height="245" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1590493729335" />
-    <state width="714" height="261" key="GridCell.Tab.1.bottom" timestamp="1590193503061">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="713" height="261" key="GridCell.Tab.1.bottom" timestamp="1590673081283">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.bottom/0.23.1440.820@0.23.1440.820" timestamp="1588330977140" />
     <state width="957" height="261" key="GridCell.Tab.1.bottom/0.23.1440.821@0.23.1440.821" timestamp="1588782983937" />
     <state width="957" height="261" key="GridCell.Tab.1.bottom/0.23.1440.822@0.23.1440.822" timestamp="1588770491593" />
-    <state width="714" height="261" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1590193503061" />
-    <state width="1198" height="261" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1589571307007" />
-    <state width="714" height="261" key="GridCell.Tab.1.center" timestamp="1590193503061">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="713" height="261" key="GridCell.Tab.1.bottom/0.23.1440.823@0.23.1440.823" timestamp="1590647523760" />
+    <state width="713" height="261" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1590673081283" />
+    <state width="713" height="261" key="GridCell.Tab.1.center" timestamp="1590673081282">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.center/0.23.1440.820@0.23.1440.820" timestamp="1588330977139" />
     <state width="957" height="261" key="GridCell.Tab.1.center/0.23.1440.821@0.23.1440.821" timestamp="1588782983936" />
     <state width="957" height="261" key="GridCell.Tab.1.center/0.23.1440.822@0.23.1440.822" timestamp="1588770491593" />
-    <state width="714" height="261" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1590193503061" />
-    <state width="1198" height="261" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1589571307006" />
-    <state width="714" height="261" key="GridCell.Tab.1.left" timestamp="1590193503060">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="713" height="261" key="GridCell.Tab.1.center/0.23.1440.823@0.23.1440.823" timestamp="1590647523759" />
+    <state width="713" height="261" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1590673081282" />
+    <state width="713" height="261" key="GridCell.Tab.1.left" timestamp="1590673081281">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.left/0.23.1440.820@0.23.1440.820" timestamp="1588330977139" />
     <state width="957" height="261" key="GridCell.Tab.1.left/0.23.1440.821@0.23.1440.821" timestamp="1588782983935" />
     <state width="957" height="261" key="GridCell.Tab.1.left/0.23.1440.822@0.23.1440.822" timestamp="1588770491592" />
-    <state width="714" height="261" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1590193503060" />
-    <state width="1198" height="261" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1589571307006" />
-    <state width="714" height="261" key="GridCell.Tab.1.right" timestamp="1590193503061">
-      <screen x="0" y="23" width="1440" height="823" />
+    <state width="713" height="261" key="GridCell.Tab.1.left/0.23.1440.823@0.23.1440.823" timestamp="1590647523758" />
+    <state width="713" height="261" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1590673081281" />
+    <state width="713" height="261" key="GridCell.Tab.1.right" timestamp="1590673081282">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state width="1237" height="261" key="GridCell.Tab.1.right/0.23.1440.820@0.23.1440.820" timestamp="1588330977140" />
     <state width="957" height="261" key="GridCell.Tab.1.right/0.23.1440.821@0.23.1440.821" timestamp="1588782983936" />
     <state width="957" height="261" key="GridCell.Tab.1.right/0.23.1440.822@0.23.1440.822" timestamp="1588770491593" />
-    <state width="714" height="261" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1590193503061" />
-    <state width="1198" height="261" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1589571307007" />
+    <state width="713" height="261" key="GridCell.Tab.1.right/0.23.1440.823@0.23.1440.823" timestamp="1590647523759" />
+    <state width="713" height="261" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1590673081282" />
     <state x="427" y="125" key="SettingsEditor" timestamp="1589426175825">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -338,7 +370,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SWEA_LEARN$__.coverage" NAME="최소 신장 트리 Coverage Results" MODIFIED="1590493729310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/그래프의 최소 비용" />
-    <SUITE FILE_PATH="coverage/SWEA_LEARN$5201___.coverage" NAME="5201. 컨테이너 운반 Coverage Results" MODIFIED="1588826390715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY" />
+    <SUITE FILE_PATH="coverage/SWEA_LEARN$5201___.coverage" NAME="5201. 컨테이너 운반 Coverage Results" MODIFIED="1590634682300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5186__2.coverage" NAME="5186. 이진수2 Coverage Results" MODIFIED="1588334453101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/START" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$2_.coverage" NAME="전기버스2_김가윤 Coverage Results" MODIFIED="1589547082765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Back Tracking" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$123.coverage" NAME="123 Coverage Results" MODIFIED="1588775684907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
@@ -353,6 +385,7 @@
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5249____.coverage" NAME="5249. 최소 신장 트리 Coverage Results" MODIFIED="1590157685763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/그래프의 최소 비용" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5208__2.coverage" NAME="5208. 전기버스2 Coverage Results" MODIFIED="1589562056301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Back Tracking" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$12.coverage" NAME="12 Coverage Results" MODIFIED="1588946944814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
+    <SUITE FILE_PATH="coverage/SWEA_LEARN$_heapq.coverage" NAME="최소신장트리_heapq Coverage Results" MODIFIED="1590665750859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/그래프의 최소 비용" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5188__.coverage" NAME="5188. 최소합 Coverage Results" MODIFIED="1589563479416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Brute Force" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5174__subtree.coverage" NAME="5174. subtree Coverage Results" MODIFIED="1589565481189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/TREE" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$MST.coverage" NAME="MST Coverage Results" MODIFIED="1590506892935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/그래프의 최소 비용" />
@@ -361,9 +394,9 @@
     <SUITE FILE_PATH="coverage/SWEA_LEARN$456.coverage" NAME="456 Coverage Results" MODIFIED="1585910241803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$sample1.coverage" NAME="수열합치기 Coverage Results" MODIFIED="1586504641515" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5209____.coverage" NAME="5209. 최소 생산 비용 Coverage Results" MODIFIED="1589553334411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/Back Tracking" />
-    <SUITE FILE_PATH="coverage/SWEA_LEARN$5202___.coverage" NAME="5202. 화물 도크 Coverage Results" MODIFIED="1588823392564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5203___.coverage" NAME="5203. 베이비진 게임 Coverage Results" MODIFIED="1588863787801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5207___.coverage" NAME="5207. 이진 탐색 Coverage Results" MODIFIED="1589467765223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/분할정복" />
+    <SUITE FILE_PATH="coverage/SWEA_LEARN$5202___.coverage" NAME="5202. 화물 도크 Coverage Results" MODIFIED="1590642715127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/GREEDY" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$5099___.coverage" NAME="5099. 피자 굽기 Coverage Results" MODIFIED="1585834804635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/QUEUE" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$.coverage" NAME="이진탐색 Coverage Results" MODIFIED="1589440700225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Advanced/분할정복" />
     <SUITE FILE_PATH="coverage/SWEA_LEARN$dsfad.coverage" NAME="dsfad Coverage Results" MODIFIED="1586428558968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/COURSE/Programming Intermediate/LINKED LIST" />

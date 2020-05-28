@@ -1,27 +1,36 @@
 <template>
   <div>
     <h1>Lunch</h1>
-    <p>{{ menus }}</p>
-    <button @click="getLunchMenu">메뉴추천!</button>
-    <p>{{ todayLunch }}</p>
+    <input @keypress.enter="addMenu" type="text" v-model="newMenu">
+    <p v-if="allMenu.length">{{ allMenu }}</p>
+    <button @click="selectMenu">랜덤선택</button>
+    <p>{{ menu }}</p>
   </div>
 </template>
 
 <script>
 import _ from 'lodash'
 
-export default {
+export default{
     data: function () {
         return {
-            menus: ['짜장면', '짬뽕', '김밥', '라면'],
-            select : '',
+            allMenu: [],
+            newMenu: '',
+            menu: '',
         }
     },
     methods: {
-        getLunchMenu () {
-            this.todayLunch = _.sample(this.menus)
-        }
-    }
+         addMenu: function () {
+            if (this.newMenu.trim().length >=1){
+                this.allMenu.push(this.newMenu)
+                this.newMenu = ''
+            }
+        },
+        selectMenu: function () {
+            this.menu = _.sample(this.allMenu)
+        },
+       
+    },
 }
 </script>
 

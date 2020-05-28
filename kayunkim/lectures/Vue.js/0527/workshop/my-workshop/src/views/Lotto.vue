@@ -16,7 +16,7 @@ export default {
     data: function () {
         return {
             randomNumbers: _.range(1,46),
-            numbers: [],
+                   numbers: [],
             count:0,
             visible: true,
         }
@@ -30,7 +30,6 @@ export default {
             return this.count
         },
     },
-
 }
 </script>
 
