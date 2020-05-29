@@ -26,3 +26,28 @@ for tc in range(1, TC+1):
         result.append(find(i))
 
     print('#{} {}'.format(tc, len(set(result))-1))
+
+
+
+
+# T = int(input())
+#
+# def rep(n):     #find_set
+#     while p[n] != n:
+#         n = p[n]
+#     return n
+#
+# for tc in range(1,T+1):
+#     N,M = map(int,input().split())
+#     l = list(map(int,input().split()))
+#     p = [i for i in range(N+1)]     #make_set
+#
+#     for i in range(M):
+#         a = l[2*i]
+#         b = l[2*i+1]
+#         p[rep(b)] = rep(a)   #union    #b집합의 대표를 a의 대표로 교체
+#     cnt = 0
+#     for i in range(1,N+1):  #대표자의 수 찾기
+#         if p[i] == i:
+#             cnt += 1
+#     print('#{} {}'.format(tc, cnt))
