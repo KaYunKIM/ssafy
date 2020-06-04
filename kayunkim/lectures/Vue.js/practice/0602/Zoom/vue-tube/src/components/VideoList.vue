@@ -3,7 +3,7 @@
       <VideoListItem 
         @video-select="onVideoSelect"
         v-for="video in videos" 
-        :key="video.etag" 
+        :key="video.etag"
         :video="video"/>
   </ul>
 </template>
