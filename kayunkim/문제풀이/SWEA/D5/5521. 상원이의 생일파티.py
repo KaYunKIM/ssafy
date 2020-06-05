@@ -1,21 +1,23 @@
 def find(cur,start):
-    global cnt
     queue = [start]
-    print(queue)
-    v=[1]
-    while queue:
-        friend = queue.pop(0)
+    # v = set([1])
+    v = set([])
+    while True:
         temp=[]
-        for f in friend:
-            if f not in v:
-                v.append(f)
+        while queue:
+            print('q',queue)
+            friend = queue.pop(0)
+            print(friend,temp)
+            for f in friend:
+                print('v',v)
+                v.add(f)
                 temp.append(bin[f])
-                cnt+=1
-        print('temp',temp)
+            print('temp',temp)
+        print('temp2',temp)
         queue=temp
         cur+=1
-        if cur>3:
-            return v
+        if cur>2:
+            return len(v)
 
 T = int(input())
 for tc in range(1,T+1):
@@ -26,6 +28,8 @@ for tc in range(1,T+1):
         bin[a].append(b)
         bin[b].append(a)
     print(bin)
-    cnt = 0
-    find(1,bin[1])
-    print('#{} {}'.format(tc,cnt))
+    if not bin[1]:
+        ans = 1
+    else:
+        ans = find(1,bin[1])
+    print('#{} {}'.format(tc,ans-1))
