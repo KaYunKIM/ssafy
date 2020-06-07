@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS</title>
+</head>
+<body>
+    <div id="app">
+        <p v-if="bool1">
+            true
+        </p>
+        <p v-if="bool2">
+            false
+        </p>
+
+        <p v-if="str1">
+            'Yes'
+        </p>
+        <p v-if="str2">
+            ''
+        </p>
+
+        <p v-if="num1">
+            1
+        </p>
+        <p v-if="num2">
+            0
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: { 
+                bool1: true,
+                bool2: false,
+                str1: 'Yes',
+                str2: '',
+                num1: 1,
+                num2: 0,
+            }
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS</title>
+</head>
+<body>
+    <div id="app">
+       <p v-if="username === 'master'">
+           Hello Master
+       </p> 
+       <p v-else>
+            Hello User
+       </p>
+       
+       <p v-if="number > 0">
+        양수
+       </p>
+       <p v-else-if="number < 0">
+        음수
+       </p>
+       <p v-else>
+        0
+       </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: { 
+                username: 'master',
+                number: 0,
+            }
+        })
+    </script>
+</body>
+</html>

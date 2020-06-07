@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS</title>
+</head>
+<body>
+    <div id="app">
+       <!-- v- 접두사로 시작하는 것들은 모두 directive라고 부근다. -->
+
+        <!-- 같은 기능 -->
+        <p v-text="message"></p>
+        <p>{{ message }}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: { 
+                message: '완전히같아요'
+            }
+        })
+
+    </script>
+</body>
+</html>

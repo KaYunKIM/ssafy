@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS</title>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="number in numbers">{{ number }}</li>
+        </ul>
+        <ol>
+            <li v-for="teacher in teachers">{{ teacher.name }}</li>
+        </ol>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: { 
+                numbers: [0, 1, 2, 3, 4, 5],
+                teachers: [
+                    { name: 'neo' },
+                    { name: 'tak' },
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
