@@ -42,10 +42,15 @@ INSTALLED_APPS = [
     #DRF
     'rest_framework',
     'rest_framework.authtoken',
+
+    # rest_auth + allauth
     'rest_auth',
     'allauth',
     'allauth.account',
     'rest_auth.registration',
+
+    # CORS
+    'corsheaders',
 
     # My_Apps
     'accounts',
@@ -55,11 +60,13 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'articleBack.urls'
@@ -141,3 +148,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ]
 }
+
+# CORS Allow
+CORS_ORIGIN_ALLOW_ALL = True

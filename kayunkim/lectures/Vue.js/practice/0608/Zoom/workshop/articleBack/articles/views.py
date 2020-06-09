@@ -8,24 +8,24 @@ from .models import Article
 # Create your views here.
 @api_view(['GET', 'POST'])
 @permission_classes([IsAuthenticated])
-def article_list(reqeust):
+def article_list(request):
     if request.method == 'POST':
-        serilaizer = AricleSerializer(data=request.data)
+        serializer = ArticleSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serilaizer.save()
-            return Resposne(serilaizer.data)
-        return Response(serializer.errors)
+            serializer.save(user=request.user)
+            return Response(serializer.data)
+        # return Response(serializer.errors)
 
     elif request.method == 'GET':
         articles = Article.objects.all()
-        serilaizer = AricleSerializer(articles, many=True)
-        return Response(serilaizer.data)
+        serializer = ArticleSerializer(articles, many=True)
+        return Response(serializer.data)
 
 @api_view(['GET'])
 def article_detail(request, article_pk):
     article = get_object_or_404(Article, pk=article_pk)
     serializer = ArticleSerializer(article)
-    return Response(serilaizer.data)
+    return Response(serializer.data)
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
