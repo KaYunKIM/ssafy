@@ -3,10 +3,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link v-if="!isLoggedIn" :to="{ name: 'Login' }">Login</router-link> |
-      <router-link v-if="isLoggedIn" to="/accounts/signup">Signup</router-link> |
+      <router-link v-if="!isLoggedIn" to="/accounts/signup">Signup</router-link> |
       <router-link v-if="isLoggedIn" :to="{ name: 'Create' }">New Article</router-link> |
       <router-link v-if="isLoggedIn" to="/accounts/logout" @click.native="logout">Logout</router-link>
-     
     </div>
     <router-view @submit-login-data="login" @sumbit-signup-data="signup" />
   </div>
@@ -15,7 +14,7 @@
 <script>
 import axios from 'axios'
 
-//axios.post(URS, BODY, HEADER 순서)
+//axios.post(URLS, BODY, HEADER 순서)
 const SERVER_URL = 'http://localhost:8000'
 
 export default {
