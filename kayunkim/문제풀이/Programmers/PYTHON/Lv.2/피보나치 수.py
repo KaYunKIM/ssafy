@@ -1,10 +1,9 @@
-def fibo(n):
-    if n <= 1:
-        return n
-    else:
-        return (fibo(n - 1) + fibo(n - 2)) % 1234567
-
-
 def solution(n):
-    answer = fibo(n)
+    bin = []
+    for i in range(n+1):
+        if i<=1:
+            bin.append(i)
+        else:
+            bin.append(bin[-1]%1234567+bin[-2]%1234567)
+    answer = bin[-1]%1234567
     return answer
