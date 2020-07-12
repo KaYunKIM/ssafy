@@ -6,8 +6,7 @@ def solution(s):
         if i=='(':
             bin.append(i)
         else:
-            if bin[-1]== '(':
-                bin.pop()
+            bin.pop()
     if bin:
         return False
     return True
