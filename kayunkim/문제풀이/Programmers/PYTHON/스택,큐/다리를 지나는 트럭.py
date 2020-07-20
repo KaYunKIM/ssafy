@@ -92,14 +92,10 @@ def solution(bridge_length, weight, truck_weights):
         if h==len(truck_weights):
             v[0] += bridge_length
             return v[0]
-        # else:
-        #
-
     print(fin,v[0]+1)
 
-
 print(solution(2,10,[7,4,5,6]))
-# solution(100,100,[10])
+
 
 
 def solution(bridge_length, weight, truck_weights):
@@ -117,3 +113,19 @@ def solution(bridge_length, weight, truck_weights):
         if bridge_length in v:
             fin.append(on.pop(0))
     return v[0]+1
+
+
+def solution(bridge_length, weight, truck_weights):
+    on = []
+    cnt = 0
+    sumV=0
+    while truck_weights:
+        cnt += 1
+        if sumV+truck_weights[0]<=weight:
+            on.insert(0,truck_weights.pop(0))
+            sumV+=on[0]
+        else:
+            on.insert(0,0)
+        if len(on)==bridge_length:
+            sumV-=on.pop()
+    return cnt+bridge_length
