@@ -47,32 +47,6 @@
 #             print(answer)
 #     return answer
 
-
-import copy
-
-# def solution(bridge_length, weight, truck_weights):
-#     answer = 0
-#     on = []
-#     fin = []
-#     rep = copy.deepcopy(bridge_length)
-#     v = [0]*len(truck_weights)
-#     h = 0
-#     while fin != truck_weights:
-#         bridge_length = rep
-#
-#         # while bridge_length != 0:
-#             print(answer,fin,on, bridge_length)
-#             if sum(on) + truck_weights[h] <= weight:
-#                 on.append(truck_weights[h])
-#                 for i in range(h+1):
-#                     v[i]+=1
-#             bridge_length -= 1
-#             answer+=1
-#
-#         print(answer,fin,on,v)
-#         fin.append(on.pop(0))
-#         h += 1
-
 def solution(bridge_length, weight, truck_weights):
     on = []
     fin = []
