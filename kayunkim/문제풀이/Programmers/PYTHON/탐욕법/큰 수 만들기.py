@@ -1,41 +1,18 @@
+import copy
 def solution(number, k):
     number = list(number)
-    max = 0
-    min = 0
-    cur = 0
-    start = 0
-    while len(number) != len(number) - k:
-        if int(number[cur]) > max:
-            max = int(number[cur])
-            # elif number[cur] < min:
-            #     min = number[cur]
-            # elif number[cur] > min:
-            for _ in range(start, cur):
-                number.pop(0)
-            max = 0
-            min = 0
-            cur = 0
-        elif min < int(number[cur]) < max:
-            start = cur
-            min = int(number[cur])
-            max = min + 1
-        cur += 1
-    return number
+    cur = 1
+    ans_len = copy.deepcopy(len(number))-k
+    while len(number)!= ans_len:
+        if int(number[cur-1]) < int(number[cur]):
+            h = cur
+            while h!=0 and int(number[h-1]) < int(number[h]) and len(number)> ans_len:
+                print(h,int(number[h-1]),int(number[h]))
+                number.remove(number[h-1])
+                cur-=1
+                h-=1
+        cur+=1
+        print(number)
+    return ''.join(number)
 
-    # answer = ''
-    # idx = 0
-    # while len(answer)!= len(number)-k:
-    #     cur = 0
-    #     while idx!= k+len(answer)+1:
-    #         # print('f',idx, cur, k+len(answer), 'ans',answer)
-    #         if int(cur) < int(number[idx]):
-    #             cur, curidx = number[idx], idx
-    #         idx+=1
-    #     if curidx != k+len(answer):
-    #         answer+=number[curidx]
-    #         curidx+=1
-    #         idx = curidx
-    #     else:
-    #         answer+=number[curidx:]
-    #         break
-    # return answer
+print(solution("4177252841", 4))
