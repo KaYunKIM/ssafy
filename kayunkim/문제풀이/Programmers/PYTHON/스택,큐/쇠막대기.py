@@ -1,14 +1,14 @@
 def solution(arrangement):
-    ans = 0
-    temp = 0
-    for a in range(len(arrangement)):
+    ans = 0  ##조각개수
+    temp = 1   #막대기 개수
+    for a in range(1,len(arrangement)):
         if arrangement[a] == '(':
             temp+=1
         else:
             if arrangement[a-1]=='(':
                 temp-=1
                 ans+=temp
-            else:
+            else:    #'))'
                 temp-=1
                 ans+=1
     return ans
