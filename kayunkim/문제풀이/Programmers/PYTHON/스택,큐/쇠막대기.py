@@ -1,9 +1,7 @@
 def solution(arrangement):
     ans = 0
     temp = 0
-    if arrangement[0]=='(':
-        temp+=1
-    for a in range(1,len(arrangement)):
+    for a in range(len(arrangement)):
         if arrangement[a] == '(':
             temp+=1
         else:
@@ -15,6 +13,20 @@ def solution(arrangement):
                 ans+=1
     return ans
 
+
+def solution(arrangement):
+    ans = 0
+    temp = 0
+    transform = arrangement.replace('()','0')
+    for t in transform:
+        if t=='(':
+            temp+=1
+        elif t==')':
+            ans+=1
+            temp-=1
+        else:
+            ans+=temp
+    return ans
 
 
 
