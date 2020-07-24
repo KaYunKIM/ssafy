@@ -1,5 +1,25 @@
 def solution(arrangement):
     ans = 0
+    temp = 0
+    if arrangement[0]=='(':
+        temp+=1
+    for a in range(1,len(arrangement)):
+        if arrangement[a] == '(':
+            temp+=1
+        else:
+            if arrangement[a-1]=='(':
+                temp-=1
+                ans+=temp
+            else:
+                temp-=1
+                ans+=1
+    return ans
+
+
+
+
+def solution(arrangement):
+    ans = 0
     temp = []
     cnt = [0]*len(arrangement)
     cur = 0
