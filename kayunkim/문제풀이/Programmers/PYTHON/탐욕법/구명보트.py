@@ -22,7 +22,14 @@
 def solution(people, limit):
     ans = 0
     people.sort(reverse=True)
+    start = len(people)-1
     for i in people:
-        for j in range(len(people) - 1, len(people) // 2 - 1, -1):
-
+        # print(people.index(i),start)
+        for j in range(start,len(people)//2-1,-1):
+            ans+=1
+            if i+people[j] <= limit:
+                start-=1
+            break
+        if people.index(i)>= start:
+            break
     return ans
