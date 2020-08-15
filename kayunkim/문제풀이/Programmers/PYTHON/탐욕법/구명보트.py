@@ -1,24 +1,18 @@
-# import heapq
-# def solution(people, limit):
-#     sumV = 0
-#     cur = 0
-#     cnt = 0
-#     while people:
-#         heapq.heapify(people)
-#         if sumV + people[0] <= limit:
-#             sumV+= people.pop(0)
-#             cur+=1
-#             # print('1',people, sumV, cnt)
-#         else:
-#             sumV = 0
-#             cnt+=1
-#         if cur == 2:
-#             sumV = 0
-#             cnt+=1
-#             # print('2',people, sumV, cnt)
-#     return cnt+1
+def solution(people, limit):
+    ans = 0
+    people.sort(reverse=True)
+    heavy = 0
+    light = len(people)-1
+    while heavy <= light:
+        if people[heavy]+people[light]<=limit:
+            light-=1
+        ans+=1
+        heavy+=1
+    return ans
 
 
+
+##실패
 def solution(people, limit):
     ans = 0
     people.sort(reverse=True)
@@ -33,3 +27,9 @@ def solution(people, limit):
         if people.index(i)>= start:
             break
     return ans
+
+
+
+
+
+
