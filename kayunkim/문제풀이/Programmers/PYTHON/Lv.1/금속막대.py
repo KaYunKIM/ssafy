@@ -16,5 +16,6 @@ for tc in range(1,tc+1):
             print(bolts,i, bin)
         else:
             i+=2
+    return 
 
 
