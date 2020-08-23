@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+	<typeAliases>
+		<!-- Type Alias 등록 하세요  -->
+		<package name="com.cafe.dto"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="mappers/userMapper.xml"/>
+		<mapper resource="mappers/cafe.xml" />
+		<mapper resource="mappers/post.xml" />
+		<mapper resource="mappers/comment.xml" />
+		<mapper resource="mappers/like.xml" />
+		<mapper resource="mappers/stamp.xml" />
+		<mapper resource="mappers/follow.xml" />
+		<mapper resource="mappers/menu.xml" />
+		<mapper resource="mappers/keyword.xml" />
+		<mapper resource="mappers/recommend.xml" />
+		
+	</mappers>
+</configuration>

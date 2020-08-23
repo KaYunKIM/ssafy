@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="cafe">
+
+	<select id="select" resultType="CafeDto">
+		select *
+		from cafe
+		where cafeno = #{cafeno}
+	</select>
+
+	<select id="selectAllByPage" resultType="CafeDto">
+		select *
+		from cafe
+		order
+		by cafeno asc
+	</select>
+
+	<select id="selectAllByLikeCount" resultType="CafeDto">
+		select *
+		from cafe
+		order by like_count desc
+		limit 10
+	</select>
+	
+	<select id="selectAllByStampCount" resultType="CafeDto">
+		select *
+		from cafe
+		order by stamp_count desc
+		limit 10
+	</select>
+	
+	<select id="selectAllByLikeRecent" resultType="CafeDto">
+		select *
+		from cafe
+		order by recent_like desc
+		limit 10
+	</select>
+	
+	<select id="selectAllByStampRecent" resultType="CafeDto">
+		select *
+		from cafe
+		order by recent_stamp desc
+		limit 10
+	</select>
+
+	<!-- distance 가 거리임 지금은 3km 로 되어있음 -->
+	<select id="selectAllAll" resultType="CafeDto">
+		<![CDATA[SELECT *,
+		
+			(6371*acos(cos(radians(#{lat}))*cos(radians(lat))*cos(radians(lng)
+		
+			-radians(#{lng}))+sin(radians(#{lat}))*sin(radians(lat))))
+		
+			AS distance
+		
+		FROM cafe
+		
+		HAVING distance <= 3
+		
+		ORDER BY distance 
+		
+		LIMIT 0,300]]>
+	</select>
+
+	<!--카페 검색 -->
+	<select id="search" resultType="CafeDto">
+		select * from cafe
+		where name like CONCAT('%',#{keyword},'%')
+	</select>
+
+	<insert id="insert">
+		insert into cafe (cafeno, name, status, address,
+		tel,business_hours)
+		values (#{cafeno}, #{name}, #{status}, #{address},
+		#{tel}, #{business_hours})
+	</insert>
+
+
+	<update id="update">
+		update cafe
+		set name = #{name},status = #{status},
+		address = #{address}, tel = #{tel},
+		business_hours = #{business_hours}, thumb = #{thumb}
+		where cafeno = #{cafeno}
+	</update>
+
+	<delete id="delete">
+		delete from cafe
+		where cafeno = #{cafeno}
+	</delete>
+
+</mapper>
+

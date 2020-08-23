@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="comment">
+
+	<select id="selectMax" resultType="Integer">
+		select max(cno)
+		from comment
+	</select>
+	
+ 	<select id="select" resultType="CommentDto">
+ 		select * 
+ 		from comment 
+ 		where cno = #{cno}
+	</select>
+	
+	<select id="selectAll" resultType="CommentDto">
+		select *
+		from comment
+		where pno = #{pno}
+	</select>
+	
+	<insert id="insert">
+		insert into comment (contents, pno, uid)
+		values (#{contents}, #{pno}, #{uid})
+	</insert>
+	
+	<update id="update">
+		update comment
+		set contents = #{contents}
+		where cno = #{cno}
+	</update>
+	
+	<delete id="delete">
+		delete from comment
+		where cno = #{cno}
+	</delete>
+	
+</mapper>
+

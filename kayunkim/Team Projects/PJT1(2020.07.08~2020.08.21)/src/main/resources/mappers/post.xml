@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="post">
+
+	<select id="select" resultType="PostDto">
+		select *
+		from post
+		where pno = #{pno}
+	</select>
+
+	<select id="selectAll" resultType="PostDto">
+		select *
+		from post
+		order by date desc
+	</select>
+
+	<select id="countByUser" resultType="int">
+		select count(*)
+		from post
+		where uid = #{uid}
+	</select>
+
+	<select id="selectAllByUser" resultType="PostDto">
+		select *
+		from post
+		where
+		uid = #{uid}
+		order by date desc
+	</select>
+
+	<select id="selectAllByCafe" resultType="PostDto">
+		select *
+		from post
+		where
+		cafeno = #{cafeno}
+		order by date desc
+	</select>
+
+	<insert id="insert" useGeneratedKeys="true" keyProperty="pno" parameterType="PostDto">
+		insert into post (uid, cafeno, contents, image,
+		taste, mood, clean)
+		values (#{uid}, #{cafeno}, #{contents}, #{image},
+		#{taste}, #{mood},
+		#{clean})
+	
+	</insert>
+
+
+	<update id="update">
+		update post
+		set contents = #{contents}, image =
+		#{image},
+		taste = #{taste}, mood = #{mood}, clean = #{clean}
+		where pno = #{pno}
+	</update>
+
+	<delete id="delete">
+		delete from post
+		where pno = #{pno}
+	</delete>
+
+</mapper>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="follow">
+
+	<select id="check" resultType="int">
+		select count(*)
+		from follow
+		where uid = #{uid} and followingid = #{followingid}
+	</select>
+	
+	<select id="countFollower" resultType="int">
+		select count(*)
+		from follow
+		where followingid = #{followingid}
+	</select>
+
+	<select id="countFollowing" resultType="int">
+		select count(*)
+		from follow
+		where uid = #{uid}
+	</select>
+
+	<select id="selectFollower" resultType="string">
+		select uid
+		from follow
+		where followingid = #{followingid}
+		order by uid asc
+
+	</select>
+
+	<select id="selectFollowing" resultType="string">
+		select followingid
+		from
+		follow
+		where uid = #{uid}
+		order by followingid asc
+	</select>
+
+	<insert id="insert">
+		insert into follow (uid, followingid)
+		values (#{uid},
+		#{followingid})
+	</insert>
+
+	<delete id="delete">
+		delete from follow
+		where uid = #{uid} and followingid
+		= #{followingid}
+	</delete>
+
+</mapper>

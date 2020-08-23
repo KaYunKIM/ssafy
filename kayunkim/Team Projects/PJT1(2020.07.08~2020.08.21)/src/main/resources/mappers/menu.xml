@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="menu">
+
+	
+	<select id="selectAll" resultType="MenuDto">
+		select *
+		from menu
+		where cafeno = #{cafeno}
+	</select>
+	
+	<insert id="insert" >
+		insert into menu (cafeno, item, price)
+		values (#{cafeno}, #{item}, #{price})
+	</insert>
+	
+	<update id="update">
+		update menu
+		set item = #{item}, price = #{price}
+		where mno = #{mno}
+	</update>
+	
+	<delete id="delete">
+		delete from menu
+		where mno = #{mno}
+	</delete>
+	
+</mapper>

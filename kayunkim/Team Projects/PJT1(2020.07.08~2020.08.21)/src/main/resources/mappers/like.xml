@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="like">
+
+	<select id="count" resultType="int">
+		select count(*)
+		from `like`
+		where cafeno = #{cafeno}
+	</select>
+
+	<select id="selectByUser" resultType="int">
+		select count(*)
+		from `like`
+		where cafeno = #{cafeno} and uid = #{uid}
+	</select>
+
+	<select id="getMaxLike" resultType="int">
+		select max(lno)
+		from `like`
+		where cafeno = #{cafeno}
+	</select>
+	
+	<!-- 좋아요 누른 카페 리스트 -->
+	<select id="selectCafe" resultType="CafeDto">
+		select *
+		from cafe c, `like` l
+		where c.cafeno = l.cafeno
+		and l.uid = #{uid};
+	</select>
+
+	<insert id="insert" useGeneratedKeys="true" keyProperty="lno"
+		parameterType="LikeDto">
+		insert into `like` (cafeno, uid)
+		values (#{cafeno},
+		#{uid})
+	</insert>
+
+	<update id="update">
+		update cafe
+		set like_count = #{like_count},
+		recent_like = #{recent_like}
+		where cafeno = #{cafeno}
+	</update>
+
+
+	<delete id="delete">
+		delete from `like`
+		where cafeno = #{cafeno} and uid =
+		#{uid}
+	</delete>
+
+</mapper>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="keyword">
+
+	
+	<select id="selectByCafe" resultType="KeywordDto">
+		select *
+		from keywords
+		where cafeno = #{cafeno}
+		
+	</select>
+	
+	<select id="selectByKeyword" resultType="CafeDto">
+		select *
+		from cafe c, keywords k
+		where c.cafeno = k.cafeno
+		and k.keyword = #{keyword};
+	</select>
+	
+	<insert id="insert" >
+		insert into keywords (cafeno, keyno, keyword)
+		values (#{cafeno}, #{keyno}, #{keyword})
+	</insert>
+	
+	<update id="update">
+		update keywords
+		set keyno = #{keyno}, keyword = #{keyword}
+		where idx = #{idx}
+	</update>
+	
+	<delete id="delete">
+		delete from keywords
+		where idx = #{idx}
+	</delete>
+	
+</mapper>

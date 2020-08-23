@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="stamp">
+
+	<select id="count" resultType="int">
+ 		select count(*) 
+ 		from stamp 
+ 		where cafeno = #{cafeno}
+	</select>
+	
+	<select id="selectByUser" resultType="int">
+		select count(*)
+		from stamp
+		where cafeno = #{cafeno} and uid = #{uid}
+	</select>
+	
+	<select id="getMaxStamp" resultType="int">
+		select max(sno)
+		from stamp
+		where cafeno = #{cafeno}
+	</select>
+	
+	<!-- 발도장 누른 카페 리스트 -->
+	<select id="selectCafe" resultType="CafeDto">
+		select *
+		from cafe c, stamp s
+		where c.cafeno = s.cafeno
+		and s.uid = #{uid};
+	</select>
+	
+	<insert id="insert" useGeneratedKeys="true" keyProperty="sno" parameterType="StampDto">
+		insert into stamp (cafeno, uid)
+		values (#{cafeno}, #{uid})
+	</insert>
+	
+	<update id="update">
+		update cafe
+		set stamp_count = #{stamp_count},
+		recent_stamp = #{recent_stamp}
+		where cafeno = #{cafeno}
+	</update>
+	
+	<delete id="delete">
+		delete from stamp
+		where cafeno = #{cafeno} and uid = #{uid}
+	</delete>
+	
+</mapper>
