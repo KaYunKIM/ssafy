@@ -11,7 +11,7 @@
       <v-card ref="form" color="#2c001e" dark class="pb-3" style="background:transparent">
         <v-list-item color="#2c001e" dark>
           <v-list-item-content>
-            <v-list-item-title class="headline">이제부터 카페 고민은 <br> 저희가 할께요!</v-list-item-title>
+            <v-list-item-title class="headline">오늘부터 카페 고민은 <br> 저희가 할께요!</v-list-item-title>
           </v-list-item-content>
           <v-list-item-avatar>
             <v-btn icon dark @click="$router.go(-1)">
@@ -56,7 +56,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn :disabled="!checkValidForm()" color="#BCAAA4" @click="signup(signupData)">Sumbit</v-btn>
+          <v-btn :disabled="!checkValidForm()" style="background:transparent" @click="signup(signupData)">Sumbit</v-btn>
           <v-spacer></v-spacer>
         </v-card-actions>
       </v-card>

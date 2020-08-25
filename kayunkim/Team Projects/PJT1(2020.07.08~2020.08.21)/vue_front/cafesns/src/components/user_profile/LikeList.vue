@@ -1,8 +1,6 @@
 <template>
   <v-slide-group
-    class="pa-4"
-    active-class="secondary"
-    show-arrows
+    show-arrows-on-hover
   >
     <div v-if="!likeList.length" class="mx-auto">
       현재 좋아하는 카페가 없습니다.
@@ -13,13 +11,13 @@
       v-slot:default="{ toggle }"
     >
       <v-card
-        class="ma-4"
+        class="ma-1"
         @click="toggle"
       >
         <v-img
           :src="'https://i3a203.p.ssafy.io:5000/api/cafe/get/image/'+cafe.cafeno"
-          height="200px"
-          width="200px"
+          height="170px"
+          width="170px"
           @click="onSelectCafe(cafe.cafeno)"
         >
           <v-row align="end" class="lightbox white--text fill-height">

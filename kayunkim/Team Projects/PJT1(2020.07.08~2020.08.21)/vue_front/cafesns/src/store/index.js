@@ -44,6 +44,7 @@ export default new Vuex.Store({
     cafeKeywords: {},
     cafeMenu: {},
 
+    searchWord: null,
     cafeSearchList: {},
     userSearchList: {},
     keywordSearchList: {},
@@ -132,6 +133,9 @@ export default new Vuex.Store({
     },
     SET_IMAGEURL(state, imageURL) {
       state.uploadImageURL = imageURL
+    },
+    SET_SEARCHWORD(state, word) {
+      state.searchWord = word
     },
     SET_CAFESEARCHLIST(state, cafeList) {
       state.cafeSearchList = cafeList
@@ -558,7 +562,9 @@ export default new Vuex.Store({
         commit('SET_CAFESEARCHLIST', {})
         commit('SET_USERSEARCHLIST', {})
         commit('SET_KEYWORDSEARCHLIST', {})
+        commit('SET_SEARCHWORD', null)
       } else {
+        commit('SET_SEARCHWORD', word)
         axios.get(SERVER.URL + SERVER.ROUTES.cafeSearch + word)
           .then((res) => {
             commit('SET_CAFESEARCHLIST', res.data)
@@ -627,53 +633,65 @@ export default new Vuex.Store({
     },
 
     fetchMostLikeRecommendList({ state, getters, commit }) {
-      if (!getters.isLoggedIn) {
-        axios.get(SERVER.URL + SERVER.ROUTES.recommend + "like/count/")
-          .then(res => commit('SET_MOSTLIKERECOMMENDLIST', res.data))
-          .catch(err => console.error(err))
-      } else {
+      axios.get(SERVER.URL + SERVER.ROUTES.recommend + "like/count/")
+        .then(res => commit('SET_MOSTLIKERECOMMENDLIST', res.data))
+        .catch(err => console.error(err))
+      if (getters.isLoggedIn) {
         const userid = state.userData.id
         axios.get(SERVER.URL + SERVER.ROUTES.recommend + `like/count/${userid}`, getters.config)
-          .then(res => commit('SET_MOSTLIKERECOMMENDLIST', res.data))
+          .then(res => {
+            if (res.data) {
+              commit('SET_MOSTLIKERECOMMENDLIST', res.data)
+            }
+          })
           .catch(err => console.error(err))
       }
     },
 
     fetchRecentLikeRecommendList({ state, getters, commit }) {
-      if (!getters.isLoggedIn) {
-        axios.get(SERVER.URL + SERVER.ROUTES.recommend + "like/recent/")
-          .then(res => commit('SET_RECENTLIKERECOMMENDLIST', res.data))
-          .catch(err => console.error(err))
-      } else {
+      axios.get(SERVER.URL + SERVER.ROUTES.recommend + "like/recent/")
+        .then(res => commit('SET_RECENTLIKERECOMMENDLIST', res.data))
+        .catch(err => console.error(err))
+      if (getters.isLoggedIn) {
         const userid = state.userData.id
         axios.get(SERVER.URL + SERVER.ROUTES.recommend + `like/recent/${userid}`, getters.config)
-          .then(res => commit('SET_RECENTLIKERECOMMENDLIST', res.data))
+          .then(res => {
+            if (res.data) {
+              commit('SET_RECENTLIKERECOMMENDLIST', res.data)
+            }
+          })
           .catch(err => console.error(err))
       }
     },
 
     fetchMostStampRecommendList({ state, getters, commit }) {
-      if (!getters.isLoggedIn) {
-        axios.get(SERVER.URL + SERVER.ROUTES.recommend + "stamp/count")
-          .then(res => commit('SET_MOSTSTAMPRECOMMENDLIST', res.data))
-          .catch(err => console.error(err))
-      } else {
+      axios.get(SERVER.URL + SERVER.ROUTES.recommend + "stamp/count")
+        .then(res => commit('SET_MOSTSTAMPRECOMMENDLIST', res.data))
+        .catch(err => console.error(err))
+      if (getters.isLoggedIn) {
         const userid = state.userData.id
         axios.get(SERVER.URL + SERVER.ROUTES.recommend + `stamp/count/${userid}`, getters.config)
-          .then(res => commit('SET_MOSTSTAMPRECOMMENDLIST', res.data))
+          .then(res => {
+            if (res.data) {
+              commit('SET_MOSTSTAMPRECOMMENDLIST', res.data)
+            }
+          })
           .catch(err => console.error(err))
       }
     },
 
     fetchRecentStampRecommendList({ state, getters, commit }) {
-      if (!getters.isLoggedIn) {
-        axios.get(SERVER.URL + SERVER.ROUTES.recommend + "stamp/recent/")
-          .then(res => commit('SET_RECENTSTAMPRECOMMENDLIST', res.data))
-          .catch(err => console.error(err))
-      } else {
+      axios.get(SERVER.URL + SERVER.ROUTES.recommend + "stamp/recent/")
+        .then(res => commit('SET_RECENTSTAMPRECOMMENDLIST', res.data))
+        .catch(err => console.error(err))
+      if (getters.isLoggedIn) {
         const userid = state.userData.id
         axios.get(SERVER.URL + SERVER.ROUTES.recommend + `stamp/recent/${userid}`, getters.config)
-          .then(res => commit('SET_RECENTSTAMPRECOMMENDLIST', res.data))
+          .then(res => {
+            if (res.data) {
+              commit('SET_RECENTSTAMPRECOMMENDLIST', res.data)
+            }
+          })
           .catch(err => console.error(err))
       }
     },

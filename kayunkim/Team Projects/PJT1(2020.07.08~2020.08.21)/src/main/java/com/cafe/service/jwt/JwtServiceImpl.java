@@ -38,7 +38,7 @@ public class JwtServiceImpl implements JwtService {
 	public TokenSet createTokenSet(UserDto user) {
 		long curTime = System.currentTimeMillis();
 
-		Date accessExDate = new Date(System.currentTimeMillis() + oneMinute*1); // 토큰 만료시간 30분
+		Date accessExDate = new Date(System.currentTimeMillis() + oneMinute*30); // 토큰 만료시간 30분
 		Date refreshExDate = new Date(System.currentTimeMillis() + oneMinute*60*24*14); // 토큰 만료시간 2주	
 		TokenSet tokenSet = TokenSet.create().refreshToken(Jwts.builder()
 				.setIssuer("cafein")

@@ -6,7 +6,6 @@
       v-for="post in postList"
       :key="post.pno"
       v-slot:default="{ toggle }"
-      class="current-image"
     >
         <v-card
           class="ma-1"
@@ -14,8 +13,8 @@
         >
           <v-img
             class="grey lighten-2"
-            height="200"
-            width="200"
+            height="170px"
+            width="170px"
             :src="'https://i3a203.p.ssafy.io:5000/api/post/get/image/'+ post.pno + '/' + new Date()"
             @click="onSelectPost(post.pno)"
           >
@@ -55,11 +54,6 @@ export default {
 }
 </script>
 
-<style scoped>
-/* .current-image :hover {
-  transform: scale(1.1);
-} */
-.current-image ::-webkit-scrollbar {
-  display: none;
-}
+<style>
+
 </style>

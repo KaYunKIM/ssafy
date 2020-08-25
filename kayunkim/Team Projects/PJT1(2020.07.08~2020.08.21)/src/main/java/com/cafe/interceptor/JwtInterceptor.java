@@ -42,8 +42,8 @@ public class JwtInterceptor extends HandlerInterceptorAdapter {
 				//response.addHeader(HEADER_REFRESH, refreshToken);
 				//response.setHeader(HEADER_ACCESS, accessToken);
 				//response.setHeader(HEADER_REFRESH, refreshToken);
-				System.out.println(accessToken);
-				System.out.println("access token 재발급");
+				//System.out.println(accessToken);
+				//System.out.println("access token 재발급");
 			}
 
 			if (hm.hasMethodAnnotation(LoginRequired.class)){
@@ -53,15 +53,7 @@ public class JwtInterceptor extends HandlerInterceptorAdapter {
 				}
 			}
 		}
-		
-		// if (request.getMethod().equals("OPTIONS")) {
-		// 	return true;
-		// }
-		// if (token != null && jwtService.isValidToken(token, jwtService.getKey())) {
-		// 	return true;
-		// } else {
-		// 	throw new UnauthorizedException();
-		// }
+
 		return super.preHandle(request, response, handler);
 	}
 }

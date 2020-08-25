@@ -1,37 +1,28 @@
 <template>
-  <div>
-
+  <div style="color: #1A1F73">
     <div v-if="surveyState">
       <!-- surveyResultRecommend -->
-      <h1>'{{ target }}'에게 추천하는 카페</h1>
+      <h1><br>'{{ target }}' 취향저격 카페</h1>
       <SurveyRecommendList/>
     </div>
+    <!-- <div v-else>
+      <h1>아직 유형 추천 카페가 없어요. 설문을 진행하시겠어요?</h1>
+    </div> -->
     
-    <!-- post -->
-    <h1>Posts</h1>
-    <PostList/>
+    <h1><br><i class="fas fa-heart fa-1x" style="color: #8C4F5A"></i> 많은 카페</h1>
+    <MostLikeRecommendList/>
 
-    <!-- cafe -->
-    <h1>Cafes</h1>
-    <CafeList/>
-
-
-    <!-- likeRecommend -->
-      <h1><i class="fas fa-heart fa-1x" style="color: #ef9a9a"></i> 많은 카페 </h1>
-      <MostLikeRecommendList/>
-
-      <h1>최근 <i class="fas fa-heart fa-1x" style="color: #ef9a9a"></i> 카페</h1>
-      <RecentLikeRecommendList/>
-
-    <!-- stampRecommend -->
-      <h1>최다 <i class="fas fa-shoe-prints fa-rotate-270 fa-1x" style="color: #90caf9"></i> 카페</h1>
-      <MostStampRecommendList/>
-
-      <h1>요즘 <i class="fas fa-shoe-prints fa-rotate-270 fa-1x" style="color: #90caf9"></i> 카페</h1>
-      <RecentStampRecommendList/>
+    <h1><br>최다 <i class="fas fa-shoe-prints fa-rotate-270 fa-1x" style="color: #49538C"></i> 카페</h1>
+    <MostStampRecommendList/>
+    
+    <h1><br>최근 <i class="fas fa-heart fa-1x" style="color: #8C4F5A"></i> 카페</h1>
+    <RecentLikeRecommendList/>
+    
+    <h1><br>실시간 <i class="fas fa-shoe-prints fa-rotate-270 fa-1x" style="color: #49538C"></i> 카페</h1>
+    <RecentStampRecommendList/>
 
     <!-- geo -->
-      <h1>내 주위 근처 카페</h1>
+      <h1><br>내 주위 <i class="material-icons md-48" style="color: #49538C">gps_fixed</i> 카페</h1>
       <GeoList/>
 
 
@@ -39,9 +30,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import CafeList from '@/components/CafeList.vue'
-import PostList from '@/components/PostList.vue'
 import GeoList from '@/components/GeoList.vue'
 
 import SurveyRecommendList from '@/components/recommend/SurveyRecommendList.vue'
@@ -55,8 +43,6 @@ import { mapState } from 'vuex'
 export default {
   name: 'Home',
   components: {
-    CafeList,
-    PostList,
     GeoList,
     SurveyRecommendList,
     MostLikeRecommendList,
@@ -89,7 +75,7 @@ export default {
 
 <style scoped>
 .link-text {
-  color: black;
+  color: "#1A1F73";
   text-decoration: none;
   text-transform: capitalize;
 }

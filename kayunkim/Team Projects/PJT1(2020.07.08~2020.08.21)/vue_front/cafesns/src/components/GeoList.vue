@@ -11,7 +11,7 @@
     </div>
 
     <div v-if="!geoCafeList.length">
-      <h2>검색된 카페가 없습니다.</h2>
+      <h3 style="color: #D9A9A9">현재 계신 곳이 서울이 아니시군요. <br> 다음 번 서울에 계실 때 추천해드릴께요!</h3>
     </div>
     <v-slide-group
       show-arrows-on-hover

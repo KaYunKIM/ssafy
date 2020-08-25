@@ -12,6 +12,8 @@ public class CafeDto {
 	private int stamp_count;
 	private int recent_like;
 	private int recent_stamp;
+	private String type;
+	private String theme;
 	
 	public int getCafeno() {
 		return cafeno;
@@ -79,6 +81,20 @@ public class CafeDto {
 	public void setRecent_stamp(int recent_stamp) {
 		this.recent_stamp = recent_stamp;
 	}
+	
+	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getTheme() {
+		return theme;
+	}
+	public void setTheme(String theme) {
+		this.theme = theme;
+	}
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -87,9 +103,10 @@ public class CafeDto {
 				.append(", business_hours=").append(business_hours).append(", thumb=").append(thumb)
 				.append(", like_count=").append(like_count).append(", stamp_count=").append(stamp_count)
 				.append(", recent_like=").append(recent_like).append(", recent_stamp=").append(recent_stamp)
-				.append("]");
+				.append(", type=").append(type).append(", theme=").append(theme).append("]");
 		return builder.toString();
 	}
+	
 
 	
 	

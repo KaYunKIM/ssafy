@@ -17,6 +17,14 @@ public class RecommendDaoImpl implements RecommendDao {
 	private SqlSession session;
 	
 	@Override
+	public List<CafeDto> recommendAllByTheme(String theme, int page) {
+		int n = 10; //한번에 보여줄 데이터 갯수
+		RowBounds bound = new RowBounds((page - 1) * n, n);
+		return session.selectList("recommend.recommendAllByTheme", theme, bound);
+	}
+
+	
+	@Override
 	public List<CafeDto> recommendByType(String type) {
 		return session.selectList("recommend.recommendByType", type);
 	}
@@ -53,6 +61,7 @@ public class RecommendDaoImpl implements RecommendDao {
 		return session.selectList("recommend.selectUserStamped", cafeno);
 	}
 
+	
 
 
 }

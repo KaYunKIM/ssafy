@@ -16,6 +16,11 @@ public class RecommendServiceImpl implements RecommendService {
 	private RecommendDao dao;
 	
 	@Override
+	public List<CafeDto> recommendAllByTheme(String theme, int page) {
+		return dao.recommendAllByTheme(theme,page);
+	}
+	
+	@Override
 	public List<CafeDto> recommendByType(String type) {
 		return dao.recommendByType(type);
 	}
@@ -49,6 +54,8 @@ public class RecommendServiceImpl implements RecommendService {
 	public List<String> selectUserStamped(int cafeno) {
 		return dao.selectUserStamped(cafeno);
 	}
+
+	
 
 
 }

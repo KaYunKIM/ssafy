@@ -13,12 +13,12 @@
       </template>
       <v-card class="d-inline-block">
         <v-row class="d-inline-block px-2">
-          <v-card-title>Posts</v-card-title>
+          <v-card-title style="color: #1A1F73">Posts</v-card-title>
         </v-row>
         <v-divider></v-divider>
         <v-card-text style="height: 300px;">
           <div v-if="!userPostList.length" class="text-center">
-            <span>아직 등록된 글이 없습니다.</span>
+            <span style="color: #D9A9A9">아직 등록된 글이 없습니다.</span>
           </div>
           <v-radio-group v-model="dialogm1" column>
             <v-row v-for="post in userPostList" :key="post.pno">

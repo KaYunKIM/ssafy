@@ -6,6 +6,7 @@ import com.cafe.dto.CafeDto;
 import com.cafe.dto.UserDto;
 
 public interface RecommendDao {
+	public List<CafeDto> recommendAllByTheme(String theme, int page);
 	public List<CafeDto> recommendByType(String type);
 	public List<CafeDto> recommendAllByType(String type, int page);
 	public int setUserType(UserDto user);

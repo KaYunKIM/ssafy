@@ -5,7 +5,17 @@
       label="찾으시는 카페가 있으신가요?"
       clearable
       @keypress.enter="searchCafeUser(keyword)"
-    ></v-text-field>
+    >
+      <template v-slot:append-outer>
+        <v-btn
+          small
+          dark
+          color="secondary"
+          @click="searchCafeUser(keyword)"
+        >검색</v-btn>
+      </template>
+    </v-text-field>
+    <h3 v-if="searchWord">'{{ searchWord }}'에 대한 검색 결과입니다.</h3>
     <v-tabs>
       <v-tab>Cafe</v-tab>
       <v-tab>User</v-tab>
@@ -29,7 +39,8 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapState, mapActions } from 'vuex'
+
 import CafeAllList from '@/components/search/CafeAllList.vue'
 import CafeSearchList from '@/components/search/CafeSearchList.vue'
 import UserSearchList from '@/components/search/UserSearchList.vue'
@@ -41,6 +52,9 @@ export default {
     return {
       keyword: null,
     }
+  },
+  computed: {
+    ...mapState(['searchWord'])
   },
   components: {
     CafeAllList,

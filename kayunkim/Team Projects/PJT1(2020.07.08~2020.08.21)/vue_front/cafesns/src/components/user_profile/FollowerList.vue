@@ -13,12 +13,12 @@
       </template>
       <v-card class="d-inline-block">
         <v-row class="d-inline-block px-2">
-          <v-card-title>Followers</v-card-title>
+          <v-card-title style="color: #1A1F73">Followers</v-card-title>
         </v-row>
         <v-divider class="mb-2"></v-divider>
         <v-card-text style="height: 300px;">
           <div v-if="!followerList.length" class="text-center">
-            <span>현재 팔로워하는 유저가 없습니다.</span>
+            <span style="color: #D9A9A9">현재 팔로워하는 유저가 없습니다.</span>
           </div>
           <v-radio-group v-model="dialogm1" column>
             <v-row v-for="user in followerList" :key="user.id">

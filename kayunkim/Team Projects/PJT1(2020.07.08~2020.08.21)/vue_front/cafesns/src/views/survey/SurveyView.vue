@@ -13,13 +13,14 @@
         <v-stepper-items style="color:white;">
           <v-row>
             <v-stepper-content
-              
+              class="px-0"
               v-for="(item, i) in surveyJSON.elements"
               :key="i"
               :step="i"
             >
               <v-col
                 cols="12"
+                class="px-2"
               >
                 <h2 v-html="item.title" style="line-height:2;"></h2>
               </v-col>
@@ -105,11 +106,11 @@ export default {
         "elements":[
           {
             "name":"question",
-            "title":"환영합니다! <br> cafe人은 성향테스트를 통해서<br>맞춤형 카페를 추천해드립니다. <br> 성향 테스트를 진행하시겠습니까?",
+            "title":"환영합니다!<br>cafe人은 성향 테스트를<br>기반으로 사용자 맞춤형<br>카페를 추천해드립니다.<br>성향 테스트를<br>진행하시겠습니까?",
           },
           {
             "name":"question1",
-            "title":"Q1. 당신은 숲 속 길을 걷던 중 집을 발견했다. <br> 이 집에서 가장 눈에 띄는 것은?",
+            "title":"Q1. 당신은 숲 속 길을 걷던 중 집을 한 채 발견했다. <br>이 중 가장 눈에 띄는 것은?",
             "choices":[
               {
                 "value": 1,
@@ -117,15 +118,15 @@ export default {
               },
               {
                 "value": 2,
-                "text":"동네 사람들이 모여 바베큐 파티를 하고 있는 모습"
+                "text":"바베큐 파티를 즐기는 모습"
               },
               {
                 "value": 3,
-                "text":"식탁 위에 먹음직스러운 음식들"
+                "text":"식탁 위 먹음직스러운 음식들"
               },
               {
                 "value": 4,
-                "text":"평범한 가정집이 아닌 게스트하우스 같은 모습"
+                "text":"평범한 가정집이 아닌 게스트하우스"
               },
               {
                 "value": 5,
@@ -135,12 +136,8 @@ export default {
           },
           {
             "name":"question2",
-            "title":"Q2. 선물을 고를 때 당신의 취향은?",
+            "title":"Q2. 당신의 선물 취향은?",
             "choices":[
-              {
-                "value": 1,
-                "text":"꽃과 손편지"
-              },
               {
                 "value": 2,
                 "text":"핵인싸템"
@@ -148,6 +145,10 @@ export default {
               {
                 "value": 3,
                 "text":"축하 케이크"
+              },
+              {
+                "value": 1,
+                "text":"꽃과 손편지"
               },
               {
                 "value": 4,
@@ -164,20 +165,20 @@ export default {
             "title":"Q3. 당신의 영화 취향은?",
             "choices":[
               {
-                "value": 1,
-                "text": require("@/assets/movies/classic.jpg")
-              },
-              {
                 "value": 2,
                 "text": require("@/assets/movies/para.jpg")
+              },
+              {
+                "value": 4,
+                "text": require("@/assets/movies/avengers.jpg")
               },
               {
                 "value": 3,
                 "text": require("@/assets/movies/charlie.jpg")
               },
               {
-                "value": 4,
-                "text": require("@/assets/movies/avengers.jpg")
+                "value": 1,
+                "text": require("@/assets/movies/classic.jpg")
               },
               {
                 "value": 5,
@@ -187,49 +188,49 @@ export default {
           },
           {
             "name":"question4",
-            "title":"Q4. 회사 첫 출근을 위해 출근룩을 준비하는 당신은?",
+            "title":"Q4. 회사 첫 출근을 위해 <br>출근룩을 준비하는 당신은?",
             "choices":[
               {
                 "value": 1,
-                "text":"집에 있던 정장룩을 꺼내 정성스럽게 다려놓는다."
+                "text":"정장을 꺼내 정성스럽게 다려놓는다"
               },
               {
                 "value": 2,
-                "text":"SNS를 켜서 #출근룩 검색 후 고대로 사러간다."
-              },
-              {
-                "value": 3,
-                "text":"출근룩보단 내가 쓸 사무실 개인용품 챙기기(feat.텀블러, 슬리퍼, 쿠션)"
+                "text":"SNS #출근룩 검색 후 고대로 사러간다"
               },
               {
                 "value": 4,
-                "text":"미생을 보며 최애 캐릭터룩을 따라입는다."
+                "text":"미생을 보며 최애 캐릭터룩을 따라입는다"
+              },
+              {
+                "value": 3,
+                "text":"출근룩보단 텀블러, 슬리퍼, 쿠션 챙기기"
               },
               {
                 "value": 5,
-                "text":"옷장 처음 열었을 때 손길이 닿는 거를 운명으로 알고 대충 주워 입는다."
+                "text":"옷장을 열어 손에 집히는거 대충 주워 입는다"
               },
             ]
           },
           {
             "name":"question5",
-            "title":"Q5. 집에 들어오자마자 바로 하는 행동은?",
+            "title":"Q5. 평소 집에 들어오자마자<br>바로 하는 행동은?",
             "choices":[
-              {
-                "value": 1,
-                "text":"씻고 옷을 갈아입는다."
-              },
               {
                 "value": 2,
                 "text":"저녁 1깡을 실천한다."
               },
               {
-                "value": 3,
-                "text":"출출한데 뭐 먹지? 냉장고부터 연다."
-              },
-              {
                 "value": 4,
                 "text":"강아지랑 논다."
+              },
+              {
+                "value": 1,
+                "text":"씻고 옷을 갈아입는다."
+              },
+              {
+                "value": 3,
+                "text":"출출한데 뭐 먹지? 냉장고부터 연다."
               },
               {
                 "value": 5,
@@ -239,7 +240,7 @@ export default {
           },
           {
             "name":"priority",
-            "title":"Q6. 다음 중 1초만에 선택하세요.",
+            "title":"Q6. 1초만의 당신의 선택은?",
             "choices": [
               {
                 "value": 1,

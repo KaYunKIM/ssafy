@@ -2,9 +2,6 @@
   <v-slide-group
     show-arrows-on-hover
   >
-    <div v-if="!mostLikeRecommendList.length" class="mx-auto">
-      현재 추천할 카페가 없습니다.
-    </div>
     <v-slide-item
       v-for="cafe in mostLikeRecommendList"
       :key="cafe.id"

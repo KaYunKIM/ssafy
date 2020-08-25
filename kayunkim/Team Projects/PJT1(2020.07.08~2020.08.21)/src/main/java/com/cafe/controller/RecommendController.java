@@ -31,6 +31,12 @@ public class RecommendController {
 	@Autowired
 	private CafeService caService;
 
+	@ApiOperation(value = "주제별 추천 리스트 보여주기")
+	@GetMapping("/survey/list/theme/{theme}/{page}")
+	public List<CafeDto> recommendAllByTheme(@PathVariable String theme,@PathVariable Integer page) {
+		return service.recommendAllByTheme(theme,page);
+	}
+	
 	@ApiOperation(value = "서베이 결과 추천 카페 3개 보여주기")
 	@GetMapping("/survey/{type}")
 	public List<CafeDto> recommendByType(@PathVariable String type) {

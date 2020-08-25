@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Posts</h3>
+    <h3 style="color: #1A1F73">Posts</h3>
     <v-list flat>
       <v-list-item-group>
         <v-list-item
@@ -17,10 +17,10 @@
             </v-img>
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title>{{ post.contents }}</v-list-item-title>
-            <v-list-item-subtitle>{{ post.uid }}</v-list-item-subtitle>
+            <v-list-item-title style="color: #49538C">{{ post.contents }}</v-list-item-title>
+            <v-list-item-subtitle style="color: #D9A9A9">{{ post.uid }}</v-list-item-subtitle>
           </v-list-item-content>
-          <v-list-item-action>{{ post.date }}</v-list-item-action>
+          <v-list-item-action style="color: #1A1F73">{{ post.date }}</v-list-item-action>
         </v-list-item>
       </v-list-item-group>
     </v-list>

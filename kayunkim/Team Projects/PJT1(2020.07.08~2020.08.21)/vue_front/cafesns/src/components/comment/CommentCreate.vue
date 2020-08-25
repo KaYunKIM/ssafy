@@ -12,7 +12,7 @@
       <v-btn
         small
         dark
-        color="secondary"
+        color="#D9A9A9"
         @click="checkBeforeCreateComment(commentData)"
       >등록</v-btn>
     </template>

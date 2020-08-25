@@ -3,47 +3,56 @@
 
 <mapper namespace="recommend">
 
+
+	<select id="recommendAllByTheme" resultType="CafeDto">
+		select *
+		from cafe
+		where theme = #{theme}
+	</select>
+
 	<select id="recommendByType" resultType="CafeDto">
 		select *
 		from cafe
-		where type = #{type}
-		order by rand() limit 3
+		where
+		type = #{type}
+		order by rand() limit 2
 	</select>
-	
+
 	<select id="recommendAllByType" resultType="CafeDto">
 		select *
 		from cafe
 		where type = #{type}
 	</select>
-	
+
 	<update id="setUserType">
 		update user
 		set survey=#{survey}
 		where id=#{id}
 	</update>
-	
+
 	<select id="selectCafeLiked" resultType="int">
 		select cafeno
 		from `like`
 		where uid = #{uid}
 	</select>
-	
+
 	<select id="selectUserLiked" resultType="string">
 		select uid
 		from `like`
 		where cafeno = #{cafeno}
 	</select>
-	
+
 	<select id="selectCafeStamped" resultType="int">
 		select cafeno
-		from stamp
+		from
+		stamp
 		where uid = #{uid}
 	</select>
-	
+
 	<select id="selectUserStamped" resultType="string">
 		select uid
 		from stamp
 		where cafeno = #{cafeno}
 	</select>
-	
+
 </mapper>
