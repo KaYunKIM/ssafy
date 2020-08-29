@@ -1,22 +1,45 @@
-N = int(input())
-switch = list(map(int,input().split()))
-students = int(input())
-for _ in range(students):
-    sex, num = map(int,input().split())
-    if sex == 1:
-        for i in range(num-1,N,num):
-            switch[i] = 1 - switch[i]
-        print(1,switch)
-    else:
-        next=0
-        while switch[num-2-next] == switch[num-2+next] and num-2-next>=0 and num-2+next<=N-1:
-            next+=1
-        print(next, num-1-next, num-1+next)
-        for i in range(num-1-next,num+next):
-            switch[i] = 1 - switch[i]
-            print(2,switch)
-for i in range(0,N,20):
-    print(*switch[i:i+20])
+# N = int(input())
+# switch = list(map(int,input().split()))
+# students = int(input())
+# for _ in range(students):
+#     sex, num = map(int,input().split())
+#     if sex == 1:
+#         for i in range(num-1,N,num):
+#             switch[i] = 1 - switch[i]
+#         print(1,switch)
+#     else:
+#         next=0
+#         while switch[num-2-next] == switch[num+next] and num-2-next>=0 and num+next<=N-1:
+#             next+=1
+#         print(next, num-2-next, num-2+next)
+#         for i in range(num-1-next,num+next):
+#             switch[i] = 1 - switch[i]
+#             print(2,switch)
+# for i in range(0,N,20):
+#     print(*switch[i:i+20])
+
+
+# N = int(input())
+# switch = list(map(int,input().split()))
+# students = int(input())
+# for _ in range(students):
+#     sex, num = map(int,input().split())
+#     if sex == 1:
+#         for i in range(num-1,N,num):
+#             switch[i] = 1 - switch[i]
+#         print(1,switch)
+#     else:
+#         next=0
+#         while True:
+#             if switch[num-2-next] == switch[num-2+next] and num-2-next>=0 and num-2+next<=N-1:
+#             next+=1
+#         print(next, num-2-next, num-2+next)
+#         for i in range(num-2-next,num+next+1):
+#             switch[i] = 1 - switch[i]
+#             print(2,switch)
+# for i in range(0,N,20):
+#     print(*switch[i:i+20])
+
 
 
 
