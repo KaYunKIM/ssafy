@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad5ff6a6-ba22-4331-97ba-fc079b3cbef4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Select By ID.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Weather Observation Station 1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ad5ff6a6-ba22-4331-97ba-fc079b3cbef4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601130821816</updated>
-      <workItem from="1601130826941" duration="758000" />
+      <workItem from="1601130826941" duration="1042000" />
     </task>
     <servers />
   </component>
