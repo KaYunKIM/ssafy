@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad5ff6a6-ba22-4331-97ba-fc079b3cbef4" name="Default Changelist" comment="" />
+    <list default="true" id="ad5ff6a6-ba22-4331-97ba-fc079b3cbef4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Revising the Select Query I.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601130821816</updated>
       <workItem from="1601130826941" duration="1042000" />
+      <workItem from="1601562149120" duration="115000" />
     </task>
     <servers />
   </component>
