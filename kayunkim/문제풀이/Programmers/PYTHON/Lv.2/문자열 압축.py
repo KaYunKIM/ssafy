@@ -1,13 +1,24 @@
 def solution(s):
     ans = ''
-    temp = ''
-    for i in range(len(s)):
-        temp+=s[i]
-        # for j in range(i+1,len(s)):
-        if temp not in s[i+1:len(s)]:
-            print(temp)
-            ans+=str(len(temp))
-            ans+=temp
-            temp = ''
-    print(ans)
-    return len(ans)
+    minV = 1000000000000
+    h = 1
+    while h != len(s)//2:
+        temp = []
+        for i in range(0,len(s),h):
+            if not temp:
+                temp.append(h)
+                temp.append(s[i:i+h])
+            else:
+                if temp[-1] == s[i:i+h]:
+                    temp[-2]+=1
+                else:
+                    temp.append(h)
+                    temp.append(s[i:i+h])
+        print(temp)
+        while 1 in temp:
+            temp.remove(1)
+        if len(temp)< minV:
+            minV = len(temp)
+            print(minV)
+        h+=1
+    return minV
