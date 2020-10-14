@@ -6,10 +6,10 @@ def find(cur):
         print()
         return
     else:
-        for i in range(N):  # 깊이탐색
+        for i in range(N):  #가로탐색
             d1_idx = N-1-(cur-i)
             d2_idx = cur+i
-            # print('mid',cur,i, d1_idx, d2_idx)
+            print('mid',cur,i, d1_idx, d2_idx)
             if not v[i] and not diag1[d1_idx] and not diag2[d2_idx]:
                 v[i] = 1
                 diag1[d1_idx]=1
@@ -23,9 +23,15 @@ def find(cur):
 
 N = int(input())
 cnt = 0
-v = [0]*N
+v = [0]*N  #가로
 sumV = []
-diag1 = [0]*(2*N-1)
-diag2 = [0]*(2*N-1)
+diag1 = [0]*(2*N-1)  #왼쪽대각선
+diag2 = [0]*(2*N-1)  #오른쪽대각선
 find(0)
 print(cnt)
+
+# (0,0) (0,1) (0,2) (0,3) (0,4)
+# (1,0) (1,1) (1,2) (1,3) (1,4)
+# (2,0) (2,1) (2,2) (2,3) (2,4)
+# (3,0) (3,1) (3,2) (3,3) (3,4)
+# (4,0) (4,1) (4,2) (4,3) (4,4)
