@@ -14,7 +14,7 @@
 9. cmd 창 열기, 아래 명령어 입력
 
 ```
->set GOOGLE_APPLICATION_CREDENTIALS={json파일 위치}\speechtotext-.................json
+> set GOOGLE_APPLICATION_CREDENTIALS={json파일 위치}\{프로젝트 명}-.................json
 ```
 
 1. cmd 창 닫으면다시 설정해주어야 하므로, 매번 입력하기 번거롭다면, 환경 변수 시스템 변수에 등록하기
@@ -109,7 +109,7 @@
 #### 서비스 계정 활성화
 
 ```python
-> gcloud auth activate-service-account --key-file={"json파일 위치"}
+> gcloud auth activate-service-account --key-file="json파일 위치"
 ```
 
 #### 마이크 사용 위한 패키기 설치
@@ -124,6 +124,10 @@
 
 > [https://findface.netlify.app/](https://www.youtube.com/redirect?q=https%3A%2F%2Ffindface.netlify.app%2F&event=video_description&redir_token=QUFFLUhqbm95a3RCTDJqak5fREF3WnAzWnB2VllxSTZSQXxBQ3Jtc0ttTURmeXF6d0plT2FYcDEyNzNQNng0c3JoSUpXQlpIcGFJVmxZYzFwY0pxLVdLY3I5UHphZEhveXZTSTVZMVRoQ29oM3FZVDRkb0pZNG9FeGtwTlROMzcwREw2WkZTMGxBamtOVDBycmRZbzJoek9kTQ%3D%3D&v=Ds-7D8d-FwA) 접속 후 STT 파일 다운로드> 프로젝트 폴더에 저장
 
+>  https://github.com/googleapis/python-speech/blob/master/samples/microphone/transcribe_streaming_mic.py
+
+위 링크 참고해서 stt_test1.py에 있는 enum, type 검색 후 => speech로 수정하기
+
 ####  실시간 음성 인식
 
 ```python
@@ -131,6 +135,8 @@
 ```
 
 => 음성 인식 확인하기
+
+![3](3.JPG)
 
 ####  .wav 확장자의 녹음 파일 텍스트화 실행
 
