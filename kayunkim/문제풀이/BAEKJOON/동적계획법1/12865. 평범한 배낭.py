@@ -12,8 +12,8 @@ for i in range(N):
             m = maxV[-1] + bag[i][1]
         else:
             if i == 1:
-                w = max(weight[-1], )
+                w = max(weight[-1])
                 maxV[i] = maxV[-1]
             else:
-                w = max(weight[-1], weight[]
+                w = max(weight[-1])
                 maxV[i] = maxV[-1]
