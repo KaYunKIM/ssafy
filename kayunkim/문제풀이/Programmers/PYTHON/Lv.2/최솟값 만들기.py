@@ -1,7 +1,7 @@
 def solution(A,B):
-    answer = 0
-    A = sorted(A)
-    B = sorted(B, reverse=True)
-
-    answer = sum([a * b for a, b in zip(A, B)])
-    return answer
+    minV = 0
+    A.sort()
+    B.sort(reverse=True)
+    for i in range(len(A)):
+        minV+=A[i]*B[i]
+    return minV
