@@ -8,6 +8,8 @@ def solution(name):
             if name[i] != 'A':
                 answer+=min(ord(name[i])-65, 90-ord(name[i])+1)
                 answer+=1
+            else:
+                answer += min(ord(name[i]) - ord('A'), ord('Z') - ord(name[i]) + 1)
     else:
         for i in range(len(name)):
             answer+=min(ord(name[i])-65, 90-ord(name[i])+1)
