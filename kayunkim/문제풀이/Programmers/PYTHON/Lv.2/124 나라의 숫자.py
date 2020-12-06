@@ -1,21 +1,14 @@
-# def solution(n):
-#     answer = []
-#     temp = [4,1,2]
-#     while n>2:
-#         answer.insert(0,temp[n%3])
-#         print('1',answer)
-#         n//=3
-#         print('1',n)
-#     if n!=0:
-#         print(n)
-#         answer.insert(0,temp[n])
-#         print('2',answer)
-#     return answer
-
 def solution(n):
-    answer = ''
-    while n > 0:
-        n -= 1
-        answer = '124'[n%3] + answer
-        n //= 3
-    return answer
+    answer = []
+    while n != 0:
+        if n%3 == 0:
+            answer.append(4)
+            n = n//3-1
+        elif n%3 == 1:
+            answer.append(1)
+            n = n//3
+        elif n%3 == 2:
+            answer.append(2)
+            n = n//3
+    ans = list(reversed(answer))
+    return ''.join(map(str,ans))
