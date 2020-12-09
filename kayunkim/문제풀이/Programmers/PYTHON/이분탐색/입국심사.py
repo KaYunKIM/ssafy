@@ -1,12 +1,17 @@
-def impossible(n, middle, times):
-    return sum([middle // x for x in times]) < n
-
 def solution(n, times):
-    left, right = 1, max(times)*n
+    answer = 0
+    left = 1
+    right = min(times)*n
+
     while left < right:
         middle = (left + right) // 2
-        if impossible(n, middle, times):
-            left = middle + 1
+        temp = n
+        for i in times:
+            temp-= mid//i
+            if temp <= 0:
+                answer = mid
+                right = mid-1
+                break
         else:
-            right = middle
-    return left
+            left = middle + 1
+    return answer
