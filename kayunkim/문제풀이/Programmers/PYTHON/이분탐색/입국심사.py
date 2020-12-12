@@ -1,17 +1,18 @@
 def solution(n, times):
     answer = 0
     left = 1
-    right = min(times)*n
+    right = max(times)*n
 
-    while left < right:
-        middle = (left + right) // 2
-        temp = n
+    while left <= right:
+        mid = (left+right)//2
+        cnt = 0
         for i in times:
-            temp-= mid//i
-            if temp <= 0:
-                answer = mid
-                right = mid-1
+            cnt += mid//i
+            if cnt >= n:
                 break
-        else:
-            left = middle + 1
+        if cnt >= n:   # n명 전체 심사 가능
+            answer = mid
+            right = mid-1
+        else:          # n명 전체 심사 가능하지 않은 경우
+            left = mid+1
     return answer
