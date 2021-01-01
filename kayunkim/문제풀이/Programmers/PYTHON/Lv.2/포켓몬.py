@@ -1,9 +1,17 @@
 def solution(nums):
-    answer = 0
-    length = len(nums) // 2
-    temp = list(set(nums))
+    temp = []
+    for i in range(len(nums)):
+        if nums[i] not in temp:
+            temp.append(nums[i])
+        if len(temp) == len(nums)/2:
+            break
+    return len(temp)
 
-    for value in temp:
-        if (answer < length):
-            answer += 1
+
+##시간 단축
+def solution(nums):
+    answer = 0
+    for i in set(nums):
+        if answer < len(nums)//2:
+            answer+=1
     return answer
