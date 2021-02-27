@@ -1,31 +1,33 @@
 def solution(begin, target, words):
-    answer = 100000000
-    v = [0] * len(words)
+    maxV = len(words)
 
-    def find(cur, target, sumV):
-        nonlocal answer
-        # print('first',cur, sumV,answer,v)
+    def find(cur, sumV):
+        nonlocal maxV
+
         if cur == target:
-            if sumV < answer:
-                answer = sumV
-        if sumV > answer:
+            if sumV < maxV:
+                maxV = sumV
             return
 
-        for w in range(len(words)):
-            if not v[w]:
-                cnt = 0
-                # print('f',w, words[w])
-                for i in range(len(words[w])):
-                    if words[w][i] != cur[i]:
-                        cnt += 1
-                if cnt == 1:
-                    # print('s',words[w])
-                    v[w] = 1
-                    find(words[w], target, sumV + 1)
-                    v[w] = 0
+        if sumV > maxV:
+            return
 
-    find(begin, target, 0)
-    if answer == 100000000:
+        for word in words:
+            if not v[words.index(word)]:
+
+                cnt = 0
+                for i in range(len(word)):
+                    if cur[i] != word[i]:
+                        cnt += 1
+
+                if cnt == 1:
+                    v[words.index(word)] = 1
+                    find(word, sumV + 1)
+                    v[words.index(word)] = 0
+
+    if target not in words:
         return 0
     else:
-        return answer
+        v = [0] * len(words)
+        find(begin, 0)
+        return maxV
