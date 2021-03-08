@@ -1,50 +1,32 @@
 def solution(n, results):
     answer = 0
-    temp = []
 
-    graph = {}
-    for i in results:
-        if i[0] not in graph:
-            graph[i[0]] = [i[1]]
-        else:
-            graph[i[0]].append(i[1])
+    win = {x: [] for x in range(1, n + 1)}
+    lose = {x: [] for x in range(1, n + 1)}
 
-    for i in graph:
-        if graph[i]:
-            v = [0] * (n + 1)
-            stack = [i]
-
-            while stack:
-                cur = stack[-1]
-                if cur not in graph or len(graph[cur]) == 0:
-                    stack.pop()
-                    v[cur] = 1
-
-                else:
-                    if not v[graph[cur][0]]:
-                        stack.append(graph[cur].pop(0))
-                    else:
-                        stack.pop()
-
-    return answer
-
-
-def solution(n, results):
-    answer = 0
-
-    v = [0] * (n + 1)
-    cur = [0] * (n + 1)
-
-    for i in results:
-        cur[i[0]] = i[1]
-        v[i[1]] += 1
+    for winner, loser in results:
+        if loser not in win[winner]:
+            win[winner].append(loser)
+        if winner not in lose[loser]:
+            lose[loser].append(winner)
 
     for i in range(1, n + 1):
-        if not cur[i]:
-            answer += 1
-        else:
-            if v[cur[i]] == 1:
-                answer += 1
+        for loser in win[i]:
+            for j in lose[i]:
+                if j not in lose[loser]:
+                    lose[loser].append(j)
 
-    # print(v, cur)
+        for winner in lose[i]:
+            for j in win[i]:
+                if j not in win[winner]:
+                    win[winner].append(j)
+
+    # print(win)
+    # print(lose)
+    # print()
+
+    for i in range(1, n + 1):
+        if len(win[i]) + len(lose[i]) == n - 1:
+            answer += 1
+
     return answer
