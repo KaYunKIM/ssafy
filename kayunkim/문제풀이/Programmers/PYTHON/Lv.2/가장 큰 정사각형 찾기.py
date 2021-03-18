@@ -1,11 +1,7 @@
-import itertools
-
 def solution(board):
-    M, N = len(board), len(board[0])
-    for i in range(1, M):
-        for j in range(1, N):
+    for i in range(1, len(board)):
+        for j in range(1, len(board[0])):
             if board[i][j] == 1:
-                board[i][j] = min(board[i-1][j-1], board[i-1][j], board[i][j-1]) + 1
-                print(board)
+                board[i][j] = min(board[i][j-1], board[i-1][j-1], board[i-1][j]) + 1
 
-    return max(itertools.chain(*board))**2
+    return max([num for row in board for num in row]) ** 2
