@@ -19,4 +19,8 @@ def solution(N, number):
     for i in range(1, len(str(number)) + 1):
         num = int(str(N) * i)
         find(num, 1)
-    return answer
+
+    if answer < 8:
+        return answer
+    else:
+        return -1
