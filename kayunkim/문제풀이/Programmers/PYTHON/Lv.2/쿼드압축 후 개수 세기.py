@@ -1,4 +1,3 @@
-
 def solution(arr):
     answer = [0,0]
     for a in range(len(arr)):
@@ -8,9 +7,8 @@ def solution(arr):
                 one = 0
                 zero = 0
                 temp = []
+
                 for j in range(h):
-                    # j+=a
-                    # print(i,j,h, arr[j][i:i+h])
                     if 2 not in arr[j][i:i+h]:
                         temp.append(arr[j][i:i+h])
                         one+=arr[j][i:i+h].count(1)
@@ -25,12 +23,8 @@ def solution(arr):
                     answer[1]+=1
                     for t in temp:
                         t = [2]*h
-
+                        
                 h+=1
-                print(one,zero,h)
-                print()
-            
-
     return answer
 
     answer = 0
@@ -40,12 +34,15 @@ def solution(arr):
     while left <= right:
         mid = (left+right)//2
         cnt = 0
+
         for i in times:
             cnt += mid//i
             if cnt >= n:
                 break
+
         if cnt >= n:
             answer = mid
             right = mid-1
+
         else:
             left = mid+1
