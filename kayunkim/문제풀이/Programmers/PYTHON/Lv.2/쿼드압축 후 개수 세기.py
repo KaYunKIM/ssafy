@@ -23,7 +23,7 @@ def solution(arr):
                     answer[1]+=1
                     for t in temp:
                         t = [2]*h
-                        
+
                 h+=1
     return answer
 
