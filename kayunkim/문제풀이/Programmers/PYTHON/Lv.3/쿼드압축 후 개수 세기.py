@@ -1,18 +1,4 @@
 def solution(arr):
-    answer = [0,0]
-    
-    v = [[0]*len(arr) for _ in range(len(arr))]
-    
-    for i in range(len(arr)):
-        for j in range(len(arr)):
-            h = 2
-            # while i+h<len(arr) and j+h<len(arr):
-                # if arr[i:i+h][j+j+h]
-            
-    return answer
-
-
-def solution(arr):
     def check(y, x, n):
         if n == 1:
             if arr[y][x] == 1:
