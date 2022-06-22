@@ -72,7 +72,7 @@ multidict==4.7.6
 mypy-extensions==0.4.3
 mysql-connector-python==8.0.21
 nltk==3.5
-numpy==1.18.5
+numpy==1.22.0
 oauthlib==3.1.0
 opt-einsum==3.3.0
 pandas==1.1.3
