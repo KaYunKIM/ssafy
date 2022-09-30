@@ -60,7 +60,7 @@ googleapis-common-protos==1.52.0
 grpcio==1.32.0
 h5py==2.10.0
 idna==2.10
-joblib==0.16.0
+joblib==1.2.0
 JPype1==1.0.2
 jwt==1.0.0
 Keras-Preprocessing==1.1.2
