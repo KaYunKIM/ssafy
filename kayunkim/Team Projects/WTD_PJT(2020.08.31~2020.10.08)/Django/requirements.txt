@@ -110,6 +110,6 @@ typing-inspect==0.6.0
 urllib3==1.25.10
 virtualenv==20.0.31
 virtualenvwrapper-win==1.2.6
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 wrapt==1.12.1
 yarl==1.6.0
