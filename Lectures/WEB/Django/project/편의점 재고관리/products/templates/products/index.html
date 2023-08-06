@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block content %}
+  <div class="d-flex justify-content-between">
+      <h3>Branch List</h3>
+      <img src="{% static 'kakao.png' %}" height="150" class="px-5 mb-3">
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">지점명</th>
+        <th scope="col">점장</th>
+      </tr>
+    </thead>
+      {% for store in stores %}
+      <tbody>
+        <tr height="80">
+          <td><a href="#" id="storeId" data-toggle="modal" data-target="#detailModal{{ store.id }}" data-title="data">{{ store.name }}</a></td>
+          <td>{{ store.manager }}</td>
+        </tr>
+      </tbody>
+      <div class="modal fade" id="detailModal{{ store.id }}" tabindex="-1" role="dialog" aria-labelledby="detailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="card text-white bg-secondary" id ="exampleCard" style="width: 30rem;">
+                <img  id="detailModalLabel" src="{{ store.image.url }}" class="card-img-top" alt="store image">
+                <div class="card-body">
+                  <h5 class="card-title" id="detailModalLabel">{{ store.name }}</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                  <a href="{% url 'products:detail' store.id %}" class="btn btn-warning">See in detail</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+{% endblock %}
